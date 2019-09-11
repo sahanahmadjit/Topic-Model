@@ -7,7 +7,11 @@ index_dictonary = dict()
 def source_term_separtor():
     with open('/home/C00408440/ZWorkStation/JournalVersion/Data/IndexData/Index.txt') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter='|')
+        lineNumber=0
         for line in csv_reader:
+            lineNumber = lineNumber +1
+            if lineNumber == 1000:
+                break
             for i in range(len(line)):
                 if i == 0:
                     sourceTerm = line[i]
