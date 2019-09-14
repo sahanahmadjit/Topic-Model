@@ -5,7 +5,7 @@ import re
 index_dictonary = dict()
 #This function reads the text file line by line. For each line it selects term from first input (input 0)
 def source_term_separtor():
-    with open('/home/C00408440/ZWorkStation/JournalVersion/Data/IndexData/Index.txt') as csv_file:
+    with open('/home/C00408440/ZWorkStation/JournalVersion/Data/IndexData/index_test.txt') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter='|')
         lineNumber=0
         for line in csv_reader:
@@ -19,7 +19,8 @@ def source_term_separtor():
                     sourceFile=re.search("txt$",line[i])
                     if sourceFile is not None:
                         i+=1
-                        add_targetFile_to_sourceFile(sourceTerm,sourceFile.string,line[i])
+                        frequency =int(line[i])
+                        add_targetFile_to_sourceFile(sourceTerm,sourceFile.string,frequency)
 
 
 
@@ -28,7 +29,7 @@ def source_term_separtor():
 #Then it has the target File with source term file frequency which is the basic of building graph unit
 def add_targetFile_to_sourceFile(sourceTerm,sourceFile,frequency):
     print("Data Processing for: " + sourceTerm)
-    with open('/home/C00408440/ZWorkStation/JournalVersion/Data/IndexData/Index.txt') as csv_file:
+    with open('/home/C00408440/ZWorkStation/JournalVersion/Data/IndexData/index_test.txt') as csv_file:
         csv_reader_targetFile = csv.reader(csv_file, delimiter='|')
         for line in csv_reader_targetFile:
             for i in range(len(line)):
@@ -39,7 +40,12 @@ def add_targetFile_to_sourceFile(sourceTerm,sourceFile,frequency):
                         targetTerm=line[0]
                         if sourceTerm in index_dictonary:
                             oldKeyValue = index_dictonary[sourceTerm]
-                            oldKeyValue[targetTerm] = frequency
+                            #check target term already appear with source term or not
+                            if targetTerm in oldKeyValue:
+                                previousFrequency= int(oldKeyValue.get(targetTerm))
+                                oldKeyValue[targetTerm]=previousFrequency+frequency
+                            else:
+                                oldKeyValue[targetTerm] = frequency
                             index_dictonary[sourceTerm] = oldKeyValue
                         else:
                             target_dictonary = {targetTerm: frequency}
@@ -62,7 +68,7 @@ def writeGraphDataToFile():
         graphDatainputFile.write(key)
         tempDict=index_dictonary[key]
         for k,v in tempDict.items():
-            graphDatainputFile.write("|"+k+"|"+v)
+            graphDatainputFile.write("|"+k+"|"+str(v))
         graphDatainputFile.write("\n")
 
 
