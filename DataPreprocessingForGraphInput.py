@@ -1,17 +1,14 @@
 import csv
 import re
 
-
+mac_data_directory= "/zWorkStation/JournalWork/Topic-Model/Data/"
+linux_data_directory="/home/C00408440/ZWorkStation/JournalVersion/Data/"
 index_dictonary = dict()
 #This function reads the text file line by line. For each line it selects term from first input (input 0)
 def source_term_separtor():
-    with open('/home/C00408440/ZWorkStation/JournalVersion/Data/IndexData/index_test.txt') as csv_file:
+    with open(mac_data_directory+'IndexData/Index.txt') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter='|')
-        lineNumber=0
         for line in csv_reader:
-            lineNumber = lineNumber +1
-            if lineNumber == 1000:
-                break
             for i in range(len(line)):
                 if i == 0:
                     sourceTerm = line[i]
@@ -29,7 +26,7 @@ def source_term_separtor():
 #Then it has the target File with source term file frequency which is the basic of building graph unit
 def add_targetFile_to_sourceFile(sourceTerm,sourceFile,frequency):
     print("Data Processing for: " + sourceTerm)
-    with open('/home/C00408440/ZWorkStation/JournalVersion/Data/IndexData/index_test.txt') as csv_file:
+    with open(mac_data_directory+'IndexData/Index.txt') as csv_file:
         csv_reader_targetFile = csv.reader(csv_file, delimiter='|')
         for line in csv_reader_targetFile:
             for i in range(len(line)):
@@ -62,7 +59,7 @@ def print_Dictonary():
         #print(index_dictonary[key])
 
 def writeGraphDataToFile():
-    graphDatainputFile= open("/home/C00408440/ZWorkStation/JournalVersion/Data/GraphData/GraphInputData.txt","w")
+    graphDatainputFile= open(mac_data_directory+"GraphData/GraphInputData.txt","w")
     for key in index_dictonary:
         print("Writing Data For: " + key)
         graphDatainputFile.write(key)
