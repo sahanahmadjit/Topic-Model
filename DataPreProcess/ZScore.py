@@ -55,9 +55,14 @@ def meanCallculation(frequencyMean,associationMean,totalNumberOfTerm):
       return frequencyMean,associationMean,totalNumberOfTerm
 
 
-def statisticalInfoWriteToFile(statiscalInfo):
+def statisticalInfoWriteToFile(freq,assiocation,total):
   statisticalWrite=open(linux_data_directory + "GraphData/StatisticalInfo_test.txt", "w")
-  statisticalWrite.write("MeanFrequency"+"|" + str(statiscalInfo[0])+ "|" + "MeanAssociation"+ "|" + str(statiscalInfo[1]) +"|"+"Total Number of Term"+"|"+str(statiscalInfo[2]))
+  statisticalWrite.write("MeanFrequency"+"|" + str(freq)+ "|" + "MeanAssociation"+ "|" + str(assiocation) +"|"+"Total Number of Term"+"|"+str(total))
+
+def deviationInfoWriteToFile(freqDeviation,associationDevaition):
+  statisticalWrite=open(linux_data_directory + "GraphData/StatisticalInfo_test.txt", "a")
+  statisticalWrite.write("\n")
+  statisticalWrite.write("SD_Frequency"+"|" + str(freqDeviation)+ "|" + "SD_Association"+ "|" + str(associationDevaition))
 
 def calculateStandardDeviation(meanFrequency,meanAssociation,totalNumberOfTerm):
   with open(linux_data_directory + 'GraphData/FrequencyAssociationInfo_test.txt') as csv_file:
@@ -85,7 +90,8 @@ def main_ZScore():
   print_Dictonary()
   #writeFrequencyAssociationToFile()
   statiscalInfo=meanCallculation(frequencyMean,associationMean,totalNumberOfTerm)
-  print(statiscalInfo)
-  statisticalInfoWriteToFile(statiscalInfo)
-  print(calculateStandardDeviation(statiscalInfo[0],statiscalInfo[1],statiscalInfo[2]))
+  statisticalInfoWriteToFile(statiscalInfo[0],statiscalInfo[1],statiscalInfo[2])
+  statiscalInfo =calculateStandardDeviation(statiscalInfo[0],statiscalInfo[1],statiscalInfo[2])
+  deviationInfoWriteToFile(statiscalInfo[0],statiscalInfo[1])
+
 main_ZScore()
