@@ -1,0 +1,1 @@
+MeanFrequency|12.25|MeanAssociation|2.0|Total Number of Term|4
