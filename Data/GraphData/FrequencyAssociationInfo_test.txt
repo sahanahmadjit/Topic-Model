@@ -1,0 +1,4 @@
+A|frequency|14|association|2
+B|frequency|25|association|2
+C|frequency|5|association|3
+D|frequency|5|association|1
