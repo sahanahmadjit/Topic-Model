@@ -129,6 +129,7 @@ def main_ZScore():
   print_Dictonary()
   #writeFrequencyAssociationToFile()
   meanInfo=meanCallculation(frequencyMean,associationMean,totalNumberOfTerm)
+  #meanInfo,SD info 0 for Frequency and 1 for Association. Mean info 2 is the total number of term
   statisticalInfoWriteToFile(meanInfo[0],meanInfo[1],meanInfo[2])
   SDInfo =calculateStandardDeviation(meanInfo[0],meanInfo[1],meanInfo[2])
   deviationInfoWriteToFile(SDInfo[0],SDInfo[1])
