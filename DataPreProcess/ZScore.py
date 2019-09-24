@@ -1,5 +1,6 @@
 import csv
 import math
+import operator
 
 mac_data_directory= "/zWorkStation/JournalWork/Topic-Model/Data/"
 linux_data_directory="/home/C00408440/ZWorkStation/JournalVersion/Data/"
@@ -103,6 +104,25 @@ def writeZScore():
       statisticalWrite.write("|" + k + "|" + str(v))
     statisticalWrite.write("\n")
 
+def sortedZScoreWrite():
+  with open(linux_data_directory + 'GraphData/zScoreInfo_test.txt') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter='|')
+    avgZscore = dict()
+    avg=0.0
+    for line in csv_reader:
+      avgZscore[line[0]]= (float(line[2])+float(line[4]))/2
+
+    sortedZScore= sorted(avgZscore.items(),key=operator.itemgetter(1),reverse=True)#sortedZScore now is a touple not a dictonary
+    sortedZScoreDict= dict(sortedZScore)
+
+  zScoreSortedWrite=open(linux_data_directory + "GraphData/zScoreSorted_test.txt", "w")
+  for key in sortedZScoreDict:
+    print("Writing Data For: " + key)
+    zScoreSortedWrite.write(key+ "|" + str(sortedZScoreDict[key]))
+    zScoreSortedWrite.write("\n")
+
+
+      
 
 def main_ZScore():
   createZScoreFormatData()
@@ -114,6 +134,7 @@ def main_ZScore():
   deviationInfoWriteToFile(SDInfo[0],SDInfo[1])
   calculateZScore(meanInfo[0],SDInfo[0],meanInfo[1],SDInfo[1])
   writeZScore()
+  sortedZScoreWrite()
 
 
 main_ZScore()
