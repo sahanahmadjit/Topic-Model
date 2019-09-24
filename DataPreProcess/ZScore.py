@@ -5,6 +5,7 @@ mac_data_directory= "/zWorkStation/JournalWork/Topic-Model/Data/"
 linux_data_directory="/home/C00408440/ZWorkStation/JournalVersion/Data/"
 
 zDictPreprocess = dict()
+zScoreDict = dict()
 frequencyMean= 0.0
 associationMean=0.0
 totalNumberOfTerm=0
@@ -83,15 +84,36 @@ def calculateStandardDeviation(meanFrequency,meanAssociation,totalNumberOfTerm):
     summationAssociaionDevaition=math.sqrt(summationAssociaionDevaition)
   return summationFrequencyDeviation,summationAssociaionDevaition
 
+def calculateZScore(meanFreq,SDFreq,meanAsso,SDAsso):
+  with open(linux_data_directory + 'GraphData/FrequencyAssociationInfo_test.txt') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter='|')
+    for line in csv_reader:
+      zScoreFrequency= (float(line[2])-meanFreq)/SDFreq
+      zScoreAssociation= (float(line[4])-meanAsso)/SDAsso
+      tempDict = {'zScoreFeq':zScoreFrequency,'zScoreAsso':zScoreAssociation}
+      zScoreDict[line[0]]=tempDict
+
+def writeZScore():
+  statisticalWrite=open(linux_data_directory + "GraphData/zScoreInfo_test.txt", "w")
+  for key in zScoreDict:
+    print("Writing Data For: " + key)
+    statisticalWrite.write(key)
+    tempDict = zScoreDict[key]
+    for k, v in tempDict.items():
+      statisticalWrite.write("|" + k + "|" + str(v))
+    statisticalWrite.write("\n")
 
 
 def main_ZScore():
   createZScoreFormatData()
   print_Dictonary()
   #writeFrequencyAssociationToFile()
-  statiscalInfo=meanCallculation(frequencyMean,associationMean,totalNumberOfTerm)
-  statisticalInfoWriteToFile(statiscalInfo[0],statiscalInfo[1],statiscalInfo[2])
-  statiscalInfo =calculateStandardDeviation(statiscalInfo[0],statiscalInfo[1],statiscalInfo[2])
-  deviationInfoWriteToFile(statiscalInfo[0],statiscalInfo[1])
+  meanInfo=meanCallculation(frequencyMean,associationMean,totalNumberOfTerm)
+  statisticalInfoWriteToFile(meanInfo[0],meanInfo[1],meanInfo[2])
+  SDInfo =calculateStandardDeviation(meanInfo[0],meanInfo[1],meanInfo[2])
+  deviationInfoWriteToFile(SDInfo[0],SDInfo[1])
+  calculateZScore(meanInfo[0],SDInfo[0],meanInfo[1],SDInfo[1])
+  writeZScore()
+
 
 main_ZScore()
