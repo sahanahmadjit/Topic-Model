@@ -1,6 +1,7 @@
 import csv
 import math
 import operator
+import matplotlib.pyplot as plt
 
 mac_data_directory= "/zWorkStation/JournalWork/Topic-Model/Data/"
 linux_data_directory="/home/C00408440/ZWorkStation/JournalVersion/Data/"
@@ -120,6 +121,10 @@ def sortedZScoreWrite():
     print("Writing Data For: " + key)
     zScoreSortedWrite.write(key+ "|" + str(sortedZScoreDict[key]))
     zScoreSortedWrite.write("\n")
+
+  #Ploting the Graph
+  plt.bar(list(sortedZScoreDict.keys()),sortedZScoreDict.values(),color='g')
+  plt.show()
 
 
       
