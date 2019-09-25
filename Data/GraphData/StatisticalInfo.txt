@@ -1,0 +1,2 @@
+MeanFrequency|2515.815091503846|MeanAssociation|44.23958977986031|Total Number of Term|22622
+SD_Frequency|19676.41241880048|SD_Association|176.79702567286586

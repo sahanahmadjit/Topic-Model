@@ -1,2 +1,3 @@
 MeanFrequency|12.25|MeanAssociation|2.0|Total Number of Term|4
 SD_Frequency|8.227241335952167|SD_Association|0.7071067811865476
+SD_Frequency|8.227241335952167|SD_Association|0.7071067811865476

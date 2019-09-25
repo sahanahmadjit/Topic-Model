@@ -14,7 +14,7 @@ totalNumberOfTerm=0
 
 def createZScoreFormatData():
   for itaration in range(2):
-    with open(linux_data_directory + 'GraphData/GraphInputData_Test.txt') as csv_file:
+    with open(mac_data_directory + 'GraphData/GraphInputData.txt') as csv_file:
       csv_reader = csv.reader(csv_file, delimiter='|')
       for line in csv_reader:
         tempDictForFrqAssociation = dict()
@@ -33,7 +33,7 @@ def print_Dictonary():
       print(k, tempDict[k])
 
 def writeFrequencyAssociationToFile():
-  frequencyAssociationDatainputFile = open(linux_data_directory + "GraphData/FrequencyAssociationInfo_test.txt", "w")
+  frequencyAssociationDatainputFile = open(mac_data_directory + "GraphData/FrequencyAssociationInfo.txt", "w")
   for key in zDictPreprocess:
     print("Writing Data For: " + key)
     frequencyAssociationDatainputFile.write(key)
@@ -44,7 +44,7 @@ def writeFrequencyAssociationToFile():
 
 
 def meanCallculation(frequencyMean,associationMean,totalNumberOfTerm):
-      with open(linux_data_directory + 'GraphData/FrequencyAssociationInfo_test.txt') as csv_file:
+      with open(mac_data_directory + 'GraphData/FrequencyAssociationInfo.txt') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter='|')
 
         for line in csv_reader:
@@ -52,6 +52,8 @@ def meanCallculation(frequencyMean,associationMean,totalNumberOfTerm):
           associationMean = associationMean + int(line[4])
           totalNumberOfTerm=totalNumberOfTerm+1
 
+        print("Total Frequency:" + str(frequencyMean))
+        print("Total Association:" + str(associationMean))
         frequencyMean=frequencyMean/totalNumberOfTerm
         associationMean=associationMean/totalNumberOfTerm
         totalNumberOfTerm=totalNumberOfTerm
@@ -59,16 +61,16 @@ def meanCallculation(frequencyMean,associationMean,totalNumberOfTerm):
 
 
 def statisticalInfoWriteToFile(freq,assiocation,total):
-  statisticalWrite=open(linux_data_directory + "GraphData/StatisticalInfo_test.txt", "w")
+  statisticalWrite=open(mac_data_directory + "GraphData/StatisticalInfo.txt", "w")
   statisticalWrite.write("MeanFrequency"+"|" + str(freq)+ "|" + "MeanAssociation"+ "|" + str(assiocation) +"|"+"Total Number of Term"+"|"+str(total))
 
 def deviationInfoWriteToFile(freqDeviation,associationDevaition):
-  statisticalWrite=open(linux_data_directory + "GraphData/StatisticalInfo_test.txt", "a")
+  statisticalWrite=open(mac_data_directory + "GraphData/StatisticalInfo.txt", "a")
   statisticalWrite.write("\n")
   statisticalWrite.write("SD_Frequency"+"|" + str(freqDeviation)+ "|" + "SD_Association"+ "|" + str(associationDevaition))
 
 def calculateStandardDeviation(meanFrequency,meanAssociation,totalNumberOfTerm):
-  with open(linux_data_directory + 'GraphData/FrequencyAssociationInfo_test.txt') as csv_file:
+  with open(mac_data_directory + 'GraphData/FrequencyAssociationInfo.txt') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
     summationFrequencyDeviation=0.0
     summationAssociaionDevaition=0.0
@@ -87,7 +89,7 @@ def calculateStandardDeviation(meanFrequency,meanAssociation,totalNumberOfTerm):
   return summationFrequencyDeviation,summationAssociaionDevaition
 
 def calculateZScore(meanFreq,SDFreq,meanAsso,SDAsso):
-  with open(linux_data_directory + 'GraphData/FrequencyAssociationInfo_test.txt') as csv_file:
+  with open(mac_data_directory + 'GraphData/FrequencyAssociationInfo.txt') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
     for line in csv_reader:
       zScoreFrequency= (float(line[2])-meanFreq)/SDFreq
@@ -96,9 +98,9 @@ def calculateZScore(meanFreq,SDFreq,meanAsso,SDAsso):
       zScoreDict[line[0]]=tempDict
 
 def writeZScore():
-  statisticalWrite=open(linux_data_directory + "GraphData/zScoreInfo_test.txt", "w")
+  statisticalWrite=open(mac_data_directory + "GraphData/zScoreInfo.txt", "w")
   for key in zScoreDict:
-    print("Writing Data For: " + key)
+    #print("Writing Data For: " + key)
     statisticalWrite.write(key)
     tempDict = zScoreDict[key]
     for k, v in tempDict.items():
@@ -106,7 +108,7 @@ def writeZScore():
     statisticalWrite.write("\n")
 
 def sortedZScoreWrite():
-  with open(linux_data_directory + 'GraphData/zScoreInfo_test.txt') as csv_file:
+  with open(mac_data_directory + 'GraphData/zScoreInfo.txt') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
     avgZscore = dict()
     avg=0.0
@@ -116,31 +118,88 @@ def sortedZScoreWrite():
     sortedZScore= sorted(avgZscore.items(),key=operator.itemgetter(1),reverse=True)#sortedZScore now is a touple not a dictonary
     sortedZScoreDict= dict(sortedZScore)
 
-  zScoreSortedWrite=open(linux_data_directory + "GraphData/zScoreSorted_test.txt", "w")
+  zScoreSortedWrite=open(mac_data_directory + "GraphData/zScoreSorted.txt", "w")
   for key in sortedZScoreDict:
-    print("Writing Data For: " + key)
+    #print("Writing Data For: " + key)
     zScoreSortedWrite.write(key+ "|" + str(sortedZScoreDict[key]))
     zScoreSortedWrite.write("\n")
 
   #Ploting the Graph
-  plt.bar(list(sortedZScoreDict.keys()),sortedZScoreDict.values(),color='g')
-  plt.show()
+  print("Starting Ploting ZScore")
+  #plt.bar(list(sortedZScoreDict.keys()),sortedZScoreDict.values(),color='g')
+  #plt.show()
+  print("Finished Ploting ZScores")
 
 
-      
+def sortedZScoreByFrequencyWrite():
+  with open(mac_data_directory + 'GraphData/zScoreInfo.txt') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter='|')
+    avgZscoreFeq = dict()
+    avg=0.0
+    for line in csv_reader:
+      avgZscoreFeq[line[0]]= float(line[2])
+
+    sortedZScoreFeq= sorted(avgZscoreFeq.items(),key=operator.itemgetter(1),reverse=True)#sortedZScore now is a touple not a dictonary
+    sortedZScoreFeqDict= dict(sortedZScoreFeq)
+
+  zScoreSortedWrite=open(mac_data_directory + "GraphData/zScoreSortedByFeq.txt", "w")
+  for key in sortedZScoreFeqDict:
+    #print("Writing Data For: " + key)
+    zScoreSortedWrite.write(key+ "|" + str(sortedZScoreFeqDict[key]))
+    zScoreSortedWrite.write("\n")
+
+def sortedZScoreByAssociationWrite():
+  with open(mac_data_directory + 'GraphData/zScoreInfo.txt') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter='|')
+    avgZscoreAsso = dict()
+    avg=0.0
+    for line in csv_reader:
+      avgZscoreAsso[line[0]]= float(line[4])
+
+    sortedZScoreAsso= sorted(avgZscoreAsso.items(),key=operator.itemgetter(1),reverse=True)#sortedZScore now is a touple not a dictonary
+    sortedZScoreAssoDict= dict(sortedZScoreAsso)
+
+  zScoreSortedWrite=open(mac_data_directory + "GraphData/zScoreSortedByAsso.txt", "w")
+  for key in sortedZScoreAssoDict:
+    #print("Writing Data For: " + key)
+    zScoreSortedWrite.write(key+ "|" + str(sortedZScoreAssoDict[key]))
+    zScoreSortedWrite.write("\n")
 
 def main_ZScore():
+  print("Creating ZScore Format");
   createZScoreFormatData()
-  print_Dictonary()
-  #writeFrequencyAssociationToFile()
+  print("Finished Creating ZScore Formats")
+  #print_Dictonary()
+  print("Writing Frequency Association Info to File")
+  writeFrequencyAssociationToFile()
+  print("Finished Writing Frequency Association Info to File")
+  print("Calculating Mean")
   meanInfo=meanCallculation(frequencyMean,associationMean,totalNumberOfTerm)
+  print("Finished Calculating Mean")
   #meanInfo,SD info 0 for Frequency and 1 for Association. Mean info 2 is the total number of term
+  print("Writing Mean Info to Statistical File")
   statisticalInfoWriteToFile(meanInfo[0],meanInfo[1],meanInfo[2])
+  print("Calculating SD")
   SDInfo =calculateStandardDeviation(meanInfo[0],meanInfo[1],meanInfo[2])
+  print("Finished Calculating SD")
+  print("Writing SD info to Statistical File")
   deviationInfoWriteToFile(SDInfo[0],SDInfo[1])
+  print("Calculating ZScore")
   calculateZScore(meanInfo[0],SDInfo[0],meanInfo[1],SDInfo[1])
+  print("Finished Calculating ZScore")
+  print("Writing ZScore to File")
   writeZScore()
+  print("Finished ZScore to File")
+  print("Sorting ZScore to File")
   sortedZScoreWrite()
+  print("Finished Sorted ZScore to File")
+  print("Writing Sorted ZScore By Frequency to File")
+  sortedZScoreByFrequencyWrite()
+  print("Finished Writing Sorted ZScore By Frequency to File")
+  print("Writing Sorted ZScore By Association to File")
+  sortedZScoreByAssociationWrite()
+  print("Finished Writing Sorted ZScore By Association to File")
+
 
 
 main_ZScore()
