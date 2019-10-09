@@ -1,0 +1,584 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <meta>
+      <creator>NetworkX 2.3</creator>
+      <lastmodified>09/10/2019</lastmodified>
+    </meta>
+    <nodes>
+      <node id="cancel" label="cancel" />
+      <node id="cca" label="cca" />
+      <node id="rpslng march" label="rpslng march" />
+      <node id="ldp label advertisement" label="ldp label advertisement" />
+      <node id="traps mib" label="traps mib" />
+      <node id="unavailable" label="unavailable" />
+      <node id="process june" label="process june" />
+      <node id="peem march" label="peem march" />
+      <node id="descriptor" label="descriptor" />
+      <node id="state database" label="state database" />
+      <node id="ccm" label="ccm" />
+      <node id="cancel operation" label="cancel operation" />
+      <node id="outstanding" label="outstanding" />
+      <node id="access protocol" label="access protocol" />
+      <node id="access" label="access" />
+      <node id="extended operation" label="extended operation" />
+      <node id="directory access" label="directory access" />
+      <node id="operation" label="operation" />
+      <node id="standards" label="standards" />
+      <node id="lightweight directory access" label="lightweight directory access" />
+      <node id="protocol" label="protocol" />
+      <node id="directory" label="directory" />
+      <node id="outstanding operation" label="outstanding operation" />
+      <node id="lightweight directory" label="lightweight directory" />
+      <node id="standards track" label="standards track" />
+      <node id="society" label="society" />
+      <node id="internet" label="internet" />
+      <node id="lightweight" label="lightweight" />
+      <node id="internet society" label="internet society" />
+      <node id="track" label="track" />
+      <node id="directory access protocol" label="directory access protocol" />
+      <node id="extended" label="extended" />
+      <node id="language" label="language" />
+      <node id="unicode" label="unicode" />
+      <node id="tagging in unicode" label="tagging in unicode" />
+      <node id="tag" label="tag" />
+      <node id="text" label="text" />
+      <node id="plain text" label="plain text" />
+      <node id="identification character" label="identification character" />
+      <node id="identification" label="identification" />
+      <node id="tag identification" label="tag identification" />
+      <node id="cancel tag" label="cancel tag" />
+      <node id="unicode plain" label="unicode plain" />
+      <node id="plain" label="plain" />
+      <node id="characters" label="characters" />
+      <node id="character" label="character" />
+      <node id="tag characters" label="tag characters" />
+      <node id="tagging" label="tagging" />
+      <node id="language tag" label="language tag" />
+      <node id="unicode plain text" label="unicode plain text" />
+      <node id="datacomputer" label="datacomputer" />
+      <node id="dms" label="dms" />
+      <node id="corporation of america" label="corporation of america" />
+      <node id="corporation" label="corporation" />
+      <node id="america" label="america" />
+      <node id="computer" label="computer" />
+      <node id="nic" label="nic" />
+      <node id="cantor" label="cantor" />
+      <node id="computer corporation of america" label="computer corporation of america" />
+      <node id="survey data" label="survey data" />
+      <node id="survey" label="survey" />
+      <node id="data" label="data" />
+      <node id="computer corporation" label="computer corporation" />
+      <node id="rfc" label="rfc" />
+      <node id="iccc" label="iccc" />
+      <node id="cca iccc weather" label="cca iccc weather" />
+      <node id="murray" label="murray" />
+      <node id="cca iccc" label="cca iccc" />
+      <node id="weather demo" label="weather demo" />
+      <node id="january" label="january" />
+      <node id="demo" label="demo" />
+      <node id="weather" label="weather" />
+      <node id="network" label="network" />
+      <node id="arpa" label="arpa" />
+      <node id="stern" label="stern" />
+      <node id="working group" label="working group" />
+      <node id="weather data" label="weather data" />
+      <node id="technical" label="technical" />
+      <node id="working" label="working" />
+      <node id="group" label="group" />
+      <node id="arpa network" label="arpa network" />
+      <node id="rpsl" label="rpsl" />
+      <node id="address family" label="address family" />
+      <node id="mp" label="mp" />
+      <node id="address" label="address" />
+      <node id="class" label="class" />
+      <node id="routing" label="routing" />
+      <node id="set" label="set" />
+      <node id="peering" label="peering" />
+      <node id="import" label="import" />
+      <node id="march" label="march" />
+      <node id="object" label="object" />
+      <node id="policy" label="policy" />
+      <node id="rpslng" label="rpslng" />
+      <node id="set class" label="set class" />
+      <node id="family" label="family" />
+      <node id="routing policy" label="routing policy" />
+      <node id="filter" label="filter" />
+      <node id="internet engineering" label="internet engineering" />
+      <node id="signaling ldp label" label="signaling ldp label" />
+      <node id="label distribution protocol" label="label distribution protocol" />
+      <node id="ldp" label="ldp" />
+      <node id="advertisement" label="advertisement" />
+      <node id="engineering" label="engineering" />
+      <node id="ldp speaker" label="ldp speaker" />
+      <node id="establishment" label="establishment" />
+      <node id="speaker" label="speaker" />
+      <node id="ldp label" label="ldp label" />
+      <node id="signaling ldp" label="signaling ldp" />
+      <node id="distribution" label="distribution" />
+      <node id="label advertisement" label="label advertisement" />
+      <node id="session" label="session" />
+      <node id="signaling" label="signaling" />
+      <node id="label" label="label" />
+      <node id="session establishment" label="session establishment" />
+      <node id="status" label="status" />
+      <node id="moore" label="moore" />
+      <node id="mib" label="mib" />
+      <node id="november" label="november" />
+      <node id="moore standards" label="moore standards" />
+      <node id="appn" label="appn" />
+      <node id="mib november" label="mib november" />
+      <node id="appn traps" label="appn traps" />
+      <node id="appn traps mib" label="appn traps mib" />
+      <node id="traps" label="traps" />
+      <node id="pm" label="pm" />
+      <node id="pdp" label="pdp" />
+      <node id="friday" label="friday" />
+      <node id="pst" label="pst" />
+      <node id="sri" label="sri" />
+      <node id="pm pst" label="pm pst" />
+      <node id="schedule" label="schedule" />
+      <node id="use" label="use" />
+      <node id="sunday" label="sunday" />
+      <node id="unavailable for use" label="unavailable for use" />
+      <node id="mpls working" label="mpls working" />
+      <node id="protocols" label="protocols" />
+      <node id="description" label="description" />
+      <node id="technology" label="technology" />
+      <node id="mpls protocols" label="mpls protocols" />
+      <node id="statement" label="statement" />
+      <node id="requirements" label="requirements" />
+      <node id="gmpls" label="gmpls" />
+      <node id="description of process" label="description of process" />
+      <node id="mpls" label="mpls" />
+      <node id="requirements statement" label="requirements statement" />
+      <node id="process" label="process" />
+      <node id="june" label="june" />
+      <node id="ip" label="ip" />
+      <node id="aaa protocol" label="aaa protocol" />
+      <node id="cops" label="cops" />
+      <node id="mobile ip" label="mobile ip" />
+      <node id="mobile" label="mobile" />
+      <node id="mitton" label="mitton" />
+      <node id="diameter" label="diameter" />
+      <node id="snmp" label="snmp" />
+      <node id="aaa" label="aaa" />
+      <node id="authentication" label="authentication" />
+      <node id="brenner" label="brenner" />
+      <node id="code" label="code" />
+      <node id="policy processing" label="policy processing" />
+      <node id="processing" label="processing" />
+      <node id="diameter policy" label="diameter policy" />
+      <node id="document describes" label="document describes" />
+      <node id="application" label="application" />
+      <node id="document" label="document" />
+      <node id="command code" label="command code" />
+      <node id="processing application" label="processing application" />
+      <node id="command" label="command" />
+      <node id="specific" label="specific" />
+      <node id="peem" label="peem" />
+      <node id="describes" label="describes" />
+      <node id="te" label="te" />
+      <node id="external dwdm" label="external dwdm" />
+      <node id="interface switching" label="interface switching" />
+      <node id="switching capability" label="switching capability" />
+      <node id="link" label="link" />
+      <node id="dwdm" label="dwdm" />
+      <node id="switching" label="switching" />
+      <node id="interface switching capability" label="interface switching capability" />
+      <node id="interface switching capability descriptor" label="interface switching capability descriptor" />
+      <node id="capability descriptor" label="capability descriptor" />
+      <node id="te link" label="te link" />
+      <node id="switching capability descriptor" label="switching capability descriptor" />
+      <node id="routing extensions" label="routing extensions" />
+      <node id="external" label="external" />
+      <node id="interface" label="interface" />
+      <node id="capability" label="capability" />
+      <node id="extensions" label="extensions" />
+      <node id="finlayson" label="finlayson" />
+      <node id="packet" label="packet" />
+      <node id="adu descriptor" label="adu descriptor" />
+      <node id="finlayson standards" label="finlayson standards" />
+      <node id="frames" label="frames" />
+      <node id="payload" label="payload" />
+      <node id="mpeg" label="mpeg" />
+      <node id="format" label="format" />
+      <node id="header" label="header" />
+      <node id="payload format" label="payload format" />
+      <node id="adu frames" label="adu frames" />
+      <node id="adu" label="adu" />
+      <node id="relay" label="relay" />
+      <node id="fr" label="fr" />
+      <node id="frame relay" label="frame relay" />
+      <node id="service interworking" label="service interworking" />
+      <node id="frame" label="frame" />
+      <node id="pvc service" label="pvc service" />
+      <node id="connection" label="connection" />
+      <node id="service" label="service" />
+      <node id="pvc" label="pvc" />
+      <node id="interworking" label="interworking" />
+      <node id="operations" label="operations" />
+      <node id="protocol operations" label="protocol operations" />
+      <node id="connection descriptor" label="connection descriptor" />
+      <node id="endpoint" label="endpoint" />
+      <node id="information" label="information" />
+      <node id="version" label="version" />
+      <node id="newton standards" label="newton standards" />
+      <node id="type" label="type" />
+      <node id="iris august" label="iris august" />
+      <node id="payload descriptor" label="payload descriptor" />
+      <node id="ietf" label="ietf" />
+      <node id="august" label="august" />
+      <node id="transfer protocol" label="transfer protocol" />
+      <node id="payload type" label="payload type" />
+      <node id="newton" label="newton" />
+      <node id="iris" label="iris" />
+      <node id="version information" label="version information" />
+      <node id="transfer" label="transfer" />
+      <node id="routers" label="routers" />
+      <node id="state advertisements" label="state advertisements" />
+      <node id="lsa" label="lsa" />
+      <node id="ospf" label="ospf" />
+      <node id="option july" label="option july" />
+      <node id="state" label="state" />
+      <node id="opaque" label="opaque" />
+      <node id="option" label="option" />
+      <node id="lsas" label="lsas" />
+      <node id="link state advertisements" label="link state advertisements" />
+      <node id="ospf routers" label="ospf routers" />
+      <node id="lsa option" label="lsa option" />
+      <node id="july" label="july" />
+      <node id="database" label="database" />
+      <node id="advertisements" label="advertisements" />
+      <node id="opaque lsas" label="opaque lsas" />
+      <node id="link state" label="link state" />
+      <node id="galecki" label="galecki" />
+      <node id="december" label="december" />
+      <node id="router" label="router" />
+      <node id="mib december" label="mib december" />
+      <node id="link state database" label="link state database" />
+      <node id="gcm" label="gcm" />
+      <node id="using" label="using" />
+      <node id="encryption" label="encryption" />
+      <node id="authenticated encryption" label="authenticated encryption" />
+      <node id="authenticated" label="authenticated" />
+      <node id="aes" label="aes" />
+      <node id="mac" label="mac" />
+      <node id="nonce" label="nonce" />
+      <node id="block" label="block" />
+      <node id="cipher" label="cipher" />
+      <node id="counter" label="counter" />
+      <node id="block cipher" label="block cipher" />
+      <node id="cbc" label="cbc" />
+      <node id="encrypted payload" label="encrypted payload" />
+      <node id="encryption algorithm" label="encryption algorithm" />
+      <node id="icv" label="icv" />
+      <node id="associated" label="associated" />
+      <node id="aes gcm" label="aes gcm" />
+      <node id="associated data" label="associated data" />
+      <node id="octet icv" label="octet icv" />
+      <node id="aes ccm" label="aes ccm" />
+      <node id="algorithm" label="algorithm" />
+      <node id="authenticated encryption algorithm" label="authenticated encryption algorithm" />
+      <node id="encrypted" label="encrypted" />
+      <node id="octet" label="octet" />
+      <node id="esp" label="esp" />
+      <node id="esp december" label="esp december" />
+      <node id="aec ccm" label="aec ccm" />
+      <node id="ipsec" label="ipsec" />
+      <node id="ipsec esp" label="ipsec esp" />
+      <node id="using aec" label="using aec" />
+      <node id="housley" label="housley" />
+      <node id="aec" label="aec" />
+      <node id="housley standards" label="housley standards" />
+      <node id="ctr" label="ctr" />
+      <node id="april" label="april" />
+      <node id="algorithms april" label="algorithms april" />
+      <node id="trust" label="trust" />
+      <node id="xml" label="xml" />
+      <node id="algorithms" label="algorithms" />
+      <node id="camellia" label="camellia" />
+    </nodes>
+    <edges>
+      <edge id="0" source="cancel" target="cancel operation" weight="38" />
+      <edge id="1" source="cancel" target="outstanding" weight="38" />
+      <edge id="2" source="cancel" target="access protocol" weight="38" />
+      <edge id="3" source="cancel" target="access" weight="38" />
+      <edge id="4" source="cancel" target="extended operation" weight="38" />
+      <edge id="5" source="cancel" target="directory access" weight="38" />
+      <edge id="6" source="cancel" target="operation" weight="38" />
+      <edge id="7" source="cancel" target="standards" weight="38" />
+      <edge id="8" source="cancel" target="lightweight directory access" weight="38" />
+      <edge id="9" source="cancel" target="protocol" weight="38" />
+      <edge id="10" source="cancel" target="directory" weight="38" />
+      <edge id="11" source="cancel" target="outstanding operation" weight="38" />
+      <edge id="12" source="cancel" target="lightweight directory" weight="38" />
+      <edge id="13" source="cancel" target="standards track" weight="38" />
+      <edge id="14" source="cancel" target="society" weight="38" />
+      <edge id="15" source="cancel" target="internet" weight="38" />
+      <edge id="16" source="cancel" target="lightweight" weight="38" />
+      <edge id="17" source="cancel" target="internet society" weight="38" />
+      <edge id="18" source="cancel" target="track" weight="38" />
+      <edge id="19" source="cancel" target="directory access protocol" weight="38" />
+      <edge id="20" source="cancel" target="extended" weight="38" />
+      <edge id="21" source="cca" target="datacomputer" weight="4" />
+      <edge id="22" source="cca" target="dms" weight="4" />
+      <edge id="23" source="cca" target="corporation of america" weight="4" />
+      <edge id="24" source="cca" target="corporation" weight="4" />
+      <edge id="25" source="cca" target="america" weight="4" />
+      <edge id="26" source="cca" target="computer" weight="4" />
+      <edge id="27" source="cca" target="nic" weight="4" />
+      <edge id="28" source="cca" target="cantor" weight="4" />
+      <edge id="29" source="cca" target="computer corporation of america" weight="4" />
+      <edge id="30" source="cca" target="survey data" weight="4" />
+      <edge id="31" source="cca" target="survey" weight="4" />
+      <edge id="32" source="cca" target="data" weight="6" />
+      <edge id="33" source="cca" target="computer corporation" weight="4" />
+      <edge id="34" source="cca" target="rfc" weight="12" />
+      <edge id="35" source="cca" target="iccc" weight="12" />
+      <edge id="36" source="cca" target="cca iccc weather" weight="12" />
+      <edge id="37" source="cca" target="murray" weight="12" />
+      <edge id="38" source="cca" target="cca iccc" weight="12" />
+      <edge id="39" source="cca" target="weather demo" weight="12" />
+      <edge id="40" source="cca" target="january" weight="12" />
+      <edge id="41" source="cca" target="demo" weight="12" />
+      <edge id="42" source="cca" target="weather" weight="14" />
+      <edge id="43" source="cca" target="network" weight="2" />
+      <edge id="44" source="cca" target="arpa" weight="2" />
+      <edge id="45" source="cca" target="stern" weight="2" />
+      <edge id="46" source="cca" target="working group" weight="2" />
+      <edge id="47" source="cca" target="weather data" weight="2" />
+      <edge id="48" source="cca" target="technical" weight="2" />
+      <edge id="49" source="cca" target="working" weight="2" />
+      <edge id="50" source="cca" target="group" weight="2" />
+      <edge id="51" source="cca" target="arpa network" weight="2" />
+      <edge id="52" source="rpslng march" target="rpsl" weight="15" />
+      <edge id="53" source="rpslng march" target="address family" weight="15" />
+      <edge id="54" source="rpslng march" target="mp" weight="15" />
+      <edge id="55" source="rpslng march" target="address" weight="15" />
+      <edge id="56" source="rpslng march" target="class" weight="15" />
+      <edge id="57" source="rpslng march" target="routing" weight="15" />
+      <edge id="58" source="rpslng march" target="set" weight="15" />
+      <edge id="59" source="rpslng march" target="peering" weight="15" />
+      <edge id="60" source="rpslng march" target="import" weight="15" />
+      <edge id="61" source="rpslng march" target="march" weight="15" />
+      <edge id="62" source="rpslng march" target="object" weight="15" />
+      <edge id="63" source="rpslng march" target="policy" weight="15" />
+      <edge id="64" source="rpslng march" target="rpslng" weight="15" />
+      <edge id="65" source="rpslng march" target="set class" weight="15" />
+      <edge id="66" source="rpslng march" target="family" weight="15" />
+      <edge id="67" source="rpslng march" target="routing policy" weight="15" />
+      <edge id="68" source="rpslng march" target="filter" weight="15" />
+      <edge id="69" source="ldp label advertisement" target="internet engineering" weight="9" />
+      <edge id="70" source="ldp label advertisement" target="signaling ldp label" weight="9" />
+      <edge id="71" source="ldp label advertisement" target="label distribution protocol" weight="9" />
+      <edge id="72" source="ldp label advertisement" target="ldp" weight="9" />
+      <edge id="73" source="ldp label advertisement" target="advertisement" weight="9" />
+      <edge id="74" source="ldp label advertisement" target="engineering" weight="9" />
+      <edge id="75" source="ldp label advertisement" target="ldp speaker" weight="9" />
+      <edge id="76" source="ldp label advertisement" target="establishment" weight="9" />
+      <edge id="77" source="ldp label advertisement" target="protocol" weight="9" />
+      <edge id="78" source="ldp label advertisement" target="speaker" weight="9" />
+      <edge id="79" source="ldp label advertisement" target="ldp label" weight="9" />
+      <edge id="80" source="ldp label advertisement" target="internet" weight="9" />
+      <edge id="81" source="ldp label advertisement" target="signaling ldp" weight="9" />
+      <edge id="82" source="ldp label advertisement" target="distribution" weight="9" />
+      <edge id="83" source="ldp label advertisement" target="label advertisement" weight="9" />
+      <edge id="84" source="ldp label advertisement" target="session" weight="9" />
+      <edge id="85" source="ldp label advertisement" target="signaling" weight="9" />
+      <edge id="86" source="ldp label advertisement" target="label" weight="9" />
+      <edge id="87" source="ldp label advertisement" target="session establishment" weight="9" />
+      <edge id="88" source="traps mib" target="status" weight="20" />
+      <edge id="89" source="traps mib" target="moore" weight="20" />
+      <edge id="90" source="traps mib" target="mib" weight="20" />
+      <edge id="91" source="traps mib" target="rfc" weight="20" />
+      <edge id="92" source="traps mib" target="standards" weight="20" />
+      <edge id="93" source="traps mib" target="november" weight="20" />
+      <edge id="94" source="traps mib" target="moore standards" weight="20" />
+      <edge id="95" source="traps mib" target="appn" weight="20" />
+      <edge id="96" source="traps mib" target="mib november" weight="20" />
+      <edge id="97" source="traps mib" target="appn traps" weight="20" />
+      <edge id="98" source="traps mib" target="appn traps mib" weight="20" />
+      <edge id="99" source="traps mib" target="standards track" weight="20" />
+      <edge id="100" source="traps mib" target="group" weight="20" />
+      <edge id="101" source="traps mib" target="traps" weight="20" />
+      <edge id="102" source="traps mib" target="track" weight="20" />
+      <edge id="103" source="unavailable" target="pm" weight="3" />
+      <edge id="104" source="unavailable" target="nic" weight="3" />
+      <edge id="105" source="unavailable" target="pdp" weight="3" />
+      <edge id="106" source="unavailable" target="friday" weight="3" />
+      <edge id="107" source="unavailable" target="pst" weight="3" />
+      <edge id="108" source="unavailable" target="network" weight="3" />
+      <edge id="109" source="unavailable" target="sri" weight="3" />
+      <edge id="110" source="unavailable" target="pm pst" weight="3" />
+      <edge id="111" source="unavailable" target="schedule" weight="3" />
+      <edge id="112" source="unavailable" target="use" weight="3" />
+      <edge id="113" source="unavailable" target="sunday" weight="3" />
+      <edge id="114" source="unavailable" target="unavailable for use" weight="3" />
+      <edge id="115" source="process june" target="mpls working" weight="22" />
+      <edge id="116" source="process june" target="protocols" weight="22" />
+      <edge id="117" source="process june" target="description" weight="22" />
+      <edge id="118" source="process june" target="technology" weight="22" />
+      <edge id="119" source="process june" target="mpls protocols" weight="22" />
+      <edge id="120" source="process june" target="statement" weight="22" />
+      <edge id="121" source="process june" target="requirements" weight="22" />
+      <edge id="122" source="process june" target="gmpls" weight="22" />
+      <edge id="123" source="process june" target="description of process" weight="22" />
+      <edge id="124" source="process june" target="mpls" weight="22" />
+      <edge id="125" source="process june" target="working group" weight="22" />
+      <edge id="126" source="process june" target="requirements statement" weight="22" />
+      <edge id="127" source="process june" target="working" weight="22" />
+      <edge id="128" source="process june" target="group" weight="22" />
+      <edge id="129" source="process june" target="process" weight="105" />
+      <edge id="130" source="process june" target="june" weight="105" />
+      <edge id="131" source="process june" target="ip" weight="83" />
+      <edge id="132" source="process june" target="aaa protocol" weight="83" />
+      <edge id="133" source="process june" target="cops" weight="83" />
+      <edge id="134" source="process june" target="rfc" weight="83" />
+      <edge id="135" source="process june" target="mobile ip" weight="83" />
+      <edge id="136" source="process june" target="protocol" weight="83" />
+      <edge id="137" source="process june" target="mobile" weight="83" />
+      <edge id="138" source="process june" target="mitton" weight="83" />
+      <edge id="139" source="process june" target="diameter" weight="83" />
+      <edge id="140" source="process june" target="snmp" weight="83" />
+      <edge id="141" source="process june" target="aaa" weight="83" />
+      <edge id="142" source="process june" target="authentication" weight="83" />
+      <edge id="143" source="peem march" target="brenner" weight="4" />
+      <edge id="144" source="peem march" target="code" weight="4" />
+      <edge id="145" source="peem march" target="policy processing" weight="4" />
+      <edge id="146" source="peem march" target="processing" weight="4" />
+      <edge id="147" source="peem march" target="diameter policy" weight="4" />
+      <edge id="148" source="peem march" target="document describes" weight="4" />
+      <edge id="149" source="peem march" target="march" weight="4" />
+      <edge id="150" source="peem march" target="application" weight="4" />
+      <edge id="151" source="peem march" target="policy" weight="4" />
+      <edge id="152" source="peem march" target="document" weight="4" />
+      <edge id="153" source="peem march" target="command code" weight="4" />
+      <edge id="154" source="peem march" target="processing application" weight="4" />
+      <edge id="155" source="peem march" target="diameter" weight="4" />
+      <edge id="156" source="peem march" target="command" weight="4" />
+      <edge id="157" source="peem march" target="specific" weight="4" />
+      <edge id="158" source="peem march" target="peem" weight="4" />
+      <edge id="159" source="peem march" target="describes" weight="4" />
+      <edge id="160" source="descriptor" target="te" weight="41" />
+      <edge id="161" source="descriptor" target="external dwdm" weight="41" />
+      <edge id="162" source="descriptor" target="interface switching" weight="41" />
+      <edge id="163" source="descriptor" target="switching capability" weight="41" />
+      <edge id="164" source="descriptor" target="link" weight="41" />
+      <edge id="165" source="descriptor" target="routing" weight="41" />
+      <edge id="166" source="descriptor" target="gmpls" weight="41" />
+      <edge id="167" source="descriptor" target="dwdm" weight="41" />
+      <edge id="168" source="descriptor" target="switching" weight="41" />
+      <edge id="169" source="descriptor" target="interface switching capability" weight="41" />
+      <edge id="170" source="descriptor" target="interface switching capability descriptor" weight="41" />
+      <edge id="171" source="descriptor" target="capability descriptor" weight="41" />
+      <edge id="172" source="descriptor" target="te link" weight="41" />
+      <edge id="173" source="descriptor" target="switching capability descriptor" weight="41" />
+      <edge id="174" source="descriptor" target="routing extensions" weight="41" />
+      <edge id="175" source="descriptor" target="external" weight="41" />
+      <edge id="176" source="descriptor" target="interface" weight="41" />
+      <edge id="177" source="descriptor" target="capability" weight="41" />
+      <edge id="178" source="descriptor" target="extensions" weight="41" />
+      <edge id="179" source="descriptor" target="finlayson" weight="27" />
+      <edge id="180" source="descriptor" target="packet" weight="27" />
+      <edge id="181" source="descriptor" target="adu descriptor" weight="27" />
+      <edge id="182" source="descriptor" target="finlayson standards" weight="27" />
+      <edge id="183" source="descriptor" target="frames" weight="27" />
+      <edge id="184" source="descriptor" target="payload" weight="56" />
+      <edge id="185" source="descriptor" target="mpeg" weight="27" />
+      <edge id="186" source="descriptor" target="standards" weight="56" />
+      <edge id="187" source="descriptor" target="format" weight="27" />
+      <edge id="188" source="descriptor" target="header" weight="27" />
+      <edge id="189" source="descriptor" target="standards track" weight="56" />
+      <edge id="190" source="descriptor" target="payload format" weight="27" />
+      <edge id="191" source="descriptor" target="adu frames" weight="27" />
+      <edge id="192" source="descriptor" target="track" weight="56" />
+      <edge id="193" source="descriptor" target="adu" weight="27" />
+      <edge id="194" source="descriptor" target="protocol" weight="49" />
+      <edge id="195" source="descriptor" target="information" weight="29" />
+      <edge id="196" source="descriptor" target="version" weight="29" />
+      <edge id="197" source="descriptor" target="newton standards" weight="29" />
+      <edge id="198" source="descriptor" target="type" weight="29" />
+      <edge id="199" source="descriptor" target="iris august" weight="29" />
+      <edge id="200" source="descriptor" target="payload descriptor" weight="29" />
+      <edge id="201" source="descriptor" target="ietf" weight="29" />
+      <edge id="202" source="descriptor" target="august" weight="29" />
+      <edge id="203" source="descriptor" target="transfer protocol" weight="29" />
+      <edge id="204" source="descriptor" target="payload type" weight="29" />
+      <edge id="205" source="descriptor" target="newton" weight="29" />
+      <edge id="206" source="descriptor" target="iris" weight="29" />
+      <edge id="207" source="descriptor" target="version information" weight="29" />
+      <edge id="208" source="descriptor" target="transfer" weight="29" />
+      <edge id="209" source="state database" target="routers" weight="1" />
+      <edge id="210" source="state database" target="state advertisements" weight="1" />
+      <edge id="211" source="state database" target="lsa" weight="1" />
+      <edge id="212" source="state database" target="link" weight="65" />
+      <edge id="213" source="state database" target="ospf" weight="65" />
+      <edge id="214" source="state database" target="rfc" weight="1" />
+      <edge id="215" source="state database" target="option july" weight="1" />
+      <edge id="216" source="state database" target="standards" weight="65" />
+      <edge id="217" source="state database" target="state" weight="65" />
+      <edge id="218" source="state database" target="opaque" weight="1" />
+      <edge id="219" source="state database" target="option" weight="1" />
+      <edge id="220" source="state database" target="lsas" weight="1" />
+      <edge id="221" source="state database" target="link state advertisements" weight="1" />
+      <edge id="222" source="state database" target="ospf routers" weight="1" />
+      <edge id="223" source="state database" target="standards track" weight="65" />
+      <edge id="224" source="state database" target="lsa option" weight="1" />
+      <edge id="225" source="state database" target="july" weight="1" />
+      <edge id="226" source="state database" target="track" weight="65" />
+      <edge id="227" source="state database" target="database" weight="65" />
+      <edge id="228" source="state database" target="advertisements" weight="1" />
+      <edge id="229" source="state database" target="opaque lsas" weight="1" />
+      <edge id="230" source="state database" target="link state" weight="1" />
+      <edge id="231" source="state database" target="status" weight="64" />
+      <edge id="232" source="state database" target="access" weight="64" />
+      <edge id="233" source="state database" target="mib" weight="64" />
+      <edge id="234" source="state database" target="galecki" weight="64" />
+      <edge id="235" source="state database" target="december" weight="64" />
+      <edge id="236" source="state database" target="router" weight="64" />
+      <edge id="237" source="state database" target="mib december" weight="64" />
+      <edge id="238" source="state database" target="link state database" weight="64" />
+      <edge id="239" source="ccm" target="gcm" weight="76" />
+      <edge id="240" source="ccm" target="using" weight="78" />
+      <edge id="241" source="ccm" target="encryption" weight="76" />
+      <edge id="242" source="ccm" target="rfc" weight="76" />
+      <edge id="243" source="ccm" target="authenticated encryption" weight="76" />
+      <edge id="244" source="ccm" target="authenticated" weight="76" />
+      <edge id="245" source="ccm" target="aes" weight="196" />
+      <edge id="246" source="ccm" target="mac" weight="51" />
+      <edge id="247" source="ccm" target="nonce" weight="51" />
+      <edge id="248" source="ccm" target="block" weight="51" />
+      <edge id="249" source="ccm" target="cipher" weight="51" />
+      <edge id="250" source="ccm" target="counter" weight="51" />
+      <edge id="251" source="ccm" target="block cipher" weight="51" />
+      <edge id="252" source="ccm" target="cbc" weight="57" />
+      <edge id="253" source="ccm" target="encrypted payload" weight="67" />
+      <edge id="254" source="ccm" target="encryption algorithm" weight="67" />
+      <edge id="255" source="ccm" target="icv" weight="67" />
+      <edge id="256" source="ccm" target="associated" weight="67" />
+      <edge id="257" source="ccm" target="aes gcm" weight="67" />
+      <edge id="258" source="ccm" target="payload" weight="136" />
+      <edge id="259" source="ccm" target="associated data" weight="67" />
+      <edge id="260" source="ccm" target="octet icv" weight="67" />
+      <edge id="261" source="ccm" target="aes ccm" weight="136" />
+      <edge id="262" source="ccm" target="algorithm" weight="67" />
+      <edge id="263" source="ccm" target="authenticated encryption algorithm" weight="67" />
+      <edge id="264" source="ccm" target="encrypted" weight="67" />
+      <edge id="265" source="ccm" target="data" weight="67" />
+      <edge id="266" source="ccm" target="octet" weight="67" />
+      <edge id="267" source="ccm" target="esp" weight="69" />
+      <edge id="268" source="ccm" target="esp december" weight="69" />
+      <edge id="269" source="ccm" target="aec ccm" weight="69" />
+      <edge id="270" source="ccm" target="standards" weight="69" />
+      <edge id="271" source="ccm" target="ipsec" weight="69" />
+      <edge id="272" source="ccm" target="december" weight="69" />
+      <edge id="273" source="ccm" target="ipsec esp" weight="69" />
+      <edge id="274" source="ccm" target="using aec" weight="69" />
+      <edge id="275" source="ccm" target="internet" weight="69" />
+      <edge id="276" source="ccm" target="housley" weight="69" />
+      <edge id="277" source="ccm" target="aec" weight="69" />
+      <edge id="278" source="ccm" target="housley standards" weight="69" />
+    </edges>
+  </graph>
+</gexf>

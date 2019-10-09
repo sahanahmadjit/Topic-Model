@@ -1,0 +1,95 @@
+Soruce: cancel
+NeighborNode:
+cancel operation | outstanding | access protocol | access | extended operation | directory access | operation | standards | lightweight directory access | protocol | directory | outstanding operation | lightweight directory | standards track | society | internet | lightweight | internet society | track | directory access protocol | extended | language | unicode | tagging in unicode | tag | text | plain text | identification character | identification | tag identification | cancel tag | unicode plain | plain | characters | character | tag characters | tagging | language tag | unicode plain text | 
+Mean: 27.384615384615383
+SD Value: 11.465925851029292
+Edges Remove From cancel to language
+Edges Remove From cancel to unicode
+Edges Remove From cancel to tagging in unicode
+Edges Remove From cancel to tag
+Edges Remove From cancel to text
+Edges Remove From cancel to plain text
+Edges Remove From cancel to identification character
+Edges Remove From cancel to identification
+Edges Remove From cancel to tag identification
+Edges Remove From cancel to cancel tag
+Edges Remove From cancel to unicode plain
+Edges Remove From cancel to plain
+Edges Remove From cancel to characters
+Edges Remove From cancel to character
+Edges Remove From cancel to tag characters
+Edges Remove From cancel to tagging
+Edges Remove From cancel to language tag
+Edges Remove From cancel to unicode plain text
+Soruce: cca
+NeighborNode:
+datacomputer | dms | corporation of america | corporation | america | computer | nic | cantor | computer corporation of america | survey data | survey | data | computer corporation | rfc | iccc | cca iccc weather | murray | cca iccc | weather demo | january | demo | weather | network | arpa | stern | working group | weather data | technical | working | group | arpa network | 
+Mean: 5.870967741935484
+SD Value: 4.187091803764632
+Soruce: rpslng march
+NeighborNode:
+rpsl | address family | mp | address | class | routing | set | peering | import | march | object | policy | rpslng | set class | family | routing policy | filter | 
+Mean: 15.0
+SD Value: 0.0
+Soruce: ldp label advertisement
+NeighborNode:
+internet engineering | signaling ldp label | label distribution protocol | ldp | advertisement | engineering | ldp speaker | establishment | protocol | speaker | ldp label | internet | signaling ldp | distribution | label advertisement | session | signaling | label | session establishment | 
+Mean: 9.0
+SD Value: 0.0
+Soruce: traps mib
+NeighborNode:
+status | moore | mib | rfc | standards | november | moore standards | appn | mib november | appn traps | appn traps mib | standards track | group | traps | track | 
+Mean: 20.0
+SD Value: 0.0
+Soruce: unavailable
+NeighborNode:
+pm | nic | pdp | friday | pst | network | sri | pm pst | schedule | use | sunday | unavailable for use | 
+Mean: 3.0
+SD Value: 0.0
+Soruce: process june
+NeighborNode:
+mpls working | protocols | description | technology | mpls protocols | statement | requirements | gmpls | description of process | mpls | working group | requirements statement | working | group | process | june | ip | aaa protocol | cops | rfc | mobile ip | protocol | mobile | mitton | diameter | snmp | aaa | authentication | 
+Mean: 54.07142857142857
+SD Value: 32.53012732335164
+Soruce: peem march
+NeighborNode:
+brenner | code | policy processing | processing | diameter policy | document describes | march | application | policy | document | command code | processing application | diameter | command | specific | peem | describes | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: descriptor
+NeighborNode:
+te | external dwdm | interface switching | switching capability | link | routing | gmpls | dwdm | switching | interface switching capability | interface switching capability descriptor | capability descriptor | te link | switching capability descriptor | routing extensions | external | interface | capability | extensions | finlayson | packet | adu descriptor | finlayson standards | frames | payload | mpeg | standards | format | header | standards track | payload format | adu frames | track | adu | relay | status | fr | frame relay | service interworking | frame | pvc service | connection | service | pvc | interworking | protocol | operations | protocol operations | connection descriptor | endpoint | information | version | newton standards | type | iris august | payload descriptor | ietf | august | transfer protocol | payload type | newton | iris | version information | transfer | 
+Mean: 32.109375
+SD Value: 10.225759732625004
+Edges Remove From descriptor to relay
+Edges Remove From descriptor to status
+Edges Remove From descriptor to fr
+Edges Remove From descriptor to frame relay
+Edges Remove From descriptor to service interworking
+Edges Remove From descriptor to frame
+Edges Remove From descriptor to pvc service
+Edges Remove From descriptor to connection
+Edges Remove From descriptor to service
+Edges Remove From descriptor to pvc
+Edges Remove From descriptor to interworking
+Edges Remove From descriptor to operations
+Edges Remove From descriptor to protocol operations
+Edges Remove From descriptor to connection descriptor
+Edges Remove From descriptor to endpoint
+Soruce: state database
+NeighborNode:
+routers | state advertisements | lsa | link | ospf | rfc | option july | standards | state | opaque | option | lsas | link state advertisements | ospf routers | standards track | lsa option | july | track | database | advertisements | opaque lsas | link state | status | access | mib | galecki | december | router | mib december | link state database | 
+Mean: 32.733333333333334
+SD Value: 31.735294057072938
+Soruce: ccm
+NeighborNode:
+gcm | using | encryption | rfc | authenticated encryption | authenticated | aes | mac | nonce | block | cipher | counter | block cipher | cbc | encrypted payload | encryption algorithm | icv | associated | aes gcm | payload | associated data | octet icv | aes ccm | algorithm | authenticated encryption algorithm | encrypted | data | octet | esp | esp december | aec ccm | standards | ipsec | december | ipsec esp | using aec | internet | housley | aec | housley standards | ctr | april | algorithms april | trust | xml | algorithms | camellia | 
+Mean: 63.04255319148936
+SD Value: 33.79661159322545
+Edges Remove From ccm to ctr
+Edges Remove From ccm to april
+Edges Remove From ccm to algorithms april
+Edges Remove From ccm to trust
+Edges Remove From ccm to xml
+Edges Remove From ccm to algorithms
+Edges Remove From ccm to camellia

@@ -3,7 +3,7 @@
   <graph defaultedgetype="directed" mode="static" name="">
     <meta>
       <creator>NetworkX 2.3</creator>
-      <lastmodified>25/09/2019</lastmodified>
+      <lastmodified>09/10/2019</lastmodified>
     </meta>
     <nodes>
       <node id="A" label="A" />
@@ -17,9 +17,8 @@
       <edge id="2" source="B" target="A" weight="20" />
       <edge id="3" source="B" target="C" weight="5" />
       <edge id="4" source="C" target="A" weight="2" />
-      <edge id="5" source="C" target="B" weight="1" />
-      <edge id="6" source="C" target="D" weight="2" />
-      <edge id="7" source="D" target="C" weight="5" />
+      <edge id="5" source="C" target="D" weight="2" />
+      <edge id="6" source="D" target="C" weight="5" />
     </edges>
   </graph>
 </gexf>
