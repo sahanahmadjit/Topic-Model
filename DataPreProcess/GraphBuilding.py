@@ -10,11 +10,11 @@ def building_graph_from_text_data():
   for itaration in range(2):
     with open(mac_data_directory + 'GraphData/GraphInputData.txt') as csv_file:
       csv_reader = csv.reader(csv_file, delimiter='|')
-      limitLineForExperiment=0
+      #limitLineForExperiment=0
       for line in csv_reader:
-        if limitLineForExperiment>10:
-          break
-        limitLineForExperiment+=1
+       # if limitLineForExperiment>10000:
+        #  break
+        #limitLineForExperiment+=1
         if itaration==0:
           G.add_node(line[0])
           continue
@@ -23,9 +23,9 @@ def building_graph_from_text_data():
             G.add_edge(line[0],line[i],weight=line[i+1])
             #print("Processing Node for:" + line[0])
 
-def print_Graph():
-  print("Number of Nodes In Graph" + str(len(G)))
-
+def print_Graph_Statistics():
+  print("Number of Nodes In Graph: " + str(G.number_of_nodes()))
+  print("Number of Edges In Graph: "+ str(G.number_of_edges()))
 def export_Graph_to_Gephi_format():
   nx.write_gexf(G,mac_data_directory+"GraphData/gephi_format_graph.gexf")
 
@@ -39,19 +39,21 @@ def disconnectTopTermInGraph():
     topTermNumber=0
     for line in csv_reader:
       G.remove_node(line[0])
-      if topTermNumber <=0:
+      if topTermNumber <100:
         break
-  print(G.edges(data='weight'))
+      topTermNumber += 1
+
 
 def lowerLevelConnectivityChecking():
   logFile= open(mac_data_directory + 'GraphData/LowerConnectivityLogFile.txt',"w")
-  with open(mac_data_directory + 'GraphData/GraphInputData.txt') as csv_file:
+  with open(mac_data_directory + 'GraphData/zScoreSorted.txt') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
-    limitForExperiment=0
+    avoidTopZScoreTerm=0
     for line in csv_reader:
-      if limitForExperiment>10:
-        break
-      limitForExperiment+=1
+      if avoidTopZScoreTerm<100:
+        avoidTopZScoreTerm += 1
+        continue
+
       neighborsNode= G[line[0]]
       logFile.write("Soruce: "+ line[0] + "\n")
       logFile.write("NeighborNode:" +"\n")
@@ -102,9 +104,10 @@ building_graph_from_text_data()
 def main_Graph_Building_function():
   building_graph_from_text_data()
   export_Graph_to_Gephi_format()
-  print_Graph()
-#  disconnectTopTermInGraph()
+  print_Graph_Statistics()
+  disconnectTopTermInGraph()
   lowerLevelConnectivityChecking()
+  print_Graph_Statistics()
   export_Lower_CommunityGraph_to_Gephi_format()
   #print_Graph()
 
