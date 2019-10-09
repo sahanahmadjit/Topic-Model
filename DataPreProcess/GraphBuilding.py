@@ -57,13 +57,21 @@ def lowerLevelConnectivityChecking():
       neighborsNode= G[line[0]]
       logFile.write("Soruce: "+ line[0] + "\n")
       logFile.write("NeighborNode:" +"\n")
-      for nodes in neighborsNode:
-        logFile.write(nodes+" | ")
+
+
       totalConnectedTerm=len(neighborsNode)
       totalFrequency=0
+      counterForLogFileWrite=0
       for term in neighborsNode:
         weightDict= neighborsNode[term]
+        if counterForLogFileWrite==10:
+          logFile.write("\n")
+          counterForLogFileWrite=0
+        else:
+          counterForLogFileWrite+=1
+        logFile.write(term + " | ")
         for weightVal in weightDict:
+         logFile.write(weightDict[weightVal]+ " | ")
          totalFrequency+=int(weightDict[weightVal])
       #Mean Devaition Calculation for the term
       mean=float(totalFrequency/totalConnectedTerm)
