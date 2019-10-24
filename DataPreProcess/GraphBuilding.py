@@ -10,7 +10,7 @@ G= nx.DiGraph()
 
 def building_graph_from_text_data():
   for itaration in range(2):
-    with open(mac_data_directory + 'GraphData/GraphInputData_Test.txt') as csv_file:
+    with open(linux_data_directory + 'GraphData/GraphInputData_Test.txt') as csv_file:
       csv_reader = csv.reader(csv_file, delimiter='|')
       #limitLineForExperiment=0
       for line in csv_reader:
@@ -110,28 +110,39 @@ def deviationCalculation(mean,sourceTerm,neighborsNode):
   return standardDeviation
 
 def lowerLevelCommunityNumber():
-  with open(mac_data_directory + 'GraphData/zScoreSorted_Test.txt') as csv_file:
+  with open(linux_data_directory + 'GraphData/zScoreSorted_Test.txt') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
 
     queueDictonaryCommnunity = dict()
     finalDictonaryCommunity = dict()
-    communityNumber = 1
+    communityNumber = 0
     for line in csv_reader:
       sourceTerm= line[0]
-      if sourceTerm not in queueDictonaryCommnunity or finalDictonaryCommunity:
-        queueDictonaryCommnunity[sourceTerm]=communityNumber
-      else: continue
-      print("Source Term ", sourceTerm)
+      if sourceTerm in finalDictonaryCommunity:
+        continue
+   #   print("Source Term ", sourceTerm)
       inEdgesTouple=G.in_edges(sourceTerm)
-      for term in inEdgesTouple:
-        inEdges=inEdgesTouple[0]
+   #   print(inEdgesTouple)
+      inEdges=[]
+      for term in inEdgesTouple:#Take inEdges touple to a list
+        inEdges.append(term[0])
+
+
       outEdges = G[sourceTerm]
       for term in outEdges:
-        print(term)
-        if term in inEdges[0]: #Check the both incoming and outgoing edge
+        if term in finalDictonaryCommunity:
+          continue #Already Processed. So continue
+        elif term in inEdges: #Check the both incoming and outgoing edge
           queueDictonaryCommnunity[term]= communityNumber
-        elif len(G[term])==0: #Check the unidirected node has any neighbour [outgoing edges]
+        elif len(G[term])==0: #Check the outgoing node has any neighbour [outgoing edges]
           queueDictonaryCommnunity[term]=communityNumber
+
+      #Do the same thing for incomingEdges
+      for term in inEdges:
+        if term in finalDictonaryCommunity:
+          continue #Already Processed. So continue
+        elif len(G[term])==0 or len(G[term])==1:  # Check the incoming node has any neighbour [outgoing edges] or only one outgoing edge which connected to this node
+          queueDictonaryCommnunity[term] = communityNumber
 
       #All node visited. Pop the source term from queue to Final queue
       finalDictonaryCommunity[sourceTerm]=communityNumber
@@ -141,13 +152,24 @@ def lowerLevelCommunityNumber():
         for key,value in queueDictonaryCommnunity.items():
           if key in finalDictonaryCommunity:
             continue #already processed
-          inEdges = G.in_edges(key)
-          outEdges = outEdges
+          inEdgesTouple = G.in_edges(key)
+          inEdges=[]
+          for term in inEdgesTouple:
+            inEdges.append(term[0])
+          outEdges = G[key]
           for term in inEdges:
-            if term[0] in outEdges:  # Check the both incoming and outgoing edge
-              tempInsertQueueDict[term[0]] = communityNumber
-            elif len(G[term[0]]) == 0:  # Check the unidirected node has any neighbour [outgoing edges]
-              tempInsertQueueDict[term[0]] = communityNumber
+            if term in finalDictonaryCommunity:
+              continue
+            elif term in outEdges:  # Check the both incoming and outgoing edge
+              tempInsertQueueDict[term] = value
+            elif len(G[term])==0 or len(G[term])==1:  # Check the unidirected node has any neighbour [outgoing edges] or only one outgoing edge which connected to this node.
+              tempInsertQueueDict[term] = value
+          #Same process but now consider outedges
+          for term in outEdges:
+            if term in finalDictonaryCommunity:
+              continue
+            elif len(G[term]) == 0:  # Check the unidirected node has any neighbour [outgoing edges]
+              tempInsertQueueDict[term] = value
           #All nodes processed for queue item. Now pop it from queue and add it to the FINAL queue
           finalDictonaryCommunity[key]=value
         #New InsertDictonary become the queue dictonary now
@@ -156,6 +178,9 @@ def lowerLevelCommunityNumber():
       #Maximun Distance travelled for the current Community No node left. Increase Community Number
       communityNumber += 1
   print("Total Community Number ", communityNumber)
+
+  for k,v in finalDictonaryCommunity.items():
+    print("Node: ", k, " Community: ",v)
 
 
 
