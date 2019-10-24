@@ -6,9 +6,11 @@ mac_data_directory= "/zWorkStation/JournalWork/Topic-Model/Data/"
 linux_data_directory="/home/C00408440/ZWorkStation/JournalVersion/Data/"
 
 G= nx.DiGraph()
+
+
 def building_graph_from_text_data():
   for itaration in range(2):
-    with open(mac_data_directory + 'GraphData/GraphInputData.txt') as csv_file:
+    with open(mac_data_directory + 'GraphData/GraphInputData_Test.txt') as csv_file:
       csv_reader = csv.reader(csv_file, delimiter='|')
       #limitLineForExperiment=0
       for line in csv_reader:
@@ -107,16 +109,75 @@ def deviationCalculation(mean,sourceTerm,neighborsNode):
   standardDeviation=math.sqrt(standardDeviationSummation/len(neighborsNode))
   return standardDeviation
 
+def lowerLevelCommunityNumber():
+  with open(mac_data_directory + 'GraphData/zScoreSorted_Test.txt') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter='|')
+
+    queueDictonaryCommnunity = dict()
+    finalDictonaryCommunity = dict()
+    communityNumber = 1
+    for line in csv_reader:
+      sourceTerm= line[0]
+      if sourceTerm not in queueDictonaryCommnunity or finalDictonaryCommunity:
+        queueDictonaryCommnunity[sourceTerm]=communityNumber
+      else: continue
+      print("Source Term ", sourceTerm)
+      inEdgesTouple=G.in_edges(sourceTerm)
+      for term in inEdgesTouple:
+        inEdges=inEdgesTouple[0]
+      outEdges = G[sourceTerm]
+      for term in outEdges:
+        print(term)
+        if term in inEdges[0]: #Check the both incoming and outgoing edge
+          queueDictonaryCommnunity[term]= communityNumber
+        elif len(G[term])==0: #Check the unidirected node has any neighbour [outgoing edges]
+          queueDictonaryCommnunity[term]=communityNumber
+
+      #All node visited. Pop the source term from queue to Final queue
+      finalDictonaryCommunity[sourceTerm]=communityNumber
+      #Now processed all the queue item for this source term
+      while (bool(queueDictonaryCommnunity)):
+        tempInsertQueueDict= dict()
+        for key,value in queueDictonaryCommnunity.items():
+          if key in finalDictonaryCommunity:
+            continue #already processed
+          inEdges = G.in_edges(key)
+          outEdges = outEdges
+          for term in inEdges:
+            if term[0] in outEdges:  # Check the both incoming and outgoing edge
+              tempInsertQueueDict[term[0]] = communityNumber
+            elif len(G[term[0]]) == 0:  # Check the unidirected node has any neighbour [outgoing edges]
+              tempInsertQueueDict[term[0]] = communityNumber
+          #All nodes processed for queue item. Now pop it from queue and add it to the FINAL queue
+          finalDictonaryCommunity[key]=value
+        #New InsertDictonary become the queue dictonary now
+        queueDictonaryCommnunity=tempInsertQueueDict
+
+      #Maximun Distance travelled for the current Community No node left. Increase Community Number
+      communityNumber += 1
+  print("Total Community Number ", communityNumber)
+
+
+
+
+
+
+
+
 building_graph_from_text_data()
 
 def main_Graph_Building_function():
   building_graph_from_text_data()
+  '''
+ 
   export_Graph_to_Gephi_format()
   print_Graph_Statistics()
   disconnectTopTermInGraph()
   lowerLevelConnectivityChecking()
   print_Graph_Statistics()
   export_Lower_CommunityGraph_to_Gephi_format()
+   '''
+  lowerLevelCommunityNumber()
   #print_Graph()
 
 
