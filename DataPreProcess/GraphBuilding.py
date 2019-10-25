@@ -1,19 +1,24 @@
 import csv
 import networkx as nx
 import math
-import DataPreProcess.Constant as CONSTANT
+
 
 mac_data_directory= "/zWorkStation/JournalWork/Topic-Model/Data/"
 linux_data_directory="/home/C00408440/ZWorkStation/JournalVersion/Data/"
 
+
+TOP_ZSCORE_TERM_NUMBER =2
 G= nx.DiGraph()
 zScore_G= nx.DiGraph()
 
-#avoidTopZScoreTerm,topTermNumber,topZScoreCount,topZScoreCountInLowerCommunity  ALL VALUE MUST BE SAME
+finalDictonaryCommunity = dict()
+zScoreFinalDictonaryCommunity = dict()
+
+#topZScoreTerm  if else condition should be same
 
 def building_graph_from_text_data():
   for itaration in range(2):
-    with open(linux_data_directory + 'GraphData/GraphInputData_Test.txt') as csv_file:
+    with open(mac_data_directory + 'GraphData/GraphInputData_Test.txt') as csv_file:
       csv_reader = csv.reader(csv_file, delimiter='|')
       for line in csv_reader:
         if itaration==0:
@@ -26,29 +31,32 @@ def building_graph_from_text_data():
 
 def building_topZScoreBased_graph_from_text_data():
   #Take Top Zcore term into a list
-  topZScoreTerm=[]
-  topTermNumber=CONSTANT.TOP_ZSCORE_TERM_NUMBER
-  with open(linux_data_directory + 'GraphData/zScoreSorted.txt') as csv_file:
+  topZScoreTermDict=[]
+  topZScoreTerm=TOP_ZSCORE_TERM_NUMBER
+  with open(mac_data_directory + 'GraphData/zScoreSorted_Test.txt') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
     for line in csv_reader:
-      if topTermNumber==0:
+      if topZScoreTerm==0:
         break
-      topZScoreTerm.append(line[0])
-      topTermNumber -= 1
+      else:
+        topZScoreTermDict.append(line[0])
+        topZScoreTerm -= 1
+    print("Top ZScore Term List", topZScoreTermDict)
 
   for itaration in range(2):
-    with open(linux_data_directory + 'GraphData/GraphInputData_Test.txt') as csv_file:
+    with open(mac_data_directory + 'GraphData/GraphInputData_Test.txt') as csv_file:
       csv_reader = csv.reader(csv_file, delimiter='|')
       for line in csv_reader:
-        if line[0] not in topZScoreTerm:
-          continue
         if itaration==0:
           zScore_G.add_node(line[0])
           continue
         else:
           for i in range(1,len(line),2): # 1:Starting from 2nd term {first term is source}, stop, increment by 2
-            zScore_G.add_edge(line[0],line[i],weight=line[i+1])
-            #print("Processing Node for:" + line[0])
+            if line[0] in topZScoreTermDict or line[i] in topZScoreTermDict:
+              zScore_G.add_edge(line[0],line[i],weight=line[i+1])
+              print("Processing Node for:" + line[0] + line[i])
+
+
 
 
 def print_Graph_Statistics():
@@ -62,25 +70,26 @@ def export_Lower_CommunityGraph_to_Gephi_format():
   nx.write_gexf(G,mac_data_directory+"GraphData/gephi_format_LowerCommunityGraph.gexf")
 
 def disconnectTopTermInGraph():
-  with open(mac_data_directory + 'GraphData/zScoreSorted.txt') as csv_file:
+  with open(mac_data_directory + 'GraphData/zScoreSorted_Test.txt') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
-    topZScoreTerm=CONSTANT.TOP_ZSCORE_TERM_NUMBER
+    topZScoreTerm=TOP_ZSCORE_TERM_NUMBER
     for line in csv_reader:
-      G.remove_node(line[0])
-      if topZScoreTerm >0:
+      if topZScoreTerm ==0:
         break
-      topZScoreTerm -= 1
+      else:
+        G.remove_node(line[0])
+        topZScoreTerm -= 1
 
 
 def lowerLevelConnectivityChecking():
   logFile= open(mac_data_directory + 'GraphData/LowerConnectivityLogFile.txt',"w")
   with open(mac_data_directory + 'GraphData/zScoreSorted.txt') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
-    topZScoreTerm=CONSTANT.TOP_ZSCORE_TERM_NUMBER
+    topZScoreTerm=TOP_ZSCORE_TERM_NUMBER
     for line in csv_reader:
-      if topZScoreTerm >0:
-        topZScoreTerm -= 1
+      if topZScoreTerm ==0:
         continue
+      else:topZScoreTerm -= 1
 
       neighborsNode= G[line[0]]
       logFile.write("Soruce: "+ line[0] + "\n")
@@ -136,16 +145,17 @@ def deviationCalculation(mean,sourceTerm,neighborsNode):
   return standardDeviation
 
 def lowerLevelCommunityNumber():
-  topZScoreTerm = CONSTANT.TOP_ZSCORE_TERM_NUMBER
-  with open(linux_data_directory + 'GraphData/zScoreSorted_Test.txt') as csv_file:
+  topZScoreTerm = TOP_ZSCORE_TERM_NUMBER
+  with open(mac_data_directory + 'GraphData/zScoreSorted_Test.txt') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
     queueDictonaryCommnunity = dict()
-    finalDictonaryCommunity = dict()
+
     communityNumber = 0
     for line in csv_reader:
-      if topZScoreTerm > 0:
+      if topZScoreTerm >0:
         topZScoreTerm -= 1
         continue
+
       sourceTerm= line[0]
       if sourceTerm in finalDictonaryCommunity:
         continue
@@ -207,30 +217,73 @@ def lowerLevelCommunityNumber():
       #Maximun Distance travelled for the current Community No node left. Increase Community Number
       communityNumber += 1
   print("Total Community Number ", communityNumber)
-
+  logFile = open(mac_data_directory + 'GraphData/LowerConnectivityLogFile_Test.txt', "w")
   for k,v in finalDictonaryCommunity.items():
-    print("Node: ", k, " Community: ",v)
+    print(k,v)
+  for k,v in finalDictonaryCommunity.items():
+    logFile.write(k + "|" + str(v) + "|")
 
 
 def hierarchicalCommunityConnection():
-  print(list(zScore_G))
-  with open(linux_data_directory + 'GraphData/zScoreSorted_Test.txt') as csv_file:
+
+  with open(mac_data_directory + 'GraphData/zScoreSorted_Test.txt') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
+    topZScoreTerm=TOP_ZSCORE_TERM_NUMBER
+    for line in csv_reader:
+      communityNumberCollection = dict()
+      listofCommunity=[]
+      if topZScoreTerm==0:
+        break
+      else:
+        topZScoreTerm-=1
+      sourceTerm=line[0]
+      print(sourceTerm,zScore_G.edges)
+      inEdgesTouple=zScore_G.in_edges(sourceTerm)
+      print("In Edges:", len(inEdgesTouple))
+      inEdges=[]
+      for term in inEdgesTouple:#Take inEdges touple to a list
+        inEdges.append(term[0])
+
+
+      outEdges = zScore_G[sourceTerm]
+
+      for term in outEdges:
+        if term in inEdges:
+          communityNumber= finalDictonaryCommunity[term]#Find out the community Number
+          if communityNumber in communityNumberCollection:
+            oldCommunityNumber= communityNumberCollection[communityNumber]#Retrive the Number of community as an example 1|3   3 terms of 1 community
+            oldCommunityNumber +=1
+            communityNumberCollection[communityNumber]=oldCommunityNumber
+          else:
+            communityNumberCollection[communityNumber]=1
+          max_Commnuity_Number=0
+          max_community= 0
+          for k,v in communityNumberCollection.items():
+            if v>max_Commnuity_Number:
+              max_community = k
+          listofCommunity.append(max_community)
+      zScoreFinalDictonaryCommunity[sourceTerm]=listofCommunity
+
+  for k,v in zScoreFinalDictonaryCommunity.items():
+    print("Term:", k, "Value:", v)
 
 
 
 
 
 
-building_graph_from_text_data()
+
+
+
 
 def main_Graph_Building_function():
   building_graph_from_text_data()
+  disconnectTopTermInGraph()
   '''
  
   export_Graph_to_Gephi_format()
   print_Graph_Statistics()
-  disconnectTopTermInGraph()
+  
   lowerLevelConnectivityChecking()
   print_Graph_Statistics()
   export_Lower_CommunityGraph_to_Gephi_format()
