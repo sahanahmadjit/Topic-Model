@@ -1,22 +1,21 @@
 import csv
 import networkx as nx
 import math
+import DataPreProcess.Constant as CONSTANT
 
 mac_data_directory= "/zWorkStation/JournalWork/Topic-Model/Data/"
 linux_data_directory="/home/C00408440/ZWorkStation/JournalVersion/Data/"
 
 G= nx.DiGraph()
+zScore_G= nx.DiGraph()
 
+#avoidTopZScoreTerm,topTermNumber,topZScoreCount,topZScoreCountInLowerCommunity  ALL VALUE MUST BE SAME
 
 def building_graph_from_text_data():
   for itaration in range(2):
     with open(linux_data_directory + 'GraphData/GraphInputData_Test.txt') as csv_file:
       csv_reader = csv.reader(csv_file, delimiter='|')
-      #limitLineForExperiment=0
       for line in csv_reader:
-       # if limitLineForExperiment>10000:
-        #  break
-        #limitLineForExperiment+=1
         if itaration==0:
           G.add_node(line[0])
           continue
@@ -24,6 +23,33 @@ def building_graph_from_text_data():
           for i in range(1,len(line),2): # 1:Starting from 2nd term {first term is source}, stop, increment by 2
             G.add_edge(line[0],line[i],weight=line[i+1])
             #print("Processing Node for:" + line[0])
+
+def building_topZScoreBased_graph_from_text_data():
+  #Take Top Zcore term into a list
+  topZScoreTerm=[]
+  topTermNumber=CONSTANT.TOP_ZSCORE_TERM_NUMBER
+  with open(linux_data_directory + 'GraphData/zScoreSorted.txt') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter='|')
+    for line in csv_reader:
+      if topTermNumber==0:
+        break
+      topZScoreTerm.append(line[0])
+      topTermNumber -= 1
+
+  for itaration in range(2):
+    with open(linux_data_directory + 'GraphData/GraphInputData_Test.txt') as csv_file:
+      csv_reader = csv.reader(csv_file, delimiter='|')
+      for line in csv_reader:
+        if line[0] not in topZScoreTerm:
+          continue
+        if itaration==0:
+          zScore_G.add_node(line[0])
+          continue
+        else:
+          for i in range(1,len(line),2): # 1:Starting from 2nd term {first term is source}, stop, increment by 2
+            zScore_G.add_edge(line[0],line[i],weight=line[i+1])
+            #print("Processing Node for:" + line[0])
+
 
 def print_Graph_Statistics():
   print("Number of Nodes In Graph: " + str(G.number_of_nodes()))
@@ -38,22 +64,22 @@ def export_Lower_CommunityGraph_to_Gephi_format():
 def disconnectTopTermInGraph():
   with open(mac_data_directory + 'GraphData/zScoreSorted.txt') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
-    topTermNumber=0
+    topZScoreTerm=CONSTANT.TOP_ZSCORE_TERM_NUMBER
     for line in csv_reader:
       G.remove_node(line[0])
-      if topTermNumber <100:
+      if topZScoreTerm >0:
         break
-      topTermNumber += 1
+      topZScoreTerm -= 1
 
 
 def lowerLevelConnectivityChecking():
   logFile= open(mac_data_directory + 'GraphData/LowerConnectivityLogFile.txt',"w")
   with open(mac_data_directory + 'GraphData/zScoreSorted.txt') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
-    avoidTopZScoreTerm=0
+    topZScoreTerm=CONSTANT.TOP_ZSCORE_TERM_NUMBER
     for line in csv_reader:
-      if avoidTopZScoreTerm<100:
-        avoidTopZScoreTerm += 1
+      if topZScoreTerm >0:
+        topZScoreTerm -= 1
         continue
 
       neighborsNode= G[line[0]]
@@ -110,13 +136,16 @@ def deviationCalculation(mean,sourceTerm,neighborsNode):
   return standardDeviation
 
 def lowerLevelCommunityNumber():
+  topZScoreTerm = CONSTANT.TOP_ZSCORE_TERM_NUMBER
   with open(linux_data_directory + 'GraphData/zScoreSorted_Test.txt') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
-
     queueDictonaryCommnunity = dict()
     finalDictonaryCommunity = dict()
     communityNumber = 0
     for line in csv_reader:
+      if topZScoreTerm > 0:
+        topZScoreTerm -= 1
+        continue
       sourceTerm= line[0]
       if sourceTerm in finalDictonaryCommunity:
         continue
@@ -183,6 +212,10 @@ def lowerLevelCommunityNumber():
     print("Node: ", k, " Community: ",v)
 
 
+def hierarchicalCommunityConnection():
+  print(list(zScore_G))
+  with open(linux_data_directory + 'GraphData/zScoreSorted_Test.txt') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter='|')
 
 
 
@@ -203,6 +236,8 @@ def main_Graph_Building_function():
   export_Lower_CommunityGraph_to_Gephi_format()
    '''
   lowerLevelCommunityNumber()
+  building_topZScoreBased_graph_from_text_data()
+  hierarchicalCommunityConnection()
   #print_Graph()
 
 
