@@ -1,0 +1,17 @@
+Total Community Number  4
+D 0
+E 0
+A 1
+C 1
+B 2
+G 2
+F 3
+I 3
+J 3
+Top ZScore Term List ['X', 'Y']
+X [('A', 'X'), ('B', 'X'), ('E', 'Y'), ('I', 'Y'), ('J', 'Y'), ('G', 'X'), ('G', 'Y'), ('X', 'G'), ('X', 'B'), ('X', 'A'), ('Y', 'G'), ('Y', 'E'), ('Y', 'I'), ('Y', 'J')]
+In Edges: 3
+Y [('A', 'X'), ('B', 'X'), ('E', 'Y'), ('I', 'Y'), ('J', 'Y'), ('G', 'X'), ('G', 'Y'), ('X', 'G'), ('X', 'B'), ('X', 'A'), ('Y', 'G'), ('Y', 'E'), ('Y', 'I'), ('Y', 'J')]
+In Edges: 4
+Term: X Value: [2, 2, 1]
+Term: Y Value: [2, 0, 3, 3]
