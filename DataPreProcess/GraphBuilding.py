@@ -13,6 +13,8 @@ zScore_G= nx.DiGraph()
 
 finalDictonaryCommunity = dict()
 zScoreFinalDictonaryCommunity = dict()
+nonOverlappingFinalDictonaryCommunity= dict()
+communityNumber=0
 
 #topZScoreTerm  if else condition should be same
 
@@ -150,7 +152,7 @@ def lowerLevelCommunityNumber():
     csv_reader = csv.reader(csv_file, delimiter='|')
     queueDictonaryCommnunity = dict()
 
-    communityNumber = 0
+    global communityNumber #Global variable to track total number of community
     for line in csv_reader:
       if topZScoreTerm >0:
         topZScoreTerm -= 1
@@ -269,6 +271,23 @@ def hierarchicalCommunityConnection():
 
 
 
+def non_overlapping_hierarchicalCommunityConnection():
+  for k,v in zScoreFinalDictonaryCommunity.items():
+    allCommunityList= v
+    allCommunitySummationDict=dict()
+    for community in allCommunityList:
+      if community not in allCommunitySummationDict:
+        allCommunitySummationDict[community]=1
+      else:
+        prevCommunityVal=allCommunitySummationDict.get(community)
+        prevCommunityVal+=1
+        allCommunitySummationDict[community]=prevCommunityVal
+
+    nonOverlappingFinalDictonaryCommunity[k]=allCommunitySummationDict
+  print(communityNumber)
+  for k,v in nonOverlappingFinalDictonaryCommunity.items():
+    print("Term:", k, " Commuity: ",v)
+  
 
 
 
@@ -291,6 +310,7 @@ def main_Graph_Building_function():
   lowerLevelCommunityNumber()
   building_topZScoreBased_graph_from_text_data()
   hierarchicalCommunityConnection()
+  non_overlapping_hierarchicalCommunityConnection()
   #print_Graph()
 
 
