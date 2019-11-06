@@ -317,19 +317,21 @@ def samplingTermFromCommunity():
     logFile.write("\n")
     cardinalityDict = dict()
     for k,v in finalDictonaryCommunity.items():
-      if v== communityNumberByOrder:
+      if v == communityNumberByOrder:
         outgoingEdge = G[k] #outgoing Edge/neightbor node
         cardinalityDict[k]= len(outgoingEdge)
 
     sorted(cardinalityDict.items(), key= lambda kv: (kv[0], kv[1])) #Sorted Based on Outgoing Degree
+
     for k,v in cardinalityDict.items():
       if k in CopyG:
         logFile.write(k + "|")
         outgoingEdge = CopyG[k]
-
-        for neighbourNode in outgoingEdge: # Remove all the neighbour first
-          CopyG.remove_node(neighbourNode)
+        for neighbourNode in outgoingEdge: # Remove all the neighbour first and also check they belong to the same community
+          if finalDictonaryCommunity.get(k)== finalDictonaryCommunity.get(neighbourNode): #check the neighbour belong to the same community
+            CopyG.remove_node(neighbourNode)
         CopyG.remove_node(k) #Remove the node now
+print("Escaping function problem")
 
 
 
