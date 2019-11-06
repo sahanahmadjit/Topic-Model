@@ -20,7 +20,7 @@ communityNumber=0
 
 def building_graph_from_text_data():
   for itaration in range(2):
-    with open(mac_data_directory + 'GraphData/GraphInputData_Test.txt') as csv_file:
+    with open(linux_data_directory + 'GraphData/GraphInputData_Test.txt') as csv_file:
       csv_reader = csv.reader(csv_file, delimiter='|')
       for line in csv_reader:
         if itaration==0:
@@ -35,7 +35,7 @@ def building_topZScoreBased_graph_from_text_data():
   #Take Top Zcore term into a list
   topZScoreTermDict=[]
   topZScoreTerm=TOP_ZSCORE_TERM_NUMBER
-  with open(mac_data_directory + 'GraphData/zScoreSorted_Test.txt') as csv_file:
+  with open(linux_data_directory + 'GraphData/zScoreSorted_Test.txt') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
     for line in csv_reader:
       if topZScoreTerm==0:
@@ -46,7 +46,7 @@ def building_topZScoreBased_graph_from_text_data():
     print("Top ZScore Term List", topZScoreTermDict)
 
   for itaration in range(2):
-    with open(mac_data_directory + 'GraphData/GraphInputData_Test.txt') as csv_file:
+    with open(linux_data_directory + 'GraphData/GraphInputData_Test.txt') as csv_file:
       csv_reader = csv.reader(csv_file, delimiter='|')
       for line in csv_reader:
         if itaration==0:
@@ -65,14 +65,14 @@ def print_Graph_Statistics():
   print("Number of Nodes In Graph: " + str(G.number_of_nodes()))
   print("Number of Edges In Graph: "+ str(G.number_of_edges()))
 def export_Graph_to_Gephi_format():
-  nx.write_gexf(G,mac_data_directory+"GraphData/gephi_format_graph.gexf")
+  nx.write_gexf(G,linux_data_directory+"GraphData/gephi_format_graph.gexf")
 
 
 def export_Lower_CommunityGraph_to_Gephi_format():
-  nx.write_gexf(G,mac_data_directory+"GraphData/gephi_format_LowerCommunityGraph.gexf")
+  nx.write_gexf(G,linux_data_directory+"GraphData/gephi_format_LowerCommunityGraph.gexf")
 
 def disconnectTopTermInGraph():
-  with open(mac_data_directory + 'GraphData/zScoreSorted_Test.txt') as csv_file:
+  with open(linux_data_directory + 'GraphData/zScoreSorted_Test.txt') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
     topZScoreTerm=TOP_ZSCORE_TERM_NUMBER
     for line in csv_reader:
@@ -84,8 +84,8 @@ def disconnectTopTermInGraph():
 
 
 def lowerLevelConnectivityChecking():
-  logFile= open(mac_data_directory + 'GraphData/LowerConnectivityLogFile.txt',"w")
-  with open(mac_data_directory + 'GraphData/zScoreSorted.txt') as csv_file:
+  logFile= open(linux_data_directory + 'GraphData/LowerConnectivityLogFile.txt',"w")
+  with open(linux_data_directory + 'GraphData/zScoreSorted.txt') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
     topZScoreTerm=TOP_ZSCORE_TERM_NUMBER
     for line in csv_reader:
@@ -148,7 +148,7 @@ def deviationCalculation(mean,sourceTerm,neighborsNode):
 
 def lowerLevelCommunityNumber():
   topZScoreTerm = TOP_ZSCORE_TERM_NUMBER
-  with open(mac_data_directory + 'GraphData/zScoreSorted_Test.txt') as csv_file:
+  with open(linux_data_directory + 'GraphData/zScoreSorted_Test.txt') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
     queueDictonaryCommnunity = dict()
 
@@ -219,7 +219,7 @@ def lowerLevelCommunityNumber():
       #Maximun Distance travelled for the current Community No node left. Increase Community Number
       communityNumber += 1
   print("Total Community Number ", communityNumber)
-  logFile = open(mac_data_directory + 'GraphData/LowerConnectivityLogFile_Test.txt', "w")
+  logFile = open(linux_data_directory + 'GraphData/LowerConnectivityLogFile_Test.txt', "w")
   for k,v in finalDictonaryCommunity.items():
     print(k,v)
   for k,v in finalDictonaryCommunity.items():
@@ -228,7 +228,7 @@ def lowerLevelCommunityNumber():
 
 def hierarchicalCommunityConnection():
 
-  with open(mac_data_directory + 'GraphData/zScoreSorted_Test.txt') as csv_file:
+  with open(linux_data_directory + 'GraphData/zScoreSorted_Test.txt') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
     topZScoreTerm=TOP_ZSCORE_TERM_NUMBER
     for line in csv_reader:
@@ -307,8 +307,7 @@ def non_overlapping_hierarchicalCommunityConnection():
 
 
 def samplingTermFromCommunity():
-  logFile = open(mac_data_directory + 'GraphData/SamplingFile_Test.txt', "w")
-  CopyG=G
+  logFile = open(linux_data_directory + 'GraphData/SamplingFile_Test.txt', "w")
 
   #finalDictonaryCommunity
 
@@ -316,6 +315,7 @@ def samplingTermFromCommunity():
     logFile.write(str(communityNumberByOrder))
     logFile.write("\n")
     cardinalityDict = dict()
+    samplingTermList = []
     for k,v in finalDictonaryCommunity.items():
       if v == communityNumberByOrder:
         outgoingEdge = G[k] #outgoing Edge/neightbor node
@@ -324,14 +324,15 @@ def samplingTermFromCommunity():
     sorted(cardinalityDict.items(), key= lambda kv: (kv[0], kv[1])) #Sorted Based on Outgoing Degree
 
     for k,v in cardinalityDict.items():
-      if k in CopyG:
+      if k in G:
         logFile.write(k + "|")
-        outgoingEdge = CopyG[k]
+        outgoingEdge = [k]
+        samplingTermList.append(k)  # Remove the node now
         for neighbourNode in outgoingEdge: # Remove all the neighbour first and also check they belong to the same community
-          if finalDictonaryCommunity.get(k)== finalDictonaryCommunity.get(neighbourNode): #check the neighbour belong to the same community
-            CopyG.remove_node(neighbourNode)
-        CopyG.remove_node(k) #Remove the node now
-print("Escaping function problem")
+          if finalDictonaryCommunity.get(k)== finalDictonaryCommunity.get(neighbourNode) and neighbourNode not in samplingTermList: #check the neighbour belong to the same community
+            samplingTermList.append(neighbourNode)
+
+
 
 
 
