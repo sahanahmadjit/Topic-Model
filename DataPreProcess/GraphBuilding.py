@@ -325,12 +325,14 @@ def samplingTermFromCommunity():
 
     for k,v in cardinalityDict.items():
       if k in G:
-        logFile.write(k + "|")
-        outgoingEdge = [k]
-        samplingTermList.append(k)  # Remove the node now
+        outgoingEdge = G[k]
+        if k not in samplingTermList:
+          logFile.write(k + "|")
         for neighbourNode in outgoingEdge: # Remove all the neighbour first and also check they belong to the same community
           if finalDictonaryCommunity.get(k)== finalDictonaryCommunity.get(neighbourNode) and neighbourNode not in samplingTermList: #check the neighbour belong to the same community
             samplingTermList.append(neighbourNode)
+        samplingTermList.append(k)  # Remove the node now
+    logFile.write("\n")
 
 
 
