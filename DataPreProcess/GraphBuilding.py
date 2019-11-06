@@ -307,18 +307,29 @@ def non_overlapping_hierarchicalCommunityConnection():
 
 
 def samplingTermFromCommunity():
+  logFile = open(mac_data_directory + 'GraphData/SamplingFile_Test.txt', "w")
   CopyG=G
 
   #finalDictonaryCommunity
 
-  for communityNumberByOrder in range(0,communityNumber-1):
+  for communityNumberByOrder in range(0,communityNumber):
+    logFile.write(str(communityNumberByOrder))
+    logFile.write("\n")
     cardinalityDict = dict()
     for k,v in finalDictonaryCommunity.items():
       if v== communityNumberByOrder:
         outgoingEdge = G[k] #outgoing Edge/neightbor node
         cardinalityDict[k]= len(outgoingEdge)
 
-    print(sorted(cardinalityDict.items(), key= lambda kv: (kv[1], kv[0])))
+    sorted(cardinalityDict.items(), key= lambda kv: (kv[0], kv[1])) #Sorted Based on Outgoing Degree
+    for k,v in cardinalityDict.items():
+      if k in CopyG:
+        logFile.write(k + "|")
+        outgoingEdge = CopyG[k]
+
+        for neighbourNode in outgoingEdge: # Remove all the neighbour first
+          CopyG.remove_node(neighbourNode)
+        CopyG.remove_node(k) #Remove the node now
 
 
 
