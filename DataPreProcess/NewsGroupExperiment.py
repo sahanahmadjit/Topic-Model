@@ -6,9 +6,10 @@ import spacy
 import pytextrank
 import en_core_web_sm
 
-mac_data_directory = "/ZResearchCode/HTopicModel/Topic-Model/Data/20news-18828"
-newsGroup_Index_Directory = "/ZResearchCode/HTopicModel/Topic-Model/Data/IndexData/"
-newsGroup_Index_FileName = "Index_NewsGroup.txt"
+MAC_DATA_DIRECTORY = "/ZResearchCode/HTopicModel/Topic-Model/Data/"
+NEWSGROUP_INDEX_DIRECTORY = "IndexData/"
+NEWSGROUP_INDEX_FILENAME = "Index_NewsGroup.txt"
+NEWSGROUP_DATA_FOLDER= "20news-18828/"
 NUMBER_OF_TERMS_EXTRACTED_FROM_DOCUMENT = 20
 
 # Load English tokenizer, tagger, parser, NER and word vectors
@@ -45,20 +46,22 @@ def readAllFilesFromSourceFolder(path):
             for phares in doc._.phrases:
                 if numberOfTermsExtractedFromDocuments == NUMBER_OF_TERMS_EXTRACTED_FROM_DOCUMENT:
                     break
-
                 splitbySpace = re.split('\s+', str(phares))  # split the sentence by space
                 filterWord = []
                 for word in splitbySpace:
-                    if word.isalpha():  # check the word contains only letter
-                        if word.lower() not in stopWordsList:  # Remove Stop Word from List
-                            filterWord.append(word)
+                    removeSpace= word.strip()
+                    if removeSpace.isalpha():  # check the word contains only letter
+                        if removeSpace.lower() not in stopWordsList:  # Remove Stop Word from List
+                            filterWord.append(removeSpace)
 
+                if len(filterWord)== 0: #if no meaningful word look for the next one
+                    continue
                 if len(filterWord) == 1:
                     if filterWord[0] in rankedSinglePharesDict:
                         oldValue = rankedSinglePharesDict[filterWord[0]]
-                        rankedSinglePharesDict[filterWord[0]] = oldValue + "|" + files + "|" + str(phares.count)
+                        rankedSinglePharesDict[filterWord[0]] = oldValue + "|" + files+ ".txt" + "|" + str(phares.count)
                     else:
-                        rankedSinglePharesDict[filterWord[0]] = files + "|" + str(phares.count)
+                        rankedSinglePharesDict[filterWord[0]] = files +".txt" + "|" + str(phares.count)
                 else:
                     itr = 0
                     pharesAddWithSpace = ""
@@ -71,12 +74,13 @@ def readAllFilesFromSourceFolder(path):
 
                     if pharesAddWithSpace in rankedMultiplePharesDict:
                         oldValue = rankedMultiplePharesDict[pharesAddWithSpace]
-                        rankedMultiplePharesDict[pharesAddWithSpace] = oldValue + "|" + files + "|" + str(phares.count)
+                        rankedMultiplePharesDict[pharesAddWithSpace] = oldValue + "|" + files + ".txt" + "|" + str(phares.count)
                     else:
-                        rankedMultiplePharesDict[pharesAddWithSpace] = files + "|" + str(phares.count)
+                        rankedMultiplePharesDict[pharesAddWithSpace] = files +".txt" + "|" + str(phares.count)
 
-                #print("{:.4f} {:5d}  {}".format(phares.rank, phares.count, phares.text))
+
                 numberOfTermsExtractedFromDocuments = numberOfTermsExtractedFromDocuments + 1
+               # print("{:.4f} {:5d}  {}".format(phares.rank, phares.count, phares.text))
 
     buildIndexFile(rankedSinglePharesDict, rankedMultiplePharesDict)
     # print(phares.chunks)
@@ -84,7 +88,7 @@ def readAllFilesFromSourceFolder(path):
 
 def buildIndexFile(rankedSinglePharesDict, rankedMultiplePharesDict):
     print("=======Building Index File========")
-    index_data_write = open(newsGroup_Index_Directory + newsGroup_Index_FileName, "w")
+    index_data_write = open(MAC_DATA_DIRECTORY+ NEWSGROUP_INDEX_DIRECTORY + NEWSGROUP_INDEX_FILENAME, "w")
     for key, value in rankedMultiplePharesDict.items():
         index_data_write.write(key + "|" + str(value))
         index_data_write.write("\n")
@@ -95,7 +99,8 @@ def buildIndexFile(rankedSinglePharesDict, rankedMultiplePharesDict):
 
 
 def NewsGroupFunctionMain():
-    readAllFilesFromSourceFolder(mac_data_directory)
+    readAllFilesFromSourceFolder(MAC_DATA_DIRECTORY+NEWSGROUP_DATA_FOLDER)
+
 
 
 NewsGroupFunctionMain()
