@@ -3,9 +3,10 @@ C | 5 | E | 10 |
 Mean: 7.5
 SD Value: 2.5
 Soruce: A
-B | 20 | C | 1 | 
-Mean: 10.5
-SD Value: 9.5
+B | 20 | C | 1 | M | 10 | 
+Mean: 10.333333333333334
+SD Value: 7.760297817881877
+Edges Remove From A to C
 Soruce: B
 C | 5 | G | 5 | 
 Mean: 5.0
