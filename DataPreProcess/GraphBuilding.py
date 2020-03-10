@@ -10,8 +10,9 @@ GRAPH_INPUT_DATA_FILENAME= "GraphInputData_Test.txt"
 ZSCORE_SORTED_FILENAME = "zScoreSorted_Test.txt"
 GEPHI_FORMAT_GRAPH_FILENAME ="gephi_format_graph_NEWSGROUP.gexf"
 GEPHI_FORMAT_LOWER_LEVEL_COMMUNITY_GRAPH_FILENAME ="gephi_format_LowerCommunityGraph_NEWSGROUP.gexf"
-LOWER_LEVEL_CONNECTIVITY_LOGFILE = "LowerConnectivityLogFile_Test"
+LOWER_LEVEL_CONNECTIVITY_LOGFILE = "LowerConnectivityLogFile_Test.txt"
 SAMPLING_FILENAME = "SamplingFile_Test"
+EDGE_REMOVE_LIST_LOGFILE = "LowerLevelEdgeRemovalLogFile_Test.txt"
 
 
 TOP_ZSCORE_TERM_NUMBER =2
@@ -63,7 +64,7 @@ def building_topZScoreBased_graph_from_text_data():
           for i in range(1,len(line),2): # 1:Starting from 2nd term {first term is source}, stop, increment by 2
             if line[0] in topZScoreTermDict or line[i] in topZScoreTermDict:
               zScore_G.add_edge(line[0],line[i],weight=line[i+1])
-              print("Processing Node for:" + line[0] + line[i])
+              #print("Processing Node for:" + line[0] + line[i])
 
 
 
@@ -92,7 +93,7 @@ def disconnectTopTermInGraph():
 
 
 def lowerLevelConnectivityChecking():
-  logFile= open(MAC_DATA_DIRECTORY+ GRAPH_DATA_DIRECTORY+ LOWER_LEVEL_CONNECTIVITY_LOGFILE,"w")
+  logFile= open(MAC_DATA_DIRECTORY+ GRAPH_DATA_DIRECTORY+ EDGE_REMOVE_LIST_LOGFILE,"w")
   with open(MAC_DATA_DIRECTORY + GRAPH_DATA_DIRECTORY + ZSCORE_SORTED_FILENAME) as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
     topZScoreTerm=TOP_ZSCORE_TERM_NUMBER
@@ -352,8 +353,12 @@ def samplingTermFromCommunity():
 
 
 def main_Graph_Building_function():
+  print("=====Building Graph From Text Data=====")
   building_graph_from_text_data()
+  print("=====Disconnect Top ZScore Term=====")
   disconnectTopTermInGraph()
+  print("====Filter Lower Level Edge Connection======")
+  #lowerLevelConnectivityChecking()
   '''
  
   export_Graph_to_Gephi_format()
@@ -363,11 +368,15 @@ def main_Graph_Building_function():
   print_Graph_Statistics()
   export_Lower_CommunityGraph_to_Gephi_format()
    '''
-  
+  ("=======Lower Level Communtiy Number Given========")
   lowerLevelCommunityNumber()
+  ("=======Building TopZScore Based Graph From Text Data=====")
   building_topZScoreBased_graph_from_text_data()
+  ("========Find out How many Terms of a particular community Connect to HierLevel Term")
   hierarchicalCommunityConnection()
+  ("=======Build Non OverLapping Community=======")
   non_overlapping_hierarchicalCommunityConnection()
+  ("======Sampling From the Community======")
   samplingTermFromCommunity()
   #print_Graph()
 
