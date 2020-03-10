@@ -6,12 +6,12 @@ import math
 MAC_DATA_DIRECTORY= "/ZResearchCode/HTopicModel/Topic-Model/Data/"
 linux_data_directory="/home/C00408440/ZWorkStation/JournalVersion/Data/"
 GRAPH_DATA_DIRECTORY = "GraphData/"
-GRAPH_INPUT_DATA_FILENAME= "GraphInputData_NewsGroup.txt"
-ZSCORE_SORTED_FILENAME = "zScoreSorted_NEWSGROUP.txt"
+GRAPH_INPUT_DATA_FILENAME= "GraphInputData_Test.txt"
+ZSCORE_SORTED_FILENAME = "zScoreSorted_Test.txt"
 GEPHI_FORMAT_GRAPH_FILENAME ="gephi_format_graph_NEWSGROUP.gexf"
 GEPHI_FORMAT_LOWER_LEVEL_COMMUNITY_GRAPH_FILENAME ="gephi_format_LowerCommunityGraph_NEWSGROUP.gexf"
-LOWER_LEVEL_CONNECTIVITY_LOGFILE = "LowerConnectivityLogFile_NEWSGRUP"
-SAMPLING_FILENAME = "SamplingFile_NEWSGROUP"
+LOWER_LEVEL_CONNECTIVITY_LOGFILE = "LowerConnectivityLogFile_Test"
+SAMPLING_FILENAME = "SamplingFile_Test"
 
 
 TOP_ZSCORE_TERM_NUMBER =2
@@ -93,7 +93,7 @@ def disconnectTopTermInGraph():
 
 def lowerLevelConnectivityChecking():
   logFile= open(MAC_DATA_DIRECTORY+ GRAPH_DATA_DIRECTORY+ LOWER_LEVEL_CONNECTIVITY_LOGFILE,"w")
-  with open(MAC_DATA_DIRECTORY + GRAPH_DATA_DIRECTORY + GRAPH_INPUT_DATA_FILENAME) as csv_file:
+  with open(MAC_DATA_DIRECTORY + GRAPH_DATA_DIRECTORY + ZSCORE_SORTED_FILENAME) as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
     topZScoreTerm=TOP_ZSCORE_TERM_NUMBER
     for line in csv_reader:
@@ -156,7 +156,7 @@ def deviationCalculation(mean,sourceTerm,neighborsNode):
 
 def lowerLevelCommunityNumber():
   topZScoreTerm = TOP_ZSCORE_TERM_NUMBER
-  with open(MAC_DATA_DIRECTORY + GRAPH_DATA_DIRECTORY + GRAPH_INPUT_DATA_FILENAME) as csv_file:
+  with open(MAC_DATA_DIRECTORY + GRAPH_DATA_DIRECTORY + ZSCORE_SORTED_FILENAME) as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
     queueDictonaryCommnunity = dict()
 
@@ -169,7 +169,7 @@ def lowerLevelCommunityNumber():
       sourceTerm= line[0]
       if sourceTerm in finalDictonaryCommunity:
         continue
-   #   print("Source Term ", sourceTerm)
+      print("Source Term ", sourceTerm)
       inEdgesTouple=G.in_edges(sourceTerm)
    #   print(inEdgesTouple)
       inEdges=[]
@@ -365,6 +365,7 @@ def main_Graph_Building_function():
   print_Graph_Statistics()
   export_Lower_CommunityGraph_to_Gephi_format()
    '''
+  lowerLevelConnectivityChecking()
   lowerLevelCommunityNumber()
   building_topZScoreBased_graph_from_text_data()
   hierarchicalCommunityConnection()
