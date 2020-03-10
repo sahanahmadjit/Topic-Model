@@ -98,13 +98,12 @@ def lowerLevelConnectivityChecking():
     csv_reader = csv.reader(csv_file, delimiter='|')
     topZScoreTerm=TOP_ZSCORE_TERM_NUMBER
     for line in csv_reader:
-      if topZScoreTerm ==0:
+      if topZScoreTerm != 0:
+        topZScoreTerm -=1
         continue
-      else:topZScoreTerm -= 1
-
       neighborsNode= G[line[0]]
       logFile.write("Soruce: "+ line[0] + "\n")
-      logFile.write("NeighborNode:" +"\n")
+      #logFile.write("NeighborNode:" +"\n")
 
 
       totalConnectedTerm=len(neighborsNode)
@@ -246,7 +245,7 @@ def hierarchicalCommunityConnection():
       else:
         topZScoreTerm-=1
       sourceTerm=line[0]
-      print(sourceTerm,zScore_G.edges)
+      #print(sourceTerm,zScore_G.edges)
       inEdgesTouple=zScore_G.in_edges(sourceTerm)
       print("In Edges:", len(inEdgesTouple))
       inEdges=[]
@@ -358,7 +357,7 @@ def main_Graph_Building_function():
   print("=====Disconnect Top ZScore Term=====")
   disconnectTopTermInGraph()
   print("====Filter Lower Level Edge Connection======")
-  #lowerLevelConnectivityChecking()
+  lowerLevelConnectivityChecking()
   '''
  
   export_Graph_to_Gephi_format()

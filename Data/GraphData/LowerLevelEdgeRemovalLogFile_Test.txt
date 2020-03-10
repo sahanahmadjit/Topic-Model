@@ -1,0 +1,36 @@
+Soruce: D
+C | 5 | E | 10 | 
+Mean: 7.5
+SD Value: 2.5
+Soruce: A
+B | 20 | C | 1 | 
+Mean: 10.5
+SD Value: 9.5
+Soruce: B
+C | 5 | G | 5 | 
+Mean: 5.0
+SD Value: 0.0
+Soruce: E
+D | 5 | F | 2 | 
+Mean: 3.5
+SD Value: 1.5
+Soruce: C
+A | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: F
+I | 10 | 
+Mean: 10.0
+SD Value: 0.0
+Soruce: I
+F | 10 | 
+Mean: 10.0
+SD Value: 0.0
+Soruce: J
+I | 4 | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: G
+B | 5 | 
+Mean: 5.0
+SD Value: 0.0
