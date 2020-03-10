@@ -63,7 +63,7 @@ def building_topZScoreBased_graph_from_text_data():
           for i in range(1,len(line),2): # 1:Starting from 2nd term {first term is source}, stop, increment by 2
             if line[0] in topZScoreTermDict or line[i] in topZScoreTermDict:
               zScore_G.add_edge(line[0],line[i],weight=line[i+1])
-              #print("Processing Node for:" + line[0] + line[i])
+              print("Processing Node for:" + line[0] + line[i])
 
 
 
@@ -80,7 +80,7 @@ def export_Lower_CommunityGraph_to_Gephi_format():
   nx.write_gexf(G,linux_data_directory+GRAPH_DATA_DIRECTORY + GEPHI_FORMAT_LOWER_LEVEL_COMMUNITY_GRAPH_FILENAME)
 
 def disconnectTopTermInGraph():
-  with open(MAC_DATA_DIRECTORY + GRAPH_DATA_DIRECTORY + GRAPH_INPUT_DATA_FILENAME) as csv_file:
+  with open(MAC_DATA_DIRECTORY + GRAPH_DATA_DIRECTORY + ZSCORE_SORTED_FILENAME) as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='|')
     topZScoreTerm=TOP_ZSCORE_TERM_NUMBER
     for line in csv_reader:
@@ -175,8 +175,6 @@ def lowerLevelCommunityNumber():
       inEdges=[]
       for term in inEdgesTouple:#Take inEdges touple to a list
         inEdges.append(term[0])
-
-
       outEdges = G[sourceTerm]
       for term in outEdges:
         if term in finalDictonaryCommunity:
@@ -365,7 +363,7 @@ def main_Graph_Building_function():
   print_Graph_Statistics()
   export_Lower_CommunityGraph_to_Gephi_format()
    '''
-  lowerLevelConnectivityChecking()
+  
   lowerLevelCommunityNumber()
   building_topZScoreBased_graph_from_text_data()
   hierarchicalCommunityConnection()
