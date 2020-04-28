@@ -1,15 +1,15 @@
-bikers|1
-article|1
-former ninjaite|1
-last night|1
-thanks|2
-anyone|2
-bike|3
-people|3
-electronics department|4
-time|5
-something|6
-curt howland|7
-email|8
-someone|9
-bikes|10
+bikers|1|REC_MOTORCYCLES
+article|1|REC_MOTORCYCLES
+former ninjaite|1|REC_MOTORCYCLES
+last night|1|REC_MOTORCYCLES
+thanks|2|SCI_ELECTRONICS
+anyone|2|SCI_ELECTRONICS
+bike|3|REC_MOTORCYCLES
+people|3|REC_MOTORCYCLES
+electronics department|4|SCI_ELECTRONICS
+time|5|REC_MOTORCYCLES
+something|6|REC_MOTORCYCLES
+curt howland|7|REC_MOTORCYCLES
+email|8|SCI_ELECTRONICS
+someone|9|REC_MOTORCYCLES
+bikes|10|REC_MOTORCYCLES

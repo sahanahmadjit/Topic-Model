@@ -1,5 +1,6 @@
 import csv
 import re
+import operator
 
 
 
@@ -7,8 +8,9 @@ MAC_DATA_DIRECTORY= "/ZResearchCode/HTopicModel/Topic-Model/Data/"
 linux_data_directory="/home/C00408440/ZWorkStation/JournalVersion/Data/"
 INDEX_FILE_DIRECTORY = "IndexData/"
 RANGE_DATA_DIRECTORY = "ClusterRange/"
-CLUSTER_RANGE_DATA_FILENAME= "NEWSGROUP_RANGE.txt"
+CLUSTER_RANGE_DATA_FILENAME= "NEWSGROUP_MANUAL_ADD_RANGE.txt"
 INDEX_FILE_NAME = "Index_NewsGroup.txt"
+TOP_CLUSTER_TERM_DATA_FILENAME= "NEWSGROUP_TOP_CLUSTER_TERM.txt"
 
 
 
@@ -52,14 +54,29 @@ def wordTopicNameBasedOnFileRange(word):
                     oldValue = oldValue + 1
                     wordAssignmentInTopic[key] = oldValue
                 else:
-                    wordAssignmentInTopic[key]= 1
+                    wordAssignmentInTopic[key] = 1
 
-    print(wordAssignmentInTopic)
+    sortedWordAssignmentinTopicAsList = sorted(wordAssignmentInTopic.items(), key=operator.itemgetter(1), reverse=True)
+    sortedDict = dict(sortedWordAssignmentinTopicAsList)
+    bestTopic = list(sortedDict.keys())[0]
+    print(word, "->", sortedDict)
+    return bestTopic
 
 
 
 
 
+def hLevelTopicAssignment():
+    data = ""
+    with open(MAC_DATA_DIRECTORY + RANGE_DATA_DIRECTORY + TOP_CLUSTER_TERM_DATA_FILENAME, "r") as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter='|')
+        for line in csv_reader:
+            topic = wordTopicNameBasedOnFileRange(line[0])
+            singleLine = line[0] + "|" + str(line[1]) + "|" + topic + "\n"  # term,cluster number, topic
+            data += singleLine
+
+    fileObject = open(MAC_DATA_DIRECTORY + RANGE_DATA_DIRECTORY + TOP_CLUSTER_TERM_DATA_FILENAME, "w")
+    fileObject.write(data)
 
 
 
@@ -71,7 +88,8 @@ def selectTermForClassification():
 
 
 def mainClassificationVerifcationFunction():
-    wordTopicNameBasedOnFileRange("experience")
+    print("=====Assign Topic Name to Top Terms=====")
+    hLevelTopicAssignment()
 
 
 mainClassificationVerifcationFunction()
