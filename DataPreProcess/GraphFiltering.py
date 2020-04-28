@@ -39,6 +39,7 @@ CO_EFFICIENT = 1
 MAC_DATA_DIRECTORY = "/ZResearchCode/HTopicModel/Topic-Model/Data/"
 linux_data_directory = "/home/C00408440/ZWorkStation/JournalVersion/Data/"
 GRAPH_DATA_DIRECTORY = "GraphData/"
+COMMUNITY_DATA_DIRECTORY = "CommunityData/"
 GRAPH_INPUT_DATA_FILENAME = "GraphInputData_NewsGroup.txt"
 ZSCORE_SORTED_FILENAME = "zScoreSorted_NEWSGROUP.txt"
 GEPHI_FORMAT_GRAPH_FILENAME = "gephi_format_graph_NEWSGROUP.gexf"
@@ -284,7 +285,8 @@ def dictonaryForHigherLevelCommunity():
         else:
             hLevelCommunityNumberDict[item] = COMMUNITY_NUMBER
             COMMUNITY_NUMBER = COMMUNITY_NUMBER + 1
-    print("=======Rebuild Graph========")
+
+
     higherLevelCommunityBaseStructure(hLevelCommunityNumberDict)
 
 
@@ -293,6 +295,8 @@ def higherLevelCommunityBaseStructure(higherLevelCommunityDict):
                                                   reverse=True)
     sortedHighLevelTermByCommunityNumberDict = dict(sortedHighLevelTermByCommunityNumber)
 
+    print("=======Higher Level Community Structure========")
+    print(sortedHighLevelTermByCommunityNumberDict)
 
     tempItemList = []
 
@@ -379,8 +383,8 @@ def coreAddTermsToCommunityFunction(currentTerm):
         commonTermSet = lowerLevelTermNeighSet.intersection(graphNodeSet)
         commonWeight = 0
         for item in commonTermSet:
-            commonWeight = commonWeight + int(
-                G[currentTerm][item]['weight'])  # From Source or target doesn'tmatter. Intersection
+            commonWeight = commonWeight + int(G[currentTerm][item]['weight'])
+            # From Source or target doesn'tmatter. Intersection
 
         unionWeight = 0
         for item in lowerLevelTermNeighSet:
@@ -396,41 +400,21 @@ def coreAddTermsToCommunityFunction(currentTerm):
     if passBoolean:
         sortedRankHashMapAsList = sorted(rankHashmap.items(), key=operator.itemgetter(1), reverse=True)
         sortedRankDict = dict(sortedRankHashMapAsList)
+        bestCommunityNumber = list(sortedRankDict.keys())[0]
+        graph = communityGraphHashMap[bestCommunityNumber]
+        graph.add_node(currentTerm)
 
-        listVal = []
-        for key, value in sortedRankDict.items():
-            listVal.append(sortedRankDict[key])
-        # Check only first two result. Rest of the result don't need to check. It should be lower for other
-        difference = listVal[0] - listVal[1]
-        print("DEBUG 2", sortedRankDict)
-        if difference < C0_EFFICIENT_FOR_MULTIPLE_COMMUNITY:
-            if currentTerm not in markMultipleCommunity:
-                markMultipleCommunity.append(currentTerm)
-        else:
-            # Get Highest RankedCommunity Number
-            bestCommunity = list(sortedRankDict.keys())[0]
-
-            try:
-                if currentTerm in unabletoConnectCommunity:
-                    unabletoConnectCommunity.remove(currentTerm)
-                    print("DEBUG 1, UN", currentTerm)
-            except KeyError:
-                print("")
-            try:
-                if currentTerm in markMultipleCommunity:
-                    print("DEBUG 1, MM", currentTerm)
-                    markMultipleCommunity.remove(currentTerm)
-            except KeyError:
-                print("")
-
-
-            graph = communityGraphHashMap[bestCommunity]
-            graph.add_node(currentTerm)
-            for item in commonTermSet:
+        for item in listOfNodes:
+            if G.has_edge(currentTerm,item):
                 weightVal = G[currentTerm][item]['weight']
                 graph.add_edge(currentTerm, item, weight=weightVal)
+            if G.has_edge(item,currentTerm):
+                weightVal = G[item][currentTerm]['weight']
                 graph.add_edge(item, currentTerm, weight=weightVal)
-            communityGraphHashMap[key] = graph
+
+        communityGraphHashMap[key] = graph
+
+
     if passBoolean == False and currentTerm not in unabletoConnectCommunity:
         unabletoConnectCommunity.append(currentTerm)
 
@@ -466,16 +450,10 @@ def addTermsToTheCommunity():
 
     print("Unable to Find community List:", len(unabletoConnectCommunity))
     print("MarkMultiple Community List:", len(markMultipleCommunity))
-    iterativeWaytoAddTermsInCommunity()
+    for i in unabletoConnectCommunity:
+        print(i," ")
 
-
-
-
-
-
-
-
-
+    #iterativeWaytoAddTermsInCommunity()
 
 
 
@@ -502,6 +480,16 @@ def recognizeCommunity(G):
     nx.draw(G, with_labels=True)
     plt.savefig("Topic-Model/Data/Images/CommunityPicture")
 
+def writingClusterToFile():
+    for key,value in communityGraphHashMap.items():
+        file = open(MAC_DATA_DIRECTORY + COMMUNITY_DATA_DIRECTORY + str(key) + ".txt", "w+")
+        graph = communityGraphHashMap[key]
+        listOfNodes = list(graph.nodes)
+        print(listOfNodes)
+        for item in listOfNodes:
+            file.write(item + "\n")
+
+
 
 def main_Graph_Building_function():
     print("=====Building Graph From Text Data=====")
@@ -520,6 +508,8 @@ def main_Graph_Building_function():
     addTermsToTheCommunity()
     print("======After Adding Terms to The Community Visualizatin=======")
     hashMapCommunityVisualization(communityGraphHashMap)
+    print("=======Writing Data to Community File=======")
+    writingClusterToFile()
 
 
 
