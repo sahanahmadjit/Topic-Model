@@ -401,21 +401,22 @@ def coreAddTermsToCommunityFunction(currentTerm):
         sortedRankHashMapAsList = sorted(rankHashmap.items(), key=operator.itemgetter(1), reverse=True)
         sortedRankDict = dict(sortedRankHashMapAsList)
         bestCommunityNumber = list(sortedRankDict.keys())[0]
-        graph = communityGraphHashMap[bestCommunityNumber]
+        graph = communityGraphHashMap[bestCommunityNumber] #LOAD BEST community in graph
+        listOfBestCommunityNodes = list(graph.nodes) #Load List of nodes for best community
+
         #Testing Purpose Code Added
         if graph.has_node(currentTerm):
             print("DEBUG","ERROR")
+
         graph.add_node(currentTerm)
-        '''
-        for item in listOfNodes:
+
+        for item in listOfBestCommunityNodes:
             if G.has_edge(currentTerm, item):
                 weightVal = G[currentTerm][item]['weight']
                 graph.add_edge(currentTerm, item, weight=weightVal)
             if G.has_edge(item, currentTerm):
                 weightVal = G[item][currentTerm]['weight']
-                graph.add_edge(item, currentTerm, weight=weightVal)        
-        '''
-
+                graph.add_edge(item, currentTerm, weight=weightVal)
 
         communityGraphHashMap[bestCommunityNumber] = graph
 
