@@ -10,7 +10,7 @@ MAC_DATA_DIRECTORY = "/ZResearchCode/HTopicModel/Topic-Model/Data/"
 NEWSGROUP_INDEX_DIRECTORY = "IndexData/"
 NEWSGROUP_INDEX_FILENAME = "Index_NewsGroup.txt"
 NEWSGROUP_DATA_FOLDER= "20news-18828/"
-NUMBER_OF_TERMS_EXTRACTED_FROM_DOCUMENT = 20
+NUMBER_OF_TERMS_EXTRACTED_FROM_DOCUMENT = 5
 
 # Load English tokenizer, tagger, parser, NER and word vectors
 nlp = spacy.load("en_core_web_sm")
@@ -18,6 +18,7 @@ nlp = spacy.load("en_core_web_sm")
 tr = pytextrank.TextRank()
 nlp.add_pipe(tr.PipelineComponent, name="textrank", last=True)
 
+stopWordsListManual = ['subject']
 
 def readAllFilesFromSourceFolder(path):
     print("============Extracting Document for Keywords========")
@@ -36,13 +37,14 @@ def readAllFilesFromSourceFolder(path):
         for files in os.listdir(folderName):
             # print("FileName",files)
             filepath = os.path.join(folderName, files)
-            # print("Full File Path", filepath)
+            #print("Full File Path", filepath)
             sample_file = open(filepath, "r", encoding="iso-8859-1")
             text = sample_file.read().lower()
             doc = nlp(text)
 
             # examine the top-ranked phrases in the document
             numberOfTermsExtractedFromDocuments = 0
+            RANKED_POINT = 10
             for phares in doc._.phrases:
                 if numberOfTermsExtractedFromDocuments == NUMBER_OF_TERMS_EXTRACTED_FROM_DOCUMENT:
                     break
@@ -52,16 +54,21 @@ def readAllFilesFromSourceFolder(path):
                     removeSpace= word.strip()
                     if removeSpace.isalpha():  # check the word contains only letter
                         if removeSpace.lower() not in stopWordsList:  # Remove Stop Word from List
-                            filterWord.append(removeSpace)
+                                if removeSpace.lower() not in stopWordsListManual:
+                                    filterWord.append(removeSpace)
 
                 if len(filterWord)== 0: #if no meaningful word look for the next one
                     continue
                 if len(filterWord) == 1:
                     if filterWord[0] in rankedSinglePharesDict:
                         oldValue = rankedSinglePharesDict[filterWord[0]]
-                        rankedSinglePharesDict[filterWord[0]] = oldValue + "|" + files+ ".txt" + "|" + str(phares.count)
+                        rankedSinglePharesDict[filterWord[0]] = oldValue + "|" + files+ ".txt" + "|" + str(RANKED_POINT)
                     else:
-                        rankedSinglePharesDict[filterWord[0]] = files +".txt" + "|" + str(phares.count)
+                        rankedSinglePharesDict[filterWord[0]] = files +".txt" + "|" + str(RANKED_POINT)
+
+                    RANKED_POINT = RANKED_POINT - 2
+                    numberOfTermsExtractedFromDocuments = numberOfTermsExtractedFromDocuments + 1
+                '''
                 else:
                     itr = 0
                     pharesAddWithSpace = ""
@@ -77,9 +84,8 @@ def readAllFilesFromSourceFolder(path):
                         rankedMultiplePharesDict[pharesAddWithSpace] = oldValue + "|" + files + ".txt" + "|" + str(phares.count)
                     else:
                         rankedMultiplePharesDict[pharesAddWithSpace] = files +".txt" + "|" + str(phares.count)
+                '''
 
-
-                numberOfTermsExtractedFromDocuments = numberOfTermsExtractedFromDocuments + 1
                # print("{:.4f} {:5d}  {}".format(phares.rank, phares.count, phares.text))
 
     buildIndexFile(rankedSinglePharesDict, rankedMultiplePharesDict)
