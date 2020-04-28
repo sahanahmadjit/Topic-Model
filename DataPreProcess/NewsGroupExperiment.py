@@ -10,7 +10,7 @@ MAC_DATA_DIRECTORY = "/ZResearchCode/HTopicModel/Topic-Model/Data/"
 NEWSGROUP_INDEX_DIRECTORY = "IndexData/"
 NEWSGROUP_INDEX_FILENAME = "Index_NewsGroup.txt"
 NEWSGROUP_DATA_FOLDER= "20news-18828/"
-NUMBER_OF_TERMS_EXTRACTED_FROM_DOCUMENT = 5
+NUMBER_OF_TERMS_EXTRACTED_FROM_DOCUMENT = 10
 
 # Load English tokenizer, tagger, parser, NER and word vectors
 nlp = spacy.load("en_core_web_sm")
@@ -44,7 +44,7 @@ def readAllFilesFromSourceFolder(path):
 
             # examine the top-ranked phrases in the document
             numberOfTermsExtractedFromDocuments = 0
-            RANKED_POINT = 10
+            RANKED_POINT = 2*NUMBER_OF_TERMS_EXTRACTED_FROM_DOCUMENT
             for phares in doc._.phrases:
                 if numberOfTermsExtractedFromDocuments == NUMBER_OF_TERMS_EXTRACTED_FROM_DOCUMENT:
                     break
@@ -65,10 +65,6 @@ def readAllFilesFromSourceFolder(path):
                         rankedSinglePharesDict[filterWord[0]] = oldValue + "|" + files+ ".txt" + "|" + str(RANKED_POINT)
                     else:
                         rankedSinglePharesDict[filterWord[0]] = files +".txt" + "|" + str(RANKED_POINT)
-
-                    RANKED_POINT = RANKED_POINT - 2
-                    numberOfTermsExtractedFromDocuments = numberOfTermsExtractedFromDocuments + 1
-                '''
                 else:
                     itr = 0
                     pharesAddWithSpace = ""
@@ -81,11 +77,12 @@ def readAllFilesFromSourceFolder(path):
 
                     if pharesAddWithSpace in rankedMultiplePharesDict:
                         oldValue = rankedMultiplePharesDict[pharesAddWithSpace]
-                        rankedMultiplePharesDict[pharesAddWithSpace] = oldValue + "|" + files + ".txt" + "|" + str(phares.count)
+                        rankedMultiplePharesDict[pharesAddWithSpace] = oldValue + "|" + files + ".txt" + "|" + str(RANKED_POINT)
                     else:
-                        rankedMultiplePharesDict[pharesAddWithSpace] = files +".txt" + "|" + str(phares.count)
-                '''
+                        rankedMultiplePharesDict[pharesAddWithSpace] = files +".txt" + "|" + str(RANKED_POINT)
 
+                RANKED_POINT = RANKED_POINT - 2
+                numberOfTermsExtractedFromDocuments = numberOfTermsExtractedFromDocuments + 1
                # print("{:.4f} {:5d}  {}".format(phares.rank, phares.count, phares.text))
 
     buildIndexFile(rankedSinglePharesDict, rankedMultiplePharesDict)

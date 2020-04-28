@@ -1,168 +1,617 @@
-mais|frequency|40|association|4
-je|frequency|32|association|4
-communication|frequency|24|association|4
-thompson|frequency|16|association|4
-chance|frequency|8|association|4
-anyone|frequency|174|association|25
-projects|frequency|64|association|4
-blakey|frequency|34|association|4
-plans|frequency|20|association|4
-output|frequency|40|association|4
-purposes|frequency|32|association|4
-software|frequency|24|association|4
-hope|frequency|16|association|4
-transistors|frequency|8|association|4
-reference|frequency|40|association|4
-power|frequency|48|association|7
-article|frequency|128|association|20
-notation|frequency|16|association|4
-office|frequency|48|association|7
-penny|frequency|40|association|4
-giles|frequency|32|association|4
-everything|frequency|24|association|4
-theunissen|frequency|16|association|4
-folks|frequency|8|association|4
-radar|frequency|40|association|4
-word|frequency|32|association|4
-ability|frequency|24|association|4
-skill|frequency|16|association|4
-mark|frequency|8|association|4
-transformers|frequency|32|association|4
-machine|frequency|32|association|8
-anybody|frequency|48|association|12
-rmx|frequency|40|association|4
-email|frequency|72|association|12
-use|frequency|40|association|8
-bull|frequency|8|association|4
-martin|frequency|40|association|4
-sounds|frequency|32|association|4
-wayne|frequency|48|association|8
-timing|frequency|88|association|16
-snow|frequency|8|association|4
-self|frequency|40|association|4
-buns|frequency|32|association|4
-c|frequency|16|association|4
-today|frequency|8|association|4
-details|frequency|56|association|8
-calabration|frequency|32|association|4
-murder|frequency|24|association|4
-show|frequency|16|association|4
-rumors|frequency|8|association|4
-eplds|frequency|40|association|4
-something|frequency|72|association|8
-chains|frequency|24|association|4
-anything|frequency|16|association|4
-thanks|frequency|56|association|11
-jet|frequency|30|association|3
-habit|frequency|24|association|3
-airplane|frequency|18|association|3
-knots|frequency|12|association|3
-site|frequency|32|association|4
-bell|frequency|40|association|4
-tomorrow|frequency|16|association|4
-first|frequency|8|association|4
-advance|frequency|32|association|4
-chip|frequency|32|association|8
-timer|frequency|8|association|4
-degrees|frequency|40|association|4
-lap|frequency|32|association|4
-caps|frequency|24|association|4
-school|frequency|56|association|16
-computer|frequency|72|association|12
-pc|frequency|32|association|4
-control|frequency|48|association|8
-protection|frequency|32|association|8
-soh|frequency|8|association|4
-university|frequency|56|association|8
-louisville|frequency|32|association|4
-someone|frequency|24|association|4
-information|frequency|40|association|4
-john|frequency|64|association|8
-data|frequency|24|association|4
-goldmine|frequency|8|association|4
-bus|frequency|72|association|8
-call|frequency|72|association|6
-views|frequency|24|association|4
-desonia|frequency|48|association|6
-eff|frequency|24|association|6
-isolated|frequency|40|association|4
-australia|frequency|24|association|4
-laird|frequency|8|association|4
-documentation|frequency|72|association|6
-system|frequency|64|association|6
-experience|frequency|48|association|12
-unit|frequency|8|association|4
-time|frequency|40|association|4
-rogers|frequency|32|association|4
-signal|frequency|24|association|4
-tesla|frequency|16|association|4
-methods|frequency|8|association|4
-april|frequency|56|association|8
-flea|frequency|32|association|4
-mit|frequency|24|association|4
-jack|frequency|8|association|4
-things|frequency|20|association|2
-aftershave|frequency|16|association|2
-nz|frequency|12|association|2
-original|frequency|8|association|4
-scopes|frequency|40|association|4
-students|frequency|32|association|4
-button|frequency|8|association|4
-string|frequency|40|association|4
-brightness|frequency|32|association|4
-bulbs|frequency|24|association|4
-xmas|frequency|16|association|4
-rtn|frequency|8|association|4
-hands|frequency|40|association|4
-research|frequency|32|association|4
-guns|frequency|24|association|4
-breadboards|frequency|16|association|4
-bit|frequency|8|association|4
-blues|frequency|80|association|7
-availability|frequency|56|association|7
-fyzzicks|frequency|24|association|4
-trouble|frequency|8|association|4
-radio|frequency|32|association|4
-hook|frequency|24|association|4
-indicators|frequency|16|association|4
-circuits|frequency|8|association|4
-lecturer|frequency|40|association|4
-subdirectories|frequency|32|association|4
-pads|frequency|24|association|4
-schematics|frequency|16|association|4
-chris|frequency|8|association|4
-guide|frequency|24|association|4
-interface|frequency|8|association|4
-frequency|frequency|80|association|8
-crystal|frequency|16|association|4
-quartz|frequency|8|association|4
-u|frequency|40|association|4
-glinos|frequency|32|association|4
-line|frequency|16|association|4
-project|frequency|8|association|4
-circuit|frequency|40|association|8
-georgia|frequency|24|association|4
-covington|frequency|16|association|4
-stephens|frequency|40|association|4
-model|frequency|32|association|4
-equipment|frequency|24|association|4
-correction|frequency|40|association|4
-thing|frequency|24|association|4
-god|frequency|16|association|4
-buses|frequency|40|association|4
-mon|frequency|24|association|4
-smtp|frequency|8|association|4
-hv|frequency|40|association|4
-sources|frequency|32|association|4
-tube|frequency|24|association|4
-capacitors|frequency|8|association|4
-parts|frequency|32|association|4
-people|frequency|8|association|4
-wire|frequency|40|association|4
-base|frequency|24|association|4
-dram|frequency|40|association|4
-controller|frequency|32|association|4
-industries|frequency|40|association|4
-radios|frequency|32|association|4
-lights|frequency|24|association|4
-cars|frequency|8|association|4
+local motorcycle club|frequency|162|association|9
+pink tools|frequency|80|association|4
+right foot|frequency|180|association|9
+phil stone|frequency|144|association|9
+funny looks|frequency|108|association|9
+couple hours|frequency|270|association|13
+norman hamer|frequency|126|association|9
+general rule|frequency|72|association|13
+kinda people|frequency|162|association|9
+lotsa leaning bends|frequency|126|association|9
+good things|frequency|108|association|9
+similar reasons|frequency|72|association|9
+nice boy|frequency|306|association|15
+big bore|frequency|162|association|9
+hand guns|frequency|126|association|9
+david svoboda|frequency|288|association|15
+extreme weirdness|frequency|72|association|9
+favorite flame wars|frequency|342|association|13
+friendly riders|frequency|126|association|8
+lowly sport bike|frequency|72|association|8
+harley riders|frequency|36|association|8
+like bombing fish|frequency|180|association|9
+john stafford|frequency|162|association|9
+calamine lotion|frequency|126|association|9
+incoherent splutterings|frequency|54|association|9
+david brown ed|frequency|162|association|8
+california edition|frequency|126|association|8
+initial post|frequency|90|association|8
+speeding ticket|frequency|54|association|8
+ca nolo press|frequency|36|association|8
+geeky stickers|frequency|180|association|9
+curt howland|frequency|504|association|26
+fern bar|frequency|126|association|9
+curtis jackson|frequency|270|association|18
+local white wine|frequency|18|association|9
+right side|frequency|90|association|9
+norton war stories|frequency|54|association|9
+red line|frequency|36|association|9
+sisters boyfriend|frequency|18|association|9
+public safety|frequency|144|association|9
+thomas jefferson|frequency|126|association|9
+larger tank|frequency|90|association|9
+huge tank|frequency|90|association|18
+black lab mix doright|frequency|54|association|9
+decent aftermarket solution|frequency|36|association|9
+honda weenies|frequency|18|association|9
+erik asphaug|frequency|180|association|9
+bigger engine|frequency|90|association|9
+sport bike|frequency|72|association|9
+bruce clarke|frequency|54|association|9
+extra bucks|frequency|36|association|9
+dod paraphernalia|frequency|180|association|9
+thicker vinyl|frequency|162|association|9
+standard disclaimers|frequency|108|association|9
+little razzing|frequency|90|association|9
+john stafford minnesota state university|frequency|18|association|9
+mike muise|frequency|304|association|8
+body mass|frequency|144|association|8
+low tolerance|frequency|18|association|8
+brand new top end chambers|frequency|140|association|7
+email address|frequency|84|association|7
+local plastic shop|frequency|180|association|9
+plastic bits|frequency|162|association|9
+tap plastic|frequency|144|association|9
+several excellent products|frequency|108|association|9
+deep scratches|frequency|90|association|9
+jonathan jefferies|frequency|72|association|9
+scott wilken|frequency|54|association|9
+sticky stuffs|frequency|18|association|9
+former ninjaite|frequency|396|association|23
+last night|frequency|270|association|23
+god almighty|frequency|36|association|9
+good sam|frequency|18|association|9
+better gloves|frequency|180|association|8
+next purchase|frequency|162|association|8
+protective gear|frequency|176|association|8
+leather gold|frequency|72|association|8
+good helmet|frequency|18|association|8
+flight bag|frequency|180|association|9
+whole station|frequency|126|association|9
+morning show|frequency|54|association|9
+right handle|frequency|112|association|7
+countersteering faq|frequency|98|association|7
+eric hmm|frequency|56|association|7
+inane mail|frequency|108|association|9
+mail problems|frequency|90|association|9
+new dod|frequency|54|association|9
+train engines|frequency|162|association|9
+power units|frequency|144|association|9
+synthetic engi|frequency|126|association|9
+oil requirements|frequency|54|association|9
+daemon child|frequency|36|association|9
+idiotic quest|frequency|90|association|9
+jack waters|frequency|72|association|9
+irwin arnstein|frequency|54|association|9
+darker skin pigmentation|frequency|36|association|9
+jack rogers|frequency|18|association|9
+cultural heritage|frequency|180|association|8
+whole rear end|frequency|180|association|9
+nicholas coburn|frequency|162|association|9
+light green stripes|frequency|144|association|9
+full fairing|frequency|108|association|9
+style tank|frequency|72|association|9
+boulder doders|frequency|54|association|9
+helmetless motorcyclists|frequency|162|association|9
+snow skis|frequency|108|association|9
+insect impacts|frequency|90|association|9
+summer evenings|frequency|72|association|9
+right leg|frequency|144|association|8
+previous article|frequency|54|association|8
+street bike|frequency|36|association|8
+passenger seat|frequency|18|association|8
+du code|frequency|180|association|9
+disk array development|frequency|162|association|9
+est mal configure|frequency|144|association|9
+peripheral products division|frequency|126|association|9
+martin danjou|frequency|90|association|9
+de programme vers|frequency|54|association|9
+downloader une programme directement dans|frequency|36|association|9
+ftp sites|frequency|192|association|10
+electrical nature|frequency|72|association|6
+hello netters|frequency|48|association|6
+peter hendricks|frequency|144|association|9
+printer ports|frequency|126|association|9
+spared printer port|frequency|90|association|9
+reference power|frequency|180|association|9
+common references|frequency|162|association|9
+whatever reference|frequency|126|association|9
+consumer gear line level|frequency|90|association|9
+alexander graham bell|frequency|252|association|17
+si notation|frequency|54|association|9
+conductive plastic elements|frequency|180|association|8
+scott dorsey|frequency|162|association|8
+high quality pot|frequency|208|association|8
+weird metric sizes|frequency|126|association|8
+best pots|frequency|72|association|8
+solid brass case|frequency|54|association|8
+audio amateur magazine|frequency|18|association|8
+police radar|frequency|324|association|18
+calibrated guns|frequency|126|association|9
+uk library microlabs|frequency|108|association|9
+radar gun|frequency|36|association|9
+radar gun target car|frequency|18|association|9
+transformer cores|frequency|180|association|9
+noisy laminated power|frequency|126|association|9
+flyback squeal|frequency|90|association|9
+metal surfaces|frequency|72|association|9
+video monitors|frequency|54|association|9
+chewing gum|frequency|36|association|9
+netland help|frequency|162|association|9
+intel rmx operating system|frequency|144|association|9
+intel rmx documentation|frequency|72|association|9
+robotics lab|frequency|54|association|9
+large machine|frequency|18|association|9
+wayne alan martin|frequency|180|association|9
+universal time reciever|frequency|126|association|9
+nice lab|frequency|36|association|9
+timing cycles|frequency|180|association|9
+timing cycle|frequency|162|association|9
+spec version|frequency|126|association|9
+total timing cycle|frequency|72|association|9
+exars chip|frequency|54|association|9
+several years|frequency|36|association|9
+timing cap|frequency|18|association|9
+kernel mode systems|frequency|180|association|9
+david sharpe|frequency|162|association|9
+jamie hanrahan|frequency|126|association|9
+san diego|frequency|108|association|9
+extra horn|frequency|90|association|9
+programming pals|frequency|162|association|9
+homebuilt pal|frequency|144|association|9
+tim deagan official obnoxious poster|frequency|126|association|9
+eric taylor|frequency|160|association|8
+local airport|frequency|144|association|8
+stealth cars|frequency|128|association|8
+radar jammers|frequency|112|association|8
+speed limits|frequency|96|association|8
+electronics projects|frequency|160|association|8
+jb jason blakey|frequency|32|association|8
+southwestern bell|frequency|162|association|9
+babak sehari|frequency|126|association|9
+highest regards|frequency|72|association|9
+rajan ranga|frequency|180|association|8
+intels timer|frequency|126|association|8
+external timer|frequency|90|association|8
+internal timer|frequency|72|association|8
+electronics department|frequency|648|association|35
+several timers|frequency|162|association|9
+good ideas|frequency|144|association|9
+different colored pellets|frequency|108|association|9
+low temperature electronics|frequency|90|association|9
+divider chain|frequency|72|association|9
+big electro|frequency|54|association|9
+serial data transmission|frequency|180|association|9
+power cables|frequency|162|association|9
+overvoltage protection|frequency|108|association|9
+martin john gregory|frequency|90|association|9
+additional info|frequency|36|association|9
+accidental shorts|frequency|18|association|9
+mike harpe|frequency|180|association|9
+ormsby bldg|frequency|144|association|9
+information technology|frequency|54|association|9
+michael harpe|frequency|18|association|9
+old data books|frequency|272|association|8
+old databooks|frequency|162|association|8
+last years books|frequency|144|association|8
+last years|frequency|108|association|8
+alan kilian|frequency|90|association|8
+old ones|frequency|72|association|8
+new books|frequency|54|association|8
+current production parts|frequency|36|association|8
+old obsolete machines|frequency|18|association|8
+bus speeds|frequency|180|association|9
+audio card chokes|frequency|126|association|9
+bus speed conflict|frequency|108|association|9
+free usenet mail|frequency|234|association|17
+higher clock rates|frequency|54|association|9
+mhz bus|frequency|36|association|9
+local bus|frequency|18|association|9
+john west|frequency|180|association|9
+external components|frequency|162|association|9
+rs components|frequency|144|association|9
+little chips|frequency|126|association|9
+isloting transformer|frequency|18|association|9
+pioneer laser player|frequency|360|association|13
+computerised viewing|frequency|306|association|13
+pioneer laserdisc|frequency|234|association|13
+front panel power light|frequency|198|association|13
+hpib connector|frequency|54|association|9
+surplus store|frequency|36|association|9
+james harris rogers|frequency|162|association|9
+hertzian wave theory|frequency|108|association|9
+sept cambridge|frequency|180|association|9
+tentative early info|frequency|126|association|9
+pt breeze rest|frequency|108|association|9
+updated copy|frequency|90|association|9
+aug wellseley|frequency|72|association|9
+april webster ecara|frequency|54|association|9
+nov plymouth mayflower|frequency|36|association|9
+new england ham electronic fleamarket|frequency|18|association|9
+positive readings|frequency|42|association|3
+unregistered evaluation|frequency|144|association|9
+standard old zenith parallel port|frequency|54|association|9
+original ibm adaptor|frequency|36|association|9
+parallel ports|frequency|18|association|9
+digital scopes|frequency|144|association|9
+first time scope users|frequency|126|association|9
+analogue scopes|frequency|108|association|9
+scope manufacturers|frequency|90|association|9
+equivalent analogue scopes|frequency|72|association|9
+jeroen belleman|frequency|18|association|9
+xmas light|frequency|162|association|9
+reduced brightness|frequency|126|association|9
+full brightness|frequency|108|association|9
+level brightness xmas light|frequency|90|association|9
+resistor leads|frequency|72|association|9
+second string|frequency|18|association|9
+wire wrapping|frequency|180|association|9
+wiring capacitance|frequency|144|association|9
+high frequencies|frequency|126|association|9
+pascal goguey|frequency|108|association|9
+transmission line techniques|frequency|90|association|9
+wrapping increases|frequency|72|association|9
+wire wrap questions|frequency|54|association|9
+good ac powered ones|frequency|36|association|9
+rainer malzbender|frequency|304|association|8
+newest jdr microdevices catalog|frequency|108|association|8
+electronic project books|frequency|180|association|9
+kyler laird|frequency|162|association|9
+answering machine|frequency|72|association|9
+extension line|frequency|36|association|9
+computing science|frequency|180|association|9
+chris hand|frequency|162|association|9
+ibm pcs|frequency|144|association|9
+pc based layout program|frequency|126|association|9
+internet mail|frequency|90|association|9
+pioneer technicial support|frequency|162|association|9
+jim keais|frequency|126|association|9
+space ace|frequency|108|association|9
+ld players|frequency|18|association|9
+suitable crystal oscillators|frequency|180|association|9
+low power quartz oscillators|frequency|162|association|9
+crystal types|frequency|144|association|9
+low temperature sensitivity|frequency|108|association|9
+high temperature|frequency|90|association|9
+significant temperature drifts|frequency|72|association|9
+gut feeling|frequency|180|association|16
+battery power|frequency|36|association|9
+extreme cold|frequency|72|association|16
+tom glinos|frequency|180|association|9
+several ideas|frequency|162|association|9
+brilliant people|frequency|144|association|9
+toronto statistics|frequency|108|association|9
+simple history lesson|frequency|54|association|9
+trek tos|frequency|36|association|9
+big problem|frequency|180|association|9
+amateur radio|frequency|108|association|9
+michael covington|frequency|90|association|9
+big capacitors|frequency|72|association|9
+exact values|frequency|18|association|9
+human factors research lab|frequency|180|association|8
+compressor problem|frequency|162|association|8
+audio logic|frequency|126|association|8
+david vanderbyl|frequency|180|association|9
+positive impression|frequency|126|association|9
+access bus|frequency|162|association|9
+interface chips|frequency|126|association|9
+long haul|frequency|108|association|9
+mountain view|frequency|90|association|9
+hv capacitors|frequency|180|association|9
+numerous stores|frequency|162|association|9
+video monitor|frequency|144|association|9
+hv caps|frequency|126|association|9
+goldstar circuitry|frequency|72|association|9
+little room|frequency|54|association|9
+dow radio|frequency|18|association|9
+raw parts|frequency|180|association|9
+multiple use|frequency|108|association|9
+electrical erasure|frequency|90|association|9
+keith ledig|frequency|72|association|9
+little blue sparks|frequency|180|association|9
+brad meier|frequency|144|association|9
+small crackling noise|frequency|36|association|9
+little box|frequency|18|association|9
+maximum spi clock rate|frequency|162|association|9
+wayne schellekens|frequency|126|association|9
+serial dram nonvolatizer|frequency|108|association|9
+bank switching|frequency|36|association|9
+twisted pair|frequency|18|association|9
+tesla coils|frequency|36|association|9
+motorcycles|frequency|236|association|13
+name|frequency|144|association|9
+membership|frequency|126|association|9
+request|frequency|108|association|9
+computers|frequency|90|association|9
+bmw|frequency|72|association|9
+bikes|frequency|270|association|27
+postings|frequency|36|association|9
+parts|frequency|144|association|18
+diving|frequency|72|association|4
+girlfriends|frequency|64|association|4
+one|frequency|48|association|4
+ankle|frequency|162|association|9
+point|frequency|126|association|9
+climbing|frequency|90|association|9
+bed|frequency|72|association|9
+metatarsals|frequency|54|association|9
+article|frequency|858|association|109
+thanks|frequency|306|association|32
+confidence|frequency|180|association|9
+reactions|frequency|162|association|9
+time|frequency|558|association|35
+thumb|frequency|198|association|13
+sobriety|frequency|126|association|13
+half|frequency|36|association|17
+harley|frequency|180|association|9
+harleys|frequency|252|association|18
+people|frequency|342|association|36
+mail|frequency|198|association|18
+flames|frequency|108|association|9
+loads|frequency|72|association|9
+years|frequency|54|association|9
+laz|frequency|36|association|9
+lots|frequency|18|association|9
+bike|frequency|360|association|18
+mood|frequency|144|association|9
+bikers|frequency|522|association|22
+road|frequency|36|association|9
+bullshit|frequency|18|association|9
+man|frequency|144|association|9
+mike|frequency|216|association|16
+cookson|frequency|108|association|15
+chances|frequency|126|association|16
+rcr|frequency|108|association|15
+area|frequency|162|association|8
+california|frequency|126|association|13
+girlfriend|frequency|54|association|8
+necks|frequency|144|association|9
+july|frequency|108|association|9
+rednecks|frequency|72|association|9
+wales|frequency|36|association|9
+shoot|frequency|18|association|9
+ticket|frequency|288|association|8
+downey|frequency|108|association|8
+reply|frequency|72|association|8
+berkeley|frequency|18|association|8
+note|frequency|144|association|9
+quiche|frequency|108|association|9
+ferns|frequency|72|association|9
+fun|frequency|36|association|9
+sister|frequency|180|association|9
+ass|frequency|144|association|9
+feet|frequency|270|association|17
+flhs|frequency|108|association|9
+mouth|frequency|72|association|9
+nicholas|frequency|162|association|9
+someone|frequency|342|association|25
+something|frequency|486|association|35
+anything|frequency|216|association|17
+environment|frequency|108|association|9
+way|frequency|18|association|9
+stafford|frequency|144|association|9
+bunis|frequency|126|association|9
+rubs|frequency|72|association|9
+decal|frequency|36|association|9
+waterloo|frequency|54|association|8
+fact|frequency|144|association|9
+wizards|frequency|162|association|17
+yang|frequency|108|association|9
+cats|frequency|90|association|9
+options|frequency|54|association|9
+ears|frequency|36|association|9
+dogs|frequency|18|association|9
+cooper|frequency|126|association|7
+sale|frequency|112|association|7
+cheers|frequency|98|association|7
+dave|frequency|142|association|16
+seller|frequency|56|association|7
+paul|frequency|42|association|7
+interceptor|frequency|126|association|9
+windscreens|frequency|36|association|9
+policies|frequency|180|association|9
+board|frequency|162|association|9
+door|frequency|144|association|9
+facilities|frequency|126|association|9
+expense|frequency|108|association|9
+satisfaction|frequency|90|association|9
+arms|frequency|126|association|8
+boots|frequency|54|association|8
+first|frequency|72|association|17
+shipping|frequency|162|association|9
+recording|frequency|144|association|9
+anyone|frequency|700|association|50
+kirschenbaum|frequency|90|association|9
+wbcn|frequency|72|association|9
+ri|frequency|36|association|9
+motorcycle|frequency|140|association|7
+faq|frequency|70|association|7
+outriggers|frequency|42|association|7
+questions|frequency|162|association|9
+entry|frequency|144|association|9
+tool|frequency|126|association|9
+dod|frequency|36|association|9
+finger|frequency|18|association|9
+usage|frequency|108|association|9
+volitiles|frequency|90|association|9
+water|frequency|72|association|9
+ge|frequency|18|association|9
+svoboda|frequency|162|association|9
+ama|frequency|144|association|9
+ding|frequency|108|association|9
+concours|frequency|18|association|9
+backs|frequency|180|association|9
+living|frequency|162|association|9
+group|frequency|144|association|9
+shoes|frequency|126|association|9
+minds|frequency|108|association|9
+boys|frequency|72|association|8
+wednesday|frequency|18|association|8
+today|frequency|126|association|9
+gauges|frequency|90|association|9
+wheel|frequency|36|association|9
+poeple|frequency|144|association|9
+cruiser|frequency|54|association|9
+buggy|frequency|36|association|9
+crutches|frequency|304|association|8
+front|frequency|108|association|8
+friday|frequency|72|association|8
+mais|frequency|108|association|9
+je|frequency|72|association|9
+communication|frequency|18|association|9
+projects|frequency|252|association|10
+blakey|frequency|164|association|10
+plans|frequency|124|association|10
+output|frequency|180|association|9
+purposes|frequency|162|association|9
+software|frequency|108|association|9
+hope|frequency|72|association|9
+transistors|frequency|54|association|9
+measure|frequency|36|association|9
+port|frequency|18|association|9
+reference|frequency|144|association|9
+power|frequency|126|association|18
+notation|frequency|18|association|9
+penny|frequency|108|association|8
+giles|frequency|36|association|8
+radar|frequency|162|association|9
+word|frequency|144|association|9
+ability|frequency|90|association|9
+skill|frequency|72|association|9
+mark|frequency|54|association|9
+office|frequency|162|association|9
+transformers|frequency|162|association|18
+machine|frequency|180|association|18
+rmx|frequency|180|association|9
+anybody|frequency|198|association|18
+email|frequency|324|association|27
+use|frequency|180|association|18
+bull|frequency|36|association|9
+martin|frequency|162|association|9
+sounds|frequency|144|association|9
+wayne|frequency|198|association|18
+timing|frequency|180|association|18
+snow|frequency|72|association|9
+problems|frequency|54|association|9
+reciever|frequency|18|association|9
+self|frequency|144|association|9
+buns|frequency|108|association|9
+details|frequency|72|association|9
+calabration|frequency|54|association|9
+murder|frequency|36|association|9
+show|frequency|18|association|9
+eplds|frequency|180|association|9
+chains|frequency|90|association|9
+advance|frequency|234|association|23
+fools|frequency|18|association|9
+jet|frequency|80|association|8
+habit|frequency|64|association|8
+airplane|frequency|48|association|8
+knots|frequency|32|association|8
+site|frequency|128|association|8
+response|frequency|48|association|8
+bell|frequency|144|association|9
+tomorrow|frequency|54|association|9
+sockets|frequency|18|association|9
+chip|frequency|136|association|17
+timer|frequency|36|association|8
+degrees|frequency|126|association|9
+lap|frequency|36|association|9
+caps|frequency|18|association|9
+computer|frequency|270|association|18
+pc|frequency|126|association|9
+control|frequency|144|association|18
+protection|frequency|108|association|18
+university|frequency|234|association|17
+louisville|frequency|126|association|9
+protel|frequency|36|association|9
+bus|frequency|306|association|18
+call|frequency|324|association|17
+views|frequency|90|association|9
+isolated|frequency|108|association|9
+john|frequency|90|association|9
+australia|frequency|72|association|9
+laird|frequency|36|association|9
+documentation|frequency|144|association|13
+system|frequency|126|association|13
+experience|frequency|180|association|26
+rogers|frequency|144|association|9
+signal|frequency|126|association|9
+tesla|frequency|90|association|9
+methods|frequency|72|association|9
+noise|frequency|54|association|9
+kind|frequency|36|association|9
+april|frequency|216|association|18
+flea|frequency|144|association|9
+things|frequency|60|association|3
+aftershave|frequency|54|association|3
+nz|frequency|48|association|3
+desonia|frequency|126|association|9
+eff|frequency|90|association|9
+original|frequency|72|association|9
+scopes|frequency|180|association|9
+students|frequency|54|association|9
+school|frequency|72|association|17
+string|frequency|180|association|9
+brightness|frequency|144|association|9
+bulbs|frequency|54|association|9
+xmas|frequency|36|association|9
+hands|frequency|162|association|9
+research|frequency|18|association|9
+blues|frequency|306|association|16
+availability|frequency|180|association|16
+fyzzicks|frequency|90|association|8
+trouble|frequency|54|association|8
+niemeyer|frequency|18|association|8
+radio|frequency|126|association|9
+hook|frequency|108|association|9
+indicators|frequency|90|association|9
+circuits|frequency|54|association|9
+device|frequency|18|association|9
+lecturer|frequency|108|association|9
+subdirectories|frequency|72|association|9
+pads|frequency|54|association|9
+schematics|frequency|36|association|9
+chris|frequency|18|association|9
+frequency|frequency|270|association|16
+u|frequency|126|association|9
+glinos|frequency|90|association|9
+line|frequency|18|association|9
+circuit|frequency|90|association|18
+stephens|frequency|160|association|8
+model|frequency|108|association|8
+equipment|frequency|90|association|8
+stereo|frequency|18|association|8
+correction|frequency|162|association|9
+thing|frequency|108|association|9
+god|frequency|90|association|9
+ghod|frequency|54|association|9
+attitude|frequency|36|association|9
+myers|frequency|18|association|9
+buses|frequency|180|association|9
+mon|frequency|72|association|9
+smtp|frequency|36|association|9
+macrae|frequency|18|association|9
+hv|frequency|108|association|9
+sources|frequency|90|association|9
+tube|frequency|36|association|9
+wire|frequency|162|association|9
+base|frequency|108|association|9
+dram|frequency|180|association|9
+controller|frequency|144|association|9
+industries|frequency|180|association|9
+radios|frequency|162|association|9
+lights|frequency|144|association|9
+cars|frequency|108|association|9
+homes|frequency|72|association|9
+peril|frequency|54|association|9

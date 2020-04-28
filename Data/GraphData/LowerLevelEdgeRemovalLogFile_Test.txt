@@ -1,687 +1,503 @@
-Soruce: timing
-martin | 4 | sounds | 4 | wayne | 4 | snow | 4 | self | 6 | buns | 6 | c | 6 | today | 6 | degrees | 4 | lap | 4 | 
-caps | 4 | school | 4 | frequency | 8 | crystal | 8 | quartz | 8 | 
-Mean: 5.333333333333333
-SD Value: 1.577621275493231
-Soruce: school
-timing | 2 | degrees | 2 | lap | 2 | caps | 2 | computer | 6 | scopes | 6 | students | 6 | button | 6 | frequency | 2 | circuit | 2 | 
-georgia | 2 | covington | 2 | blues | 4 | availability | 4 | parts | 4 | people | 4 | 
-Mean: 3.5
-SD Value: 1.6583123951777
-Soruce: email
-anybody | 6 | rmx | 6 | use | 6 | bull | 6 | machine | 4 | university | 4 | louisville | 4 | someone | 4 | thanks | 8 | wire | 8 | 
-base | 8 | 
-Mean: 5.818181818181818
-SD Value: 1.5850541612875175
-Edges Remove From email to machine
-Edges Remove From email to university
-Edges Remove From email to louisville
-Edges Remove From email to someone
-Soruce: computer
-pc | 10 | control | 10 | protection | 10 | soh | 10 | school | 4 | scopes | 4 | students | 4 | button | 4 | industries | 4 | radios | 4 | 
-lights | 4 | cars | 4 | 
-Mean: 6.0
-SD Value: 2.8284271247461903
-Soruce: frequency
-timing | 10 | crystal | 10 | quartz | 10 | school | 10 | circuit | 10 | georgia | 10 | covington | 10 | 
+Soruce: couple hours
+norman hamer | 6 | confidence | 6 | reactions | 6 | mike muise | 8 | body mass | 4 | thumb | 4 | 
+Mean: 5.666666666666667
+SD Value: 1.3743685418725535
+Edges Remove From couple hours to body mass
+Edges Remove From couple hours to thumb
+Soruce: bikers
+friendly riders | 8 | area | 8 | cultural heritage | 6 | 
+Mean: 7.333333333333333
+SD Value: 0.9428090415820634
+Edges Remove From bikers to cultural heritage
+Soruce: mike muise
+couple hours | 18 | body mass | 18 | thumb | 18 | 
+Mean: 18.0
+SD Value: 0.0
+Soruce: crutches
+right leg | 18 | mike | 18 | front | 18 | 
+Mean: 18.0
+SD Value: 0.0
+Soruce: pink tools
+diving | 10 | girlfriends | 10 | one | 10 | 
 Mean: 10.0
 SD Value: 0.0
-Soruce: thanks
-eplds | 2 | something | 2 | chains | 2 | anything | 2 | advance | 10 | chip | 10 | timer | 10 | email | 2 | wire | 2 | base | 2 | 
-Mean: 4.4
-SD Value: 3.6660605559646724
-Soruce: anybody
-power | 2 | office | 2 | transformers | 2 | machine | 2 | rmx | 8 | email | 8 | use | 8 | bull | 8 | correction | 2 | thing | 2 | 
-god | 2 | 
-Mean: 4.181818181818182
-SD Value: 2.886274157525008
-Soruce: experience
-documentation | 4 | system | 4 | unit | 4 | call | 6 | desonia | 6 | eff | 6 | original | 6 | university | 2 | stephens | 2 | model | 2 | 
-equipment | 2 | 
-Mean: 4.0
-SD Value: 1.7056057308448835
-Edges Remove From experience to university
-Edges Remove From experience to stephens
-Edges Remove From experience to model
-Edges Remove From experience to equipment
-Soruce: blues
-availability | 20 | fyzzicks | 10 | trouble | 10 | school | 10 | parts | 10 | people | 10 | 
-Mean: 11.666666666666666
-SD Value: 3.726779962499649
+Soruce: right foot
+phil stone | 10 | funny looks | 10 | ankle | 10 | point | 10 | 
+Mean: 10.0
+SD Value: 0.0
+Soruce: like bombing fish
+john stafford | 10 | calamine lotion | 10 | necks | 10 | july | 10 | 
+Mean: 10.0
+SD Value: 0.0
+Soruce: geeky stickers
+fern bar | 10 | note | 10 | quiche | 10 | 
+Mean: 10.0
+SD Value: 0.0
+Soruce: curtis jackson
+public safety | 10 | thomas jefferson | 10 | nicholas | 10 | 
+Mean: 10.0
+SD Value: 0.0
+Soruce: erik asphaug
+something | 10 | anything | 10 | environment | 10 | 
+Mean: 10.0
+SD Value: 0.0
+Soruce: dod paraphernalia
+thicker vinyl | 10 | standard disclaimers | 10 | stafford | 10 | bunis | 10 | 
+Mean: 10.0
+SD Value: 0.0
+Soruce: brand new top end chambers
+email address | 10 | cooper | 10 | sale | 10 | cheers | 10 | 
+Mean: 10.0
+SD Value: 0.0
+Soruce: local plastic shop
+plastic bits | 10 | tap plastic | 10 | several excellent products | 10 | interceptor | 10 | 
+Mean: 10.0
+SD Value: 0.0
+Soruce: better gloves
+next purchase | 10 | protective gear | 10 | arms | 10 | 
+Mean: 10.0
+SD Value: 0.0
+Soruce: flight bag
+whole station | 10 | shipping | 10 | recording | 10 | anyone | 10 | 
+Mean: 10.0
+SD Value: 0.0
+Soruce: whole rear end
+nicholas coburn | 10 | light green stripes | 10 | full fairing | 10 | today | 10 | 
+Mean: 10.0
+SD Value: 0.0
+Soruce: confidence
+couple hours | 10 | norman hamer | 10 | reactions | 10 | 
+Mean: 10.0
+SD Value: 0.0
+Soruce: harley
+harleys | 10 | mail | 10 | flames | 10 | 
+Mean: 10.0
+SD Value: 0.0
+Soruce: sister
+bikes | 10 | ass | 10 | flhs | 10 | 
+Mean: 10.0
+SD Value: 0.0
+Soruce: policies
+board | 10 | door | 10 | facilities | 10 | expense | 10 | 
+Mean: 10.0
+SD Value: 0.0
+Soruce: motorcycle
+right handle | 10 | countersteering faq | 10 | article | 10 | 
+Mean: 10.0
+SD Value: 0.0
+Soruce: backs
+living | 10 | group | 10 | shoes | 10 | minds | 10 | 
+Mean: 10.0
+SD Value: 0.0
+Soruce: ticket
+david brown ed | 16 | california edition | 16 | downey | 16 | 
+Mean: 16.0
+SD Value: 0.0
+Soruce: local motorcycle club
+name | 8 | membership | 8 | request | 8 | 
+Mean: 8.0
+SD Value: 0.0
+Soruce: kinda people
+lotsa leaning bends | 8 | good things | 8 | mood | 8 | 
+Mean: 8.0
+SD Value: 0.0
+Soruce: big bore
+hand guns | 8 | man | 8 | 
+Mean: 8.0
+SD Value: 0.0
+Soruce: john stafford
+like bombing fish | 8 | calamine lotion | 8 | necks | 8 | july | 8 | 
+Mean: 8.0
+SD Value: 0.0
+Soruce: thicker vinyl
+dod paraphernalia | 8 | standard disclaimers | 8 | stafford | 8 | bunis | 8 | 
+Mean: 8.0
+SD Value: 0.0
+Soruce: plastic bits
+local plastic shop | 8 | tap plastic | 8 | several excellent products | 8 | interceptor | 8 | 
+Mean: 8.0
+SD Value: 0.0
+Soruce: next purchase
+better gloves | 8 | protective gear | 8 | arms | 8 | 
+Mean: 8.0
+SD Value: 0.0
+Soruce: train engines
+power units | 8 | synthetic engi | 8 | usage | 8 | 
+Mean: 8.0
+SD Value: 0.0
+Soruce: nicholas coburn
+whole rear end | 8 | light green stripes | 8 | full fairing | 8 | today | 8 | 
+Mean: 8.0
+SD Value: 0.0
+Soruce: helmetless motorcyclists
+last night | 8 | snow skis | 8 | poeple | 8 | 
+Mean: 8.0
+SD Value: 0.0
+Soruce: diving
+pink tools | 8 | girlfriends | 8 | one | 8 | 
+Mean: 8.0
+SD Value: 0.0
+Soruce: ankle
+right foot | 8 | phil stone | 8 | funny looks | 8 | point | 8 | 
+Mean: 8.0
+SD Value: 0.0
+Soruce: reactions
+couple hours | 8 | norman hamer | 8 | confidence | 8 | 
+Mean: 8.0
+SD Value: 0.0
+Soruce: harleys
+harley | 8 | mail | 8 | flames | 8 | 
+Mean: 8.0
+SD Value: 0.0
+Soruce: bikes
+sister | 8 | ass | 8 | flhs | 8 | 
+Mean: 8.0
+SD Value: 0.0
+Soruce: nicholas
+curtis jackson | 8 | public safety | 8 | thomas jefferson | 8 | 
+Mean: 8.0
+SD Value: 0.0
 Soruce: something
-eplds | 8 | chains | 8 | anything | 8 | thanks | 8 | radio | 10 | hook | 10 | indicators | 10 | circuits | 10 | 
-Mean: 9.0
-SD Value: 1.0
-Soruce: bus
-call | 10 | views | 10 | desonia | 10 | eff | 10 | april | 8 | buses | 8 | mon | 8 | smtp | 8 | 
-Mean: 9.0
-SD Value: 1.0
-Soruce: john
-information | 8 | data | 8 | goldmine | 8 | protection | 8 | isolated | 8 | australia | 8 | laird | 8 | 
+erik asphaug | 8 | anything | 8 | environment | 8 | 
 Mean: 8.0
 SD Value: 0.0
-Soruce: call
-bus | 8 | views | 8 | desonia | 18 | eff | 18 | experience | 10 | original | 10 | 
-Mean: 12.0
-SD Value: 4.320493798938574
-Soruce: documentation
-system | 18 | experience | 10 | unit | 10 | guide | 8 | interface | 8 | 
-Mean: 10.8
-SD Value: 3.7094473981982814
-Soruce: details
-calabration | 10 | murder | 10 | show | 10 | rumors | 10 | april | 4 | flea | 4 | mit | 4 | jack | 4 | 
-Mean: 7.0
-SD Value: 3.0
-Soruce: university
-machine | 10 | email | 10 | louisville | 10 | someone | 10 | experience | 4 | stephens | 4 | model | 4 | equipment | 4 | 
-Mean: 7.0
-SD Value: 3.0
-Soruce: april
-details | 10 | flea | 10 | mit | 10 | jack | 10 | bus | 4 | buses | 4 | mon | 4 | smtp | 4 | 
-Mean: 7.0
-SD Value: 3.0
-Soruce: system
-documentation | 16 | experience | 6 | unit | 6 | guide | 10 | interface | 10 | 
-Mean: 9.6
-SD Value: 3.6660605559646715
-Soruce: availability
-blues | 14 | fyzzicks | 8 | trouble | 8 | school | 6 | parts | 6 | people | 6 | 
+Soruce: cooper
+brand new top end chambers | 8 | email address | 8 | sale | 8 | cheers | 8 | 
 Mean: 8.0
-SD Value: 2.8284271247461903
-Soruce: wayne
-martin | 6 | sounds | 6 | timing | 6 | snow | 6 | chip | 6 | circuit | 6 | dram | 6 | controller | 6 | 
+SD Value: 0.0
+Soruce: board
+policies | 8 | door | 8 | facilities | 8 | expense | 8 | 
+Mean: 8.0
+SD Value: 0.0
+Soruce: shipping
+flight bag | 8 | whole station | 8 | recording | 8 | anyone | 8 | 
+Mean: 8.0
+SD Value: 0.0
+Soruce: questions
+inane mail | 8 | entry | 8 | tool | 8 | 
+Mean: 8.0
+SD Value: 0.0
+Soruce: svoboda
+ama | 8 | ding | 8 | 
+Mean: 8.0
+SD Value: 0.0
+Soruce: living
+backs | 8 | group | 8 | shoes | 8 | minds | 8 | 
+Mean: 8.0
+SD Value: 0.0
+Soruce: cultural heritage
+bikers | 20 | 
+Mean: 20.0
+SD Value: 0.0
+Soruce: phil stone
+right foot | 6 | funny looks | 6 | ankle | 6 | point | 6 | 
 Mean: 6.0
 SD Value: 0.0
-Soruce: control
-computer | 6 | pc | 6 | protection | 6 | soh | 6 | u | 6 | glinos | 6 | line | 6 | project | 6 | 
+Soruce: public safety
+curtis jackson | 6 | thomas jefferson | 6 | nicholas | 6 | 
 Mean: 6.0
 SD Value: 0.0
-Soruce: power
-reference | 8 | notation | 8 | office | 12 | transformers | 4 | machine | 4 | anybody | 4 | 
-Mean: 6.666666666666667
-SD Value: 2.9814239699997196
-Soruce: office
-reference | 2 | power | 12 | notation | 2 | transformers | 10 | machine | 10 | anybody | 10 | 
-Mean: 7.666666666666667
-SD Value: 4.068851871911234
-Edges Remove From office to reference
-Edges Remove From office to notation
-Soruce: use
-anybody | 4 | rmx | 4 | email | 4 | bull | 4 | bell | 6 | tomorrow | 6 | first | 6 | 
-Mean: 4.857142857142857
-SD Value: 0.989743318610787
-Soruce: circuit
-school | 8 | frequency | 8 | georgia | 8 | covington | 8 | wayne | 2 | chip | 2 | dram | 2 | controller | 2 | 
-Mean: 5.0
-SD Value: 3.0
-Soruce: projects
-blakey | 18 | plans | 18 | site | 10 | 
-Mean: 15.333333333333334
-SD Value: 3.7712361663282534
-Edges Remove From projects to site
-Soruce: desonia
-bus | 4 | call | 12 | views | 4 | eff | 12 | experience | 8 | original | 8 | 
-Mean: 8.0
-SD Value: 3.265986323710904
-Edges Remove From desonia to bus
-Edges Remove From desonia to views
-Soruce: machine
-power | 6 | office | 6 | transformers | 6 | anybody | 6 | email | 2 | university | 2 | louisville | 2 | someone | 2 | 
-Mean: 4.0
-SD Value: 2.0
-Soruce: chip
-thanks | 4 | advance | 4 | timer | 4 | wayne | 4 | circuit | 4 | dram | 4 | controller | 4 | 
-Mean: 4.0
-SD Value: 0.0
-Soruce: protection
-computer | 4 | pc | 4 | control | 4 | soh | 4 | john | 4 | isolated | 4 | australia | 4 | laird | 4 | 
-Mean: 4.0
-SD Value: 0.0
-Soruce: mais
-je | 10 | communication | 10 | thompson | 10 | chance | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: output
-purposes | 10 | software | 10 | hope | 10 | transistors | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: reference
-power | 10 | notation | 10 | office | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: penny
-giles | 10 | everything | 10 | theunissen | 10 | folks | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: radar
-word | 10 | ability | 10 | skill | 10 | mark | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: rmx
-anybody | 10 | email | 10 | use | 10 | bull | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: martin
-sounds | 10 | wayne | 10 | timing | 10 | snow | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: self
-timing | 10 | buns | 10 | c | 10 | today | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: eplds
-something | 10 | chains | 10 | anything | 10 | thanks | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: bell
-use | 10 | tomorrow | 10 | first | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: degrees
-timing | 10 | lap | 10 | caps | 10 | school | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: information
-john | 10 | data | 10 | goldmine | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: isolated
-protection | 10 | john | 10 | australia | 10 | laird | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: time
-rogers | 10 | signal | 10 | tesla | 10 | methods | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: scopes
-school | 10 | computer | 10 | students | 10 | button | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: string
-brightness | 10 | bulbs | 10 | xmas | 10 | rtn | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: hands
-research | 10 | guns | 10 | breadboards | 10 | bit | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: lecturer
-subdirectories | 10 | pads | 10 | schematics | 10 | chris | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: u
-control | 10 | glinos | 10 | line | 10 | project | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: stephens
-university | 10 | experience | 10 | model | 10 | equipment | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: correction
-anybody | 10 | thing | 10 | god | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: buses
-bus | 10 | april | 10 | mon | 10 | smtp | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: hv
-sources | 10 | tube | 10 | capacitors | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: wire
-email | 10 | thanks | 10 | base | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: dram
-wayne | 10 | chip | 10 | circuit | 10 | controller | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: industries
-computer | 10 | radios | 10 | lights | 10 | cars | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: eff
-bus | 2 | call | 6 | views | 2 | desonia | 6 | experience | 4 | original | 4 | 
-Mean: 4.0
-SD Value: 1.632993161855452
-Edges Remove From eff to bus
-Edges Remove From eff to views
-Soruce: blakey
-projects | 10 | plans | 10 | site | 4 | 
-Mean: 8.0
-SD Value: 2.8284271247461903
-Edges Remove From blakey to site
-Soruce: je
-mais | 8 | communication | 8 | thompson | 8 | chance | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: purposes
-output | 8 | software | 8 | hope | 8 | transistors | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: giles
-penny | 8 | everything | 8 | theunissen | 8 | folks | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: word
-radar | 8 | ability | 8 | skill | 8 | mark | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: transformers
-power | 8 | office | 8 | machine | 8 | anybody | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: sounds
-martin | 8 | wayne | 8 | timing | 8 | snow | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: buns
-timing | 8 | self | 8 | c | 8 | today | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: calabration
-details | 8 | murder | 8 | show | 8 | rumors | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: site
-projects | 8 | blakey | 8 | plans | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: advance
-thanks | 8 | chip | 8 | timer | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: lap
-timing | 8 | degrees | 8 | caps | 8 | school | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: pc
-computer | 8 | control | 8 | protection | 8 | soh | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: louisville
-machine | 8 | email | 8 | university | 8 | someone | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: rogers
-time | 8 | signal | 8 | tesla | 8 | methods | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: flea
-details | 8 | april | 8 | mit | 8 | jack | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: students
-school | 8 | computer | 8 | scopes | 8 | button | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: brightness
-string | 8 | bulbs | 8 | xmas | 8 | rtn | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: research
-hands | 8 | guns | 8 | breadboards | 8 | bit | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: radio
-something | 8 | hook | 8 | indicators | 8 | circuits | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: subdirectories
-lecturer | 8 | pads | 8 | schematics | 8 | chris | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: glinos
-control | 8 | u | 8 | line | 8 | project | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: model
-university | 8 | experience | 8 | stephens | 8 | equipment | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: sources
-hv | 8 | tube | 8 | capacitors | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: parts
-school | 8 | blues | 8 | availability | 8 | people | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: controller
-wayne | 8 | chip | 8 | circuit | 8 | dram | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: radios
-computer | 8 | industries | 8 | lights | 8 | cars | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: communication
-mais | 6 | je | 6 | thompson | 6 | chance | 6 | 
+Soruce: tap plastic
+local plastic shop | 6 | plastic bits | 6 | several excellent products | 6 | interceptor | 6 | 
 Mean: 6.0
 SD Value: 0.0
-Soruce: software
-output | 6 | purposes | 6 | hope | 6 | transistors | 6 | 
+Soruce: right handle
+countersteering faq | 6 | motorcycle | 6 | article | 6 | 
 Mean: 6.0
 SD Value: 0.0
-Soruce: everything
-penny | 6 | giles | 6 | theunissen | 6 | folks | 6 | 
+Soruce: power units
+train engines | 6 | synthetic engi | 6 | usage | 6 | 
 Mean: 6.0
 SD Value: 0.0
-Soruce: ability
-radar | 6 | word | 6 | skill | 6 | mark | 6 | 
+Soruce: light green stripes
+whole rear end | 6 | nicholas coburn | 6 | full fairing | 6 | today | 6 | 
 Mean: 6.0
 SD Value: 0.0
-Soruce: murder
-details | 6 | calabration | 6 | show | 6 | rumors | 6 | 
+Soruce: name
+local motorcycle club | 6 | membership | 6 | request | 6 | 
 Mean: 6.0
 SD Value: 0.0
-Soruce: chains
-eplds | 6 | something | 6 | anything | 6 | thanks | 6 | 
+Soruce: girlfriends
+pink tools | 6 | diving | 6 | one | 6 | 
 Mean: 6.0
 SD Value: 0.0
-Soruce: caps
-timing | 6 | degrees | 6 | lap | 6 | school | 6 | 
+Soruce: mood
+kinda people | 6 | lotsa leaning bends | 6 | good things | 6 | 
 Mean: 6.0
 SD Value: 0.0
-Soruce: someone
-machine | 6 | email | 6 | university | 6 | louisville | 6 | 
+Soruce: man
+big bore | 6 | hand guns | 6 | 
 Mean: 6.0
 SD Value: 0.0
-Soruce: data
-information | 6 | john | 6 | goldmine | 6 | 
+Soruce: necks
+like bombing fish | 6 | john stafford | 6 | calamine lotion | 6 | july | 6 | 
 Mean: 6.0
 SD Value: 0.0
-Soruce: views
-bus | 6 | call | 6 | desonia | 6 | eff | 6 | 
+Soruce: note
+geeky stickers | 6 | fern bar | 6 | quiche | 6 | 
 Mean: 6.0
 SD Value: 0.0
-Soruce: australia
-protection | 6 | john | 6 | isolated | 6 | laird | 6 | 
+Soruce: ass
+sister | 6 | bikes | 6 | flhs | 6 | 
 Mean: 6.0
-SD Value: 0.0
-Soruce: signal
-time | 6 | rogers | 6 | tesla | 6 | methods | 6 | 
-Mean: 6.0
-SD Value: 0.0
-Soruce: mit
-details | 6 | april | 6 | flea | 6 | jack | 6 | 
-Mean: 6.0
-SD Value: 0.0
-Soruce: bulbs
-string | 6 | brightness | 6 | xmas | 6 | rtn | 6 | 
-Mean: 6.0
-SD Value: 0.0
-Soruce: guns
-hands | 6 | research | 6 | breadboards | 6 | bit | 6 | 
-Mean: 6.0
-SD Value: 0.0
-Soruce: fyzzicks
-blues | 6 | availability | 6 | trouble | 6 | 
-Mean: 6.0
-SD Value: 0.0
-Soruce: hook
-something | 6 | radio | 6 | indicators | 6 | circuits | 6 | 
-Mean: 6.0
-SD Value: 0.0
-Soruce: pads
-lecturer | 6 | subdirectories | 6 | schematics | 6 | chris | 6 | 
-Mean: 6.0
-SD Value: 0.0
-Soruce: guide
-documentation | 6 | system | 6 | interface | 6 | 
-Mean: 6.0
-SD Value: 0.0
-Soruce: georgia
-school | 6 | frequency | 6 | circuit | 6 | covington | 6 | 
-Mean: 6.0
-SD Value: 0.0
-Soruce: equipment
-university | 6 | experience | 6 | stephens | 6 | model | 6 | 
-Mean: 6.0
-SD Value: 0.0
-Soruce: thing
-anybody | 6 | correction | 6 | god | 6 | 
-Mean: 6.0
-SD Value: 0.0
-Soruce: mon
-bus | 6 | april | 6 | buses | 6 | smtp | 6 | 
-Mean: 6.0
-SD Value: 0.0
-Soruce: tube
-hv | 6 | sources | 6 | capacitors | 6 | 
-Mean: 6.0
-SD Value: 0.0
-Soruce: base
-email | 6 | thanks | 6 | wire | 6 | 
-Mean: 6.0
-SD Value: 0.0
-Soruce: lights
-computer | 6 | industries | 6 | radios | 6 | cars | 6 | 
-Mean: 6.0
-SD Value: 0.0
-Soruce: jet
-habit | 10 | airplane | 10 | knots | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: plans
-projects | 6 | blakey | 6 | site | 2 | 
-Mean: 4.666666666666667
-SD Value: 1.8856180831641267
-Edges Remove From plans to site
-Soruce: habit
-jet | 8 | airplane | 8 | knots | 8 | 
-Mean: 8.0
-SD Value: 0.0
-Soruce: thompson
-mais | 4 | je | 4 | communication | 4 | chance | 4 | 
-Mean: 4.0
-SD Value: 0.0
-Soruce: hope
-output | 4 | purposes | 4 | software | 4 | transistors | 4 | 
-Mean: 4.0
-SD Value: 0.0
-Soruce: notation
-reference | 4 | power | 4 | office | 4 | 
-Mean: 4.0
-SD Value: 0.0
-Soruce: theunissen
-penny | 4 | giles | 4 | everything | 4 | folks | 4 | 
-Mean: 4.0
-SD Value: 0.0
-Soruce: skill
-radar | 4 | word | 4 | ability | 4 | mark | 4 | 
-Mean: 4.0
-SD Value: 0.0
-Soruce: c
-timing | 4 | self | 4 | buns | 4 | today | 4 | 
-Mean: 4.0
-SD Value: 0.0
-Soruce: show
-details | 4 | calabration | 4 | murder | 4 | rumors | 4 | 
-Mean: 4.0
 SD Value: 0.0
 Soruce: anything
-eplds | 4 | something | 4 | chains | 4 | thanks | 4 | 
-Mean: 4.0
-SD Value: 0.0
-Soruce: tomorrow
-use | 4 | bell | 4 | first | 4 | 
-Mean: 4.0
-SD Value: 0.0
-Soruce: tesla
-time | 4 | rogers | 4 | signal | 4 | methods | 4 | 
-Mean: 4.0
-SD Value: 0.0
-Soruce: xmas
-string | 4 | brightness | 4 | bulbs | 4 | rtn | 4 | 
-Mean: 4.0
-SD Value: 0.0
-Soruce: breadboards
-hands | 4 | research | 4 | guns | 4 | bit | 4 | 
-Mean: 4.0
-SD Value: 0.0
-Soruce: indicators
-something | 4 | radio | 4 | hook | 4 | circuits | 4 | 
-Mean: 4.0
-SD Value: 0.0
-Soruce: schematics
-lecturer | 4 | subdirectories | 4 | pads | 4 | chris | 4 | 
-Mean: 4.0
-SD Value: 0.0
-Soruce: crystal
-timing | 4 | frequency | 4 | quartz | 4 | 
-Mean: 4.0
-SD Value: 0.0
-Soruce: line
-control | 4 | u | 4 | glinos | 4 | project | 4 | 
-Mean: 4.0
-SD Value: 0.0
-Soruce: covington
-school | 4 | frequency | 4 | circuit | 4 | georgia | 4 | 
-Mean: 4.0
-SD Value: 0.0
-Soruce: god
-anybody | 4 | correction | 4 | thing | 4 | 
-Mean: 4.0
-SD Value: 0.0
-Soruce: airplane
-jet | 6 | habit | 6 | knots | 6 | 
+erik asphaug | 6 | something | 6 | environment | 6 | 
 Mean: 6.0
 SD Value: 0.0
-Soruce: chance
-mais | 2 | je | 2 | communication | 2 | thompson | 2 | 
-Mean: 2.0
+Soruce: stafford
+dod paraphernalia | 6 | thicker vinyl | 6 | standard disclaimers | 6 | bunis | 6 | 
+Mean: 6.0
 SD Value: 0.0
-Soruce: transistors
-output | 2 | purposes | 2 | software | 2 | hope | 2 | 
-Mean: 2.0
+Soruce: fact
+wizards | 6 | yang | 6 | 
+Mean: 6.0
 SD Value: 0.0
-Soruce: folks
-penny | 2 | giles | 2 | everything | 2 | theunissen | 2 | 
-Mean: 2.0
+Soruce: sale
+brand new top end chambers | 6 | email address | 6 | cooper | 6 | cheers | 6 | 
+Mean: 6.0
 SD Value: 0.0
-Soruce: mark
-radar | 2 | word | 2 | ability | 2 | skill | 2 | 
-Mean: 2.0
+Soruce: door
+policies | 6 | board | 6 | facilities | 6 | expense | 6 | 
+Mean: 6.0
 SD Value: 0.0
-Soruce: bull
-anybody | 2 | rmx | 2 | email | 2 | use | 2 | 
-Mean: 2.0
+Soruce: recording
+flight bag | 6 | whole station | 6 | shipping | 6 | anyone | 6 | 
+Mean: 6.0
 SD Value: 0.0
-Soruce: snow
-martin | 2 | sounds | 2 | wayne | 2 | timing | 2 | 
-Mean: 2.0
+Soruce: entry
+inane mail | 6 | questions | 6 | tool | 6 | 
+Mean: 6.0
+SD Value: 0.0
+Soruce: ama
+svoboda | 6 | ding | 6 | 
+Mean: 6.0
+SD Value: 0.0
+Soruce: group
+backs | 6 | living | 6 | shoes | 6 | minds | 6 | 
+Mean: 6.0
+SD Value: 0.0
+Soruce: poeple
+helmetless motorcyclists | 6 | last night | 6 | snow skis | 6 | 
+Mean: 6.0
+SD Value: 0.0
+Soruce: david brown ed
+california edition | 8 | ticket | 16 | downey | 8 | 
+Mean: 10.666666666666666
+SD Value: 3.7712361663282534
+Soruce: area
+friendly riders | 8 | bikers | 16 | 
+Mean: 12.0
+SD Value: 4.0
+Soruce: norman hamer
+couple hours | 4 | confidence | 4 | reactions | 4 | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: lotsa leaning bends
+kinda people | 4 | good things | 4 | mood | 4 | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: hand guns
+big bore | 4 | man | 4 | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: calamine lotion
+like bombing fish | 4 | john stafford | 4 | necks | 4 | july | 4 | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: fern bar
+geeky stickers | 4 | note | 4 | quiche | 4 | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: thomas jefferson
+curtis jackson | 4 | public safety | 4 | nicholas | 4 | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: whole station
+flight bag | 4 | shipping | 4 | recording | 4 | anyone | 4 | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: countersteering faq
+right handle | 4 | motorcycle | 4 | article | 4 | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: synthetic engi
+train engines | 4 | power units | 4 | usage | 4 | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: last night
+helmetless motorcyclists | 4 | snow skis | 4 | poeple | 4 | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: membership
+local motorcycle club | 4 | name | 4 | request | 4 | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: point
+right foot | 4 | phil stone | 4 | funny looks | 4 | ankle | 4 | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: mail
+harley | 4 | harleys | 4 | flames | 4 | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: bunis
+dod paraphernalia | 4 | thicker vinyl | 4 | standard disclaimers | 4 | stafford | 4 | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: wizards
+fact | 4 | yang | 4 | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: cheers
+brand new top end chambers | 4 | email address | 4 | cooper | 4 | sale | 4 | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: interceptor
+local plastic shop | 4 | plastic bits | 4 | tap plastic | 4 | several excellent products | 4 | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: facilities
+policies | 4 | board | 4 | door | 4 | expense | 4 | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: arms
+better gloves | 4 | next purchase | 4 | protective gear | 4 | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: tool
+inane mail | 4 | questions | 4 | entry | 4 | 
+Mean: 4.0
+SD Value: 0.0
+Soruce: shoes
+backs | 4 | living | 4 | group | 4 | minds | 4 | 
+Mean: 4.0
 SD Value: 0.0
 Soruce: today
-timing | 2 | self | 2 | buns | 2 | c | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: rumors
-details | 2 | calabration | 2 | murder | 2 | show | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: first
-use | 2 | bell | 2 | tomorrow | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: timer
-thanks | 2 | advance | 2 | chip | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: soh
-computer | 2 | pc | 2 | control | 2 | protection | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: goldmine
-information | 2 | john | 2 | data | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: laird
-protection | 2 | john | 2 | isolated | 2 | australia | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: unit
-documentation | 2 | system | 2 | experience | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: methods
-time | 2 | rogers | 2 | signal | 2 | tesla | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: jack
-details | 2 | april | 2 | flea | 2 | mit | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: original
-call | 2 | desonia | 2 | eff | 2 | experience | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: button
-school | 2 | computer | 2 | scopes | 2 | students | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: rtn
-string | 2 | brightness | 2 | bulbs | 2 | xmas | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: bit
-hands | 2 | research | 2 | guns | 2 | breadboards | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: trouble
-blues | 2 | availability | 2 | fyzzicks | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: circuits
-something | 2 | radio | 2 | hook | 2 | indicators | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: chris
-lecturer | 2 | subdirectories | 2 | pads | 2 | schematics | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: interface
-documentation | 2 | system | 2 | guide | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: quartz
-timing | 2 | frequency | 2 | crystal | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: project
-control | 2 | u | 2 | glinos | 2 | line | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: smtp
-bus | 2 | april | 2 | buses | 2 | mon | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: capacitors
-hv | 2 | sources | 2 | tube | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: people
-school | 2 | blues | 2 | availability | 2 | parts | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: cars
-computer | 2 | industries | 2 | radios | 2 | lights | 2 | 
-Mean: 2.0
-SD Value: 0.0
-Soruce: things
-aftershave | 10 | nz | 10 | 
-Mean: 10.0
-SD Value: 0.0
-Soruce: knots
-jet | 4 | habit | 4 | airplane | 4 | 
+whole rear end | 4 | nicholas coburn | 4 | light green stripes | 4 | full fairing | 4 | 
 Mean: 4.0
 SD Value: 0.0
-Soruce: aftershave
-things | 8 | nz | 8 | 
+Soruce: body mass
+couple hours | 6 | mike muise | 12 | thumb | 6 | 
 Mean: 8.0
+SD Value: 2.8284271247461903
+Soruce: right leg
+crutches | 12 | mike | 6 | front | 6 | 
+Mean: 8.0
+SD Value: 2.8284271247461903
+Soruce: funny looks
+right foot | 2 | phil stone | 2 | ankle | 2 | point | 2 | 
+Mean: 2.0
 SD Value: 0.0
-Soruce: nz
-things | 6 | aftershave | 6 | 
+Soruce: good things
+kinda people | 2 | lotsa leaning bends | 2 | mood | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: standard disclaimers
+dod paraphernalia | 2 | thicker vinyl | 2 | stafford | 2 | bunis | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: email address
+brand new top end chambers | 2 | cooper | 2 | sale | 2 | cheers | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: several excellent products
+local plastic shop | 2 | plastic bits | 2 | tap plastic | 2 | interceptor | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: protective gear
+better gloves | 2 | next purchase | 2 | arms | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: inane mail
+questions | 2 | entry | 2 | tool | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: full fairing
+whole rear end | 2 | nicholas coburn | 2 | light green stripes | 2 | today | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: snow skis
+helmetless motorcyclists | 2 | last night | 2 | poeple | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: request
+local motorcycle club | 2 | name | 2 | membership | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: one
+pink tools | 2 | diving | 2 | girlfriends | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: flames
+harley | 2 | harleys | 2 | mail | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: july
+like bombing fish | 2 | john stafford | 2 | calamine lotion | 2 | necks | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: quiche
+geeky stickers | 2 | fern bar | 2 | note | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: flhs
+sister | 2 | bikes | 2 | ass | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: environment
+erik asphaug | 2 | something | 2 | anything | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: yang
+fact | 2 | wizards | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: expense
+policies | 2 | board | 2 | door | 2 | facilities | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: anyone
+flight bag | 2 | whole station | 2 | shipping | 2 | recording | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: article
+right handle | 2 | countersteering faq | 2 | motorcycle | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: usage
+train engines | 2 | power units | 2 | synthetic engi | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: ding
+svoboda | 2 | ama | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: minds
+backs | 2 | living | 2 | group | 2 | shoes | 2 | 
+Mean: 2.0
+SD Value: 0.0
+Soruce: friendly riders
+area | 4 | bikers | 8 | 
 Mean: 6.0
-SD Value: 0.0
+SD Value: 2.0
+Soruce: california edition
+david brown ed | 4 | ticket | 8 | downey | 4 | 
+Mean: 5.333333333333333
+SD Value: 1.8856180831641267
+Soruce: mike
+right leg | 4 | crutches | 8 | front | 4 | 
+Mean: 5.333333333333333
+SD Value: 1.8856180831641267
+Soruce: downey
+david brown ed | 2 | california edition | 2 | ticket | 4 | 
+Mean: 2.6666666666666665
+SD Value: 0.9428090415820634
+Soruce: thumb
+couple hours | 2 | mike muise | 4 | body mass | 2 | 
+Mean: 2.6666666666666665
+SD Value: 0.9428090415820634
+Soruce: front
+right leg | 2 | crutches | 4 | mike | 2 | 
+Mean: 2.6666666666666665
+SD Value: 0.9428090415820634

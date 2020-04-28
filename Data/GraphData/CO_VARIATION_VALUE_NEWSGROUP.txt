@@ -1,158 +1,602 @@
-blues|11.428571428571429|3.4992710611188262|0.3061862178478973
-something|9.0|1.0|0.1111111111111111
-bus|9.0|1.0|0.1111111111111111
-john|8.0|0.0|0.0
-call|12.0|4.320493798938574|0.36004114991154784
-documentation|12.0|4.320493798938574|0.36004114991154784
-details|7.0|3.0|0.42857142857142855
-university|7.0|3.0|0.42857142857142855
-april|7.0|3.0|0.42857142857142855
-system|10.666666666666666|4.109609335312651|0.38527587518556106
-availability|8.0|2.6186146828319083|0.32732683535398854
-wayne|6.0|0.0|0.0
-control|6.0|0.0|0.0
-power|6.857142857142857|2.799416848895061|0.4082482904638631
-office|6.857142857142857|4.2570469787860965|0.6208193510729725
-use|5.0|1.0|0.2
-circuit|5.0|3.0|0.6
-projects|16.0|3.4641016151377544|0.21650635094610965
-desonia|8.0|3.265986323710904|0.408248290463863
-machine|4.0|2.0|0.5
-chip|4.0|0.0|0.0
-protection|4.0|0.0|0.0
-mais|10.0|0.0|0.0
-output|10.0|0.0|0.0
-reference|10.0|0.0|0.0
-penny|10.0|0.0|0.0
-radar|10.0|0.0|0.0
-rmx|10.0|0.0|0.0
-martin|10.0|0.0|0.0
-self|10.0|0.0|0.0
-eplds|10.0|0.0|0.0
-bell|10.0|0.0|0.0
-degrees|10.0|0.0|0.0
-information|10.0|0.0|0.0
-isolated|10.0|0.0|0.0
-time|10.0|0.0|0.0
-scopes|10.0|0.0|0.0
-string|10.0|0.0|0.0
-hands|10.0|0.0|0.0
-lecturer|10.0|0.0|0.0
-u|10.0|0.0|0.0
-stephens|10.0|0.0|0.0
-correction|10.0|0.0|0.0
-buses|10.0|0.0|0.0
-hv|10.0|0.0|0.0
-wire|10.0|0.0|0.0
-dram|10.0|0.0|0.0
-industries|10.0|0.0|0.0
-eff|4.0|1.632993161855452|0.408248290463863
-blakey|8.5|2.598076211353316|0.305656024865096
+police radar|18.0|2.0|0.1111111111111111
+advance|10.173913043478262|7.976335509891217|0.783998789433752
+call|19.058823529411764|4.658585852523137|0.24443197374349793
+bus|17.0|1.0|0.058823529411764705
+experience|6.923076923076923|4.304944178348684|0.621825270205921
+pioneer laser player|27.692307692307693|9.730085108210398|0.35136418446315326
+blues|19.125|5.337075510052299|0.27906277176744043
+curtis jackson|15.0|5.0|0.3333333333333333
+computer|15.0|1.0|0.06666666666666667
+favorite flame wars|26.307692307692307|15.900578680251355|0.6044079615300223
+nice boy|20.4|7.310266752998828|0.3583464094607269
+feet|15.882352941176471|4.142780438037415|0.26084173128383725
+harleys|14.0|4.0|0.2857142857142857
+david svoboda|19.2|7.332121111929343|0.38188130791298663
+frequency|16.875|5.048205126577168|0.29915289638975806
+alexander graham bell|14.823529411764707|6.688315484024422|0.4511958858270443
+computerised viewing|23.53846153846154|8.307692307692307|0.35294117647058815
+free usenet mail|13.764705882352942|5.734615344448913|0.41661735408389533
+university|13.764705882352942|4.845002419288|0.35198735524741875
+april|12.0|6.0|0.5
+anything|12.705882352941176|4.799077189263798|0.3777051491550212
+mail|11.0|3.0|0.2727272727272727
+anybody|11.0|3.0|0.2727272727272727
+wayne|11.0|1.0|0.09090909090909091
+couple hours|20.76923076923077|7.040037654552338|0.3389647759599274
+mike|13.5|5.123475382979799|0.37951669503554064
+machine|10.0|2.0|0.2
+use|10.0|0.0|0.0
+timing|10.0|0.0|0.0
+transformers|9.0|7.0|0.7777777777777778
+motorcycles|18.153846153846153|2.7692307692307696|0.15254237288135597
+pioneer laserdisc|18.0|6.748219138295787|0.37490106323865485
+mike muise|38.0|0.0|0.0
+rainer malzbender|38.0|0.0|0.0
+crutches|38.0|0.0|0.0
+gut feeling|11.25|4.993746088859544|0.4438885412319595
+availability|11.25|6.239991987174342|0.554665954415497
+wizards|9.529411764705882|5.292810296095055|0.5554183644050367
+parts|8.0|6.0|0.75
+control|8.0|0.0|0.0
+ticket|36.0|0.0|0.0
+projects|25.2|8.818163074019441|0.3499271061118826
+power|7.0|5.0|0.7142857142857143
+front panel power light|15.23076923076923|5.846153846153847|0.38383838383838387
+thumb|15.23076923076923|5.739925571131578|0.3768638001248006
+chip|8.0|0.0|0.0
+old data books|34.0|0.0|0.0
+dave|8.875|0.9921567416492215|0.11179230891822214
+protection|6.0|0.0|0.0
+chances|7.875|4.553501400021746|0.5782224000027614
+huge tank|5.0|3.0|0.6
+circuit|5.0|1.0|0.2
+ftp sites|19.2|7.332121111929343|0.38188130791298663
+documentation|11.076923076923077|4.999408249006744|0.45133546692421994
+cookson|7.2|2.4|0.3333333333333333
+rcr|7.2|4.308131845707603|0.5983516452371671
+first|4.235294117647059|0.9411764705882356|0.2222222222222223
+school|4.235294117647059|0.9411764705882357|0.22222222222222232
+high quality pot|26.0|0.0|0.0
+sobriety|9.692307692307692|3.830738337842687|0.3952349078726582
+california|9.692307692307692|6.413742641746408|0.6617353519262168
+system|9.692307692307692|3.4947128281847837|0.36056560925716025
+right foot|20.0|0.0|0.0
+like bombing fish|20.0|0.0|0.0
+geeky stickers|20.0|0.0|0.0
+erik asphaug|20.0|0.0|0.0
+dod paraphernalia|20.0|0.0|0.0
+local plastic shop|20.0|0.0|0.0
+flight bag|20.0|0.0|0.0
+whole rear end|20.0|0.0|0.0
+du code|20.0|0.0|0.0
+reference power|20.0|0.0|0.0
+transformer cores|20.0|0.0|0.0
+wayne alan martin|20.0|0.0|0.0
+timing cycles|20.0|0.0|0.0
+kernel mode systems|20.0|0.0|0.0
+serial data transmission|20.0|0.0|0.0
+mike harpe|20.0|0.0|0.0
+bus speeds|20.0|0.0|0.0
+john west|20.0|0.0|0.0
+sept cambridge|20.0|0.0|0.0
+wire wrapping|20.0|0.0|0.0
+electronic project books|20.0|0.0|0.0
+computing science|20.0|0.0|0.0
+suitable crystal oscillators|20.0|0.0|0.0
+tom glinos|20.0|0.0|0.0
+big problem|20.0|0.0|0.0
+david vanderbyl|20.0|0.0|0.0
+hv capacitors|20.0|0.0|0.0
+raw parts|20.0|0.0|0.0
+little blue sparks|20.0|0.0|0.0
+confidence|20.0|0.0|0.0
+harley|20.0|0.0|0.0
+sister|20.0|0.0|0.0
+policies|20.0|0.0|0.0
+backs|20.0|0.0|0.0
+output|20.0|0.0|0.0
+rmx|20.0|0.0|0.0
+eplds|20.0|0.0|0.0
+scopes|20.0|0.0|0.0
+string|20.0|0.0|0.0
+buses|20.0|0.0|0.0
+dram|20.0|0.0|0.0
+industries|20.0|0.0|0.0
+extreme cold|4.5|2.29128784747792|0.5091750772173156
+blakey|16.4|6.374950980203691|0.3887165231831519
+better gloves|22.5|6.614378277661476|0.2939723678960656
+cultural heritage|22.5|6.614378277661476|0.2939723678960656
+conductive plastic elements|22.5|6.614378277661476|0.2939723678960656
+rajan ranga|22.5|6.614378277661476|0.2939723678960656
+human factors research lab|22.5|6.614378277661476|0.2939723678960656
+local motorcycle club|18.0|0.0|0.0
+kinda people|18.0|0.0|0.0
+big bore|18.0|0.0|0.0
+john stafford|18.0|0.0|0.0
+thicker vinyl|18.0|0.0|0.0
+plastic bits|18.0|0.0|0.0
+train engines|18.0|0.0|0.0
+nicholas coburn|18.0|0.0|0.0
+helmetless motorcyclists|18.0|0.0|0.0
+disk array development|18.0|0.0|0.0
+common references|18.0|0.0|0.0
+netland help|18.0|0.0|0.0
+timing cycle|18.0|0.0|0.0
+david sharpe|18.0|0.0|0.0
+programming pals|18.0|0.0|0.0
+southwestern bell|18.0|0.0|0.0
+several timers|18.0|0.0|0.0
+power cables|18.0|0.0|0.0
+external components|18.0|0.0|0.0
+james harris rogers|18.0|0.0|0.0
+xmas light|18.0|0.0|0.0
+kyler laird|18.0|0.0|0.0
+chris hand|18.0|0.0|0.0
+pioneer technicial support|18.0|0.0|0.0
+low power quartz oscillators|18.0|0.0|0.0
+several ideas|18.0|0.0|0.0
+access bus|18.0|0.0|0.0
+numerous stores|18.0|0.0|0.0
+maximum spi clock rate|18.0|0.0|0.0
+ankle|18.0|0.0|0.0
+reactions|18.0|0.0|0.0
+nicholas|18.0|0.0|0.0
+board|18.0|0.0|0.0
+shipping|18.0|0.0|0.0
+questions|18.0|0.0|0.0
+svoboda|18.0|0.0|0.0
+living|18.0|0.0|0.0
+purposes|18.0|0.0|0.0
+radar|18.0|0.0|0.0
+office|18.0|0.0|0.0
+martin|18.0|0.0|0.0
+hands|18.0|0.0|0.0
+correction|18.0|0.0|0.0
+wire|18.0|0.0|0.0
+radios|18.0|0.0|0.0
+protective gear|22.0|0.0|0.0
+half|2.1176470588235294|0.47058823529411775|0.22222222222222227
+david brown ed|20.25|5.952940449895329|0.2939723678960656
+next purchase|20.25|5.952940449895329|0.2939723678960656
+scott dorsey|20.25|5.952940449895329|0.2939723678960656
+old databooks|20.25|5.952940449895329|0.2939723678960656
+compressor problem|20.25|5.952940449895329|0.2939723678960656
+area|20.25|5.952940449895329|0.2939723678960656
+eric taylor|20.0|0.0|0.0
+electronics projects|20.0|0.0|0.0
+stephens|20.0|0.0|0.0
+phil stone|16.0|0.0|0.0
+public safety|16.0|0.0|0.0
+tap plastic|16.0|0.0|0.0
+power units|16.0|0.0|0.0
+light green stripes|16.0|0.0|0.0
+est mal configure|16.0|0.0|0.0
+peter hendricks|16.0|0.0|0.0
+intel rmx operating system|16.0|0.0|0.0
+homebuilt pal|16.0|0.0|0.0
+good ideas|16.0|0.0|0.0
+ormsby bldg|16.0|0.0|0.0
+rs components|16.0|0.0|0.0
+unregistered evaluation|16.0|0.0|0.0
+digital scopes|16.0|0.0|0.0
+wiring capacitance|16.0|0.0|0.0
+ibm pcs|16.0|0.0|0.0
+crystal types|16.0|0.0|0.0
+brilliant people|16.0|0.0|0.0
+video monitor|16.0|0.0|0.0
+brad meier|16.0|0.0|0.0
+name|16.0|0.0|0.0
+mood|16.0|0.0|0.0
+man|16.0|0.0|0.0
+necks|16.0|0.0|0.0
+note|16.0|0.0|0.0
+ass|16.0|0.0|0.0
+stafford|16.0|0.0|0.0
+fact|16.0|0.0|0.0
+door|16.0|0.0|0.0
+recording|16.0|0.0|0.0
+entry|16.0|0.0|0.0
+ama|16.0|0.0|0.0
+group|16.0|0.0|0.0
+poeple|16.0|0.0|0.0
+reference|16.0|0.0|0.0
+word|16.0|0.0|0.0
+sounds|16.0|0.0|0.0
+self|16.0|0.0|0.0
+bell|16.0|0.0|0.0
+rogers|16.0|0.0|0.0
+flea|16.0|0.0|0.0
+brightness|16.0|0.0|0.0
+controller|16.0|0.0|0.0
+lights|16.0|0.0|0.0
+plans|12.4|4.6303347611160905|0.3734140936383944
+general rule|5.538461538461538|1.9460170216420798|0.3513641844631533
+body mass|18.0|5.291502622129181|0.2939723678960656
+right leg|18.0|5.291502622129181|0.2939723678960656
+local airport|18.0|0.0|0.0
+last years books|18.0|5.291502622129181|0.2939723678960656
+norman hamer|14.0|0.0|0.0
+lotsa leaning bends|14.0|0.0|0.0
+hand guns|14.0|0.0|0.0
+calamine lotion|14.0|0.0|0.0
+fern bar|14.0|0.0|0.0
+thomas jefferson|14.0|0.0|0.0
+whole station|14.0|0.0|0.0
+synthetic engi|14.0|0.0|0.0
+peripheral products division|14.0|0.0|0.0
+printer ports|14.0|0.0|0.0
+whatever reference|14.0|0.0|0.0
+calibrated guns|14.0|0.0|0.0
+noisy laminated power|14.0|0.0|0.0
+universal time reciever|14.0|0.0|0.0
+spec version|14.0|0.0|0.0
+jamie hanrahan|14.0|0.0|0.0
+tim deagan official obnoxious poster|14.0|0.0|0.0
+babak sehari|14.0|0.0|0.0
+audio card chokes|14.0|0.0|0.0
+little chips|14.0|0.0|0.0
+tentative early info|14.0|0.0|0.0
+first time scope users|14.0|0.0|0.0
+reduced brightness|14.0|0.0|0.0
+high frequencies|14.0|0.0|0.0
+pc based layout program|14.0|0.0|0.0
+jim keais|14.0|0.0|0.0
+positive impression|14.0|0.0|0.0
+interface chips|14.0|0.0|0.0
+hv caps|14.0|0.0|0.0
+wayne schellekens|14.0|0.0|0.0
+membership|14.0|0.0|0.0
+point|14.0|0.0|0.0
+bunis|14.0|0.0|0.0
+interceptor|14.0|0.0|0.0
+facilities|14.0|0.0|0.0
+tool|14.0|0.0|0.0
+shoes|14.0|0.0|0.0
+today|14.0|0.0|0.0
+degrees|14.0|0.0|0.0
+pc|14.0|0.0|0.0
+louisville|14.0|0.0|0.0
+signal|14.0|0.0|0.0
+desonia|14.0|0.0|0.0
+radio|14.0|0.0|0.0
+u|14.0|0.0|0.0
+stealth cars|16.0|0.0|0.0
+site|16.0|0.0|0.0
+friendly riders|15.75|4.630064794363034|0.2939723678960656
+california edition|15.75|4.630064794363034|0.2939723678960656
+weird metric sizes|15.75|4.630064794363034|0.2939723678960656
+intels timer|15.75|4.630064794363034|0.2939723678960656
+audio logic|15.75|4.630064794363034|0.2939723678960656
+arms|15.75|4.630064794363034|0.2939723678960656
+brand new top end chambers|20.0|0.0|0.0
+motorcycle|20.0|0.0|0.0
+funny looks|12.0|0.0|0.0
+good things|12.0|0.0|0.0
+standard disclaimers|12.0|0.0|0.0
+several excellent products|12.0|0.0|0.0
+inane mail|12.0|0.0|0.0
+full fairing|12.0|0.0|0.0
+snow skis|12.0|0.0|0.0
+uk library microlabs|12.0|0.0|0.0
+san diego|12.0|0.0|0.0
+different colored pellets|12.0|0.0|0.0
+overvoltage protection|12.0|0.0|0.0
+bus speed conflict|12.0|0.0|0.0
+hertzian wave theory|12.0|0.0|0.0
+pt breeze rest|12.0|0.0|0.0
+analogue scopes|12.0|0.0|0.0
+full brightness|12.0|0.0|0.0
+pascal goguey|12.0|0.0|0.0
+space ace|12.0|0.0|0.0
+low temperature sensitivity|12.0|0.0|0.0
+toronto statistics|12.0|0.0|0.0
+amateur radio|12.0|0.0|0.0
+long haul|12.0|0.0|0.0
+multiple use|12.0|0.0|0.0
+serial dram nonvolatizer|12.0|0.0|0.0
+request|12.0|0.0|0.0
+flames|12.0|0.0|0.0
+july|12.0|0.0|0.0
+quiche|12.0|0.0|0.0
+flhs|12.0|0.0|0.0
+environment|12.0|0.0|0.0
+yang|12.0|0.0|0.0
+expense|12.0|0.0|0.0
+usage|12.0|0.0|0.0
+ding|12.0|0.0|0.0
+minds|12.0|0.0|0.0
+mais|12.0|0.0|0.0
+software|12.0|0.0|0.0
+buns|12.0|0.0|0.0
+isolated|12.0|0.0|0.0
+hook|12.0|0.0|0.0
+lecturer|12.0|0.0|0.0
+thing|12.0|0.0|0.0
+hv|12.0|0.0|0.0
+base|12.0|0.0|0.0
+cars|12.0|0.0|0.0
+radar jammers|14.0|0.0|0.0
+cooper|18.0|0.0|0.0
+last years|13.5|3.968626966596886|0.2939723678960656
+newest jdr microdevices catalog|13.5|3.968626966596886|0.2939723678960656
+downey|13.5|3.968626966596886|0.2939723678960656
+front|13.5|3.968626966596886|0.2939723678960656
+penny|13.5|3.968626966596886|0.2939723678960656
+model|13.5|3.968626966596886|0.2939723678960656
+right side|10.0|0.0|0.0
+larger tank|10.0|0.0|0.0
+bigger engine|10.0|0.0|0.0
+little razzing|10.0|0.0|0.0
+deep scratches|10.0|0.0|0.0
+mail problems|10.0|0.0|0.0
+idiotic quest|10.0|0.0|0.0
+insect impacts|10.0|0.0|0.0
+martin danjou|10.0|0.0|0.0
+spared printer port|10.0|0.0|0.0
+consumer gear line level|10.0|0.0|0.0
+flyback squeal|10.0|0.0|0.0
+extra horn|10.0|0.0|0.0
+low temperature electronics|10.0|0.0|0.0
+martin john gregory|10.0|0.0|0.0
+updated copy|10.0|0.0|0.0
+scope manufacturers|10.0|0.0|0.0
+level brightness xmas light|10.0|0.0|0.0
+transmission line techniques|10.0|0.0|0.0
+internet mail|10.0|0.0|0.0
+high temperature|10.0|0.0|0.0
+michael covington|10.0|0.0|0.0
+mountain view|10.0|0.0|0.0
+electrical erasure|10.0|0.0|0.0
+computers|10.0|0.0|0.0
+climbing|10.0|0.0|0.0
+cats|10.0|0.0|0.0
+satisfaction|10.0|0.0|0.0
+kirschenbaum|10.0|0.0|0.0
+volitiles|10.0|0.0|0.0
+gauges|10.0|0.0|0.0
+ability|10.0|0.0|0.0
+chains|10.0|0.0|0.0
+views|10.0|0.0|0.0
+john|10.0|0.0|0.0
+tesla|10.0|0.0|0.0
+eff|10.0|0.0|0.0
+indicators|10.0|0.0|0.0
+glinos|10.0|0.0|0.0
+god|10.0|0.0|0.0
+sources|10.0|0.0|0.0
+right handle|16.0|0.0|0.0
+sale|16.0|0.0|0.0
+speed limits|12.0|0.0|0.0
+initial post|11.25|3.307189138830738|0.2939723678960656
+external timer|11.25|3.307189138830738|0.2939723678960656
+alan kilian|11.25|3.307189138830738|0.2939723678960656
+fyzzicks|11.25|3.307189138830738|0.2939723678960656
+equipment|11.25|3.307189138830738|0.2939723678960656
+similar reasons|8.0|0.0|0.0
+extreme weirdness|8.0|0.0|0.0
+sport bike|8.0|0.0|0.0
+jonathan jefferies|8.0|0.0|0.0
+jack waters|8.0|0.0|0.0
+style tank|8.0|0.0|0.0
+summer evenings|8.0|0.0|0.0
+metal surfaces|8.0|0.0|0.0
+intel rmx documentation|8.0|0.0|0.0
+total timing cycle|8.0|0.0|0.0
+highest regards|8.0|0.0|0.0
+divider chain|8.0|0.0|0.0
+aug wellseley|8.0|0.0|0.0
+equivalent analogue scopes|8.0|0.0|0.0
+resistor leads|8.0|0.0|0.0
+wrapping increases|8.0|0.0|0.0
+answering machine|8.0|0.0|0.0
+significant temperature drifts|8.0|0.0|0.0
+big capacitors|8.0|0.0|0.0
+goldstar circuitry|8.0|0.0|0.0
+keith ledig|8.0|0.0|0.0
+bmw|8.0|0.0|0.0
+bed|8.0|0.0|0.0
+loads|8.0|0.0|0.0
+rednecks|8.0|0.0|0.0
+ferns|8.0|0.0|0.0
+mouth|8.0|0.0|0.0
+rubs|8.0|0.0|0.0
+wbcn|8.0|0.0|0.0
+water|8.0|0.0|0.0
 je|8.0|0.0|0.0
-purposes|8.0|0.0|0.0
-giles|8.0|0.0|0.0
-word|8.0|0.0|0.0
-transformers|8.0|0.0|0.0
-sounds|8.0|0.0|0.0
-buns|8.0|0.0|0.0
-calabration|8.0|0.0|0.0
-site|8.0|0.0|0.0
-advance|8.0|0.0|0.0
-lap|8.0|0.0|0.0
-pc|8.0|0.0|0.0
-louisville|8.0|0.0|0.0
-rogers|8.0|0.0|0.0
-flea|8.0|0.0|0.0
-students|8.0|0.0|0.0
-brightness|8.0|0.0|0.0
-research|8.0|0.0|0.0
-radio|8.0|0.0|0.0
+hope|8.0|0.0|0.0
+skill|8.0|0.0|0.0
+snow|8.0|0.0|0.0
+details|8.0|0.0|0.0
+australia|8.0|0.0|0.0
+methods|8.0|0.0|0.0
+original|8.0|0.0|0.0
 subdirectories|8.0|0.0|0.0
-glinos|8.0|0.0|0.0
-model|8.0|0.0|0.0
-sources|8.0|0.0|0.0
-parts|8.0|0.0|0.0
-controller|8.0|0.0|0.0
-radios|8.0|0.0|0.0
-communication|6.0|0.0|0.0
-software|6.0|0.0|0.0
-everything|6.0|0.0|0.0
-ability|6.0|0.0|0.0
-murder|6.0|0.0|0.0
-chains|6.0|0.0|0.0
-caps|6.0|0.0|0.0
-someone|6.0|0.0|0.0
-data|6.0|0.0|0.0
-views|6.0|0.0|0.0
-australia|6.0|0.0|0.0
-signal|6.0|0.0|0.0
-mit|6.0|0.0|0.0
-bulbs|6.0|0.0|0.0
-guns|6.0|0.0|0.0
-fyzzicks|6.0|0.0|0.0
-hook|6.0|0.0|0.0
-pads|6.0|0.0|0.0
-guide|6.0|0.0|0.0
-georgia|6.0|0.0|0.0
-equipment|6.0|0.0|0.0
-thing|6.0|0.0|0.0
-mon|6.0|0.0|0.0
-tube|6.0|0.0|0.0
-base|6.0|0.0|0.0
-lights|6.0|0.0|0.0
+mon|8.0|0.0|0.0
+homes|8.0|0.0|0.0
+countersteering faq|14.0|0.0|0.0
+cheers|14.0|0.0|0.0
 jet|10.0|0.0|0.0
-plans|5.0|1.7320508075688772|0.34641016151377546
+lowly sport bike|9.0|2.6457513110645907|0.2939723678960656
+leather gold|9.0|2.6457513110645907|0.2939723678960656
+best pots|9.0|2.6457513110645907|0.2939723678960656
+internal timer|9.0|2.6457513110645907|0.2939723678960656
+old ones|9.0|2.6457513110645907|0.2939723678960656
+reply|9.0|2.6457513110645907|0.2939723678960656
+boys|9.0|2.6457513110645907|0.2939723678960656
+friday|9.0|2.6457513110645907|0.2939723678960656
+incoherent splutterings|6.0|0.0|0.0
+norton war stories|6.0|0.0|0.0
+black lab mix doright|6.0|0.0|0.0
+bruce clarke|6.0|0.0|0.0
+scott wilken|6.0|0.0|0.0
+morning show|6.0|0.0|0.0
+new dod|6.0|0.0|0.0
+oil requirements|6.0|0.0|0.0
+irwin arnstein|6.0|0.0|0.0
+boulder doders|6.0|0.0|0.0
+de programme vers|6.0|0.0|0.0
+si notation|6.0|0.0|0.0
+video monitors|6.0|0.0|0.0
+robotics lab|6.0|0.0|0.0
+exars chip|6.0|0.0|0.0
+big electro|6.0|0.0|0.0
+information technology|6.0|0.0|0.0
+higher clock rates|6.0|0.0|0.0
+hpib connector|6.0|0.0|0.0
+april webster ecara|6.0|0.0|0.0
+standard old zenith parallel port|6.0|0.0|0.0
+wire wrap questions|6.0|0.0|0.0
+simple history lesson|6.0|0.0|0.0
+little room|6.0|0.0|0.0
+metatarsals|6.0|0.0|0.0
+years|6.0|0.0|0.0
+options|6.0|0.0|0.0
+cruiser|6.0|0.0|0.0
+transistors|6.0|0.0|0.0
+mark|6.0|0.0|0.0
+problems|6.0|0.0|0.0
+calabration|6.0|0.0|0.0
+tomorrow|6.0|0.0|0.0
+noise|6.0|0.0|0.0
+students|6.0|0.0|0.0
+bulbs|6.0|0.0|0.0
+circuits|6.0|0.0|0.0
+pads|6.0|0.0|0.0
+ghod|6.0|0.0|0.0
+peril|6.0|0.0|0.0
+email address|12.0|0.0|0.0
 habit|8.0|0.0|0.0
-thompson|4.0|0.0|0.0
-hope|4.0|0.0|0.0
-notation|4.0|0.0|0.0
-theunissen|4.0|0.0|0.0
-skill|4.0|0.0|0.0
-c|4.0|0.0|0.0
-show|4.0|0.0|0.0
-anything|4.0|0.0|0.0
-tomorrow|4.0|0.0|0.0
-tesla|4.0|0.0|0.0
+faq|10.0|0.0|0.0
+speeding ticket|6.75|1.984313483298443|0.2939723678960656
+previous article|6.75|1.984313483298443|0.2939723678960656
+solid brass case|6.75|1.984313483298443|0.2939723678960656
+new books|6.75|1.984313483298443|0.2939723678960656
+girlfriend|6.75|1.984313483298443|0.2939723678960656
+waterloo|6.75|1.984313483298443|0.2939723678960656
+boots|6.75|1.984313483298443|0.2939723678960656
+trouble|6.75|1.984313483298443|0.2939723678960656
+red line|4.0|0.0|0.0
+decent aftermarket solution|4.0|0.0|0.0
+extra bucks|4.0|0.0|0.0
+god almighty|4.0|0.0|0.0
+daemon child|4.0|0.0|0.0
+darker skin pigmentation|4.0|0.0|0.0
+downloader une programme directement dans|4.0|0.0|0.0
+radar gun|4.0|0.0|0.0
+chewing gum|4.0|0.0|0.0
+nice lab|4.0|0.0|0.0
+several years|4.0|0.0|0.0
+additional info|4.0|0.0|0.0
+mhz bus|4.0|0.0|0.0
+surplus store|4.0|0.0|0.0
+nov plymouth mayflower|4.0|0.0|0.0
+original ibm adaptor|4.0|0.0|0.0
+good ac powered ones|4.0|0.0|0.0
+extension line|4.0|0.0|0.0
+battery power|4.0|0.0|0.0
+trek tos|4.0|0.0|0.0
+small crackling noise|4.0|0.0|0.0
+bank switching|4.0|0.0|0.0
+tesla coils|4.0|0.0|0.0
+postings|4.0|0.0|0.0
+laz|4.0|0.0|0.0
+road|4.0|0.0|0.0
+wales|4.0|0.0|0.0
+fun|4.0|0.0|0.0
+decal|4.0|0.0|0.0
+ears|4.0|0.0|0.0
+windscreens|4.0|0.0|0.0
+ri|4.0|0.0|0.0
+dod|4.0|0.0|0.0
+wheel|4.0|0.0|0.0
+buggy|4.0|0.0|0.0
+measure|4.0|0.0|0.0
+bull|4.0|0.0|0.0
+murder|4.0|0.0|0.0
+lap|4.0|0.0|0.0
+protel|4.0|0.0|0.0
+laird|4.0|0.0|0.0
+kind|4.0|0.0|0.0
 xmas|4.0|0.0|0.0
-breadboards|4.0|0.0|0.0
-indicators|4.0|0.0|0.0
 schematics|4.0|0.0|0.0
-crystal|4.0|0.0|0.0
-line|4.0|0.0|0.0
-covington|4.0|0.0|0.0
-god|4.0|0.0|0.0
+attitude|4.0|0.0|0.0
+smtp|4.0|0.0|0.0
+tube|4.0|0.0|0.0
 airplane|6.0|0.0|0.0
-chance|2.0|0.0|0.0
-transistors|2.0|0.0|0.0
-folks|2.0|0.0|0.0
-mark|2.0|0.0|0.0
-bull|2.0|0.0|0.0
-snow|2.0|0.0|0.0
-today|2.0|0.0|0.0
-rumors|2.0|0.0|0.0
-first|2.0|0.0|0.0
-timer|2.0|0.0|0.0
-soh|2.0|0.0|0.0
-goldmine|2.0|0.0|0.0
-laird|2.0|0.0|0.0
-unit|2.0|0.0|0.0
-methods|2.0|0.0|0.0
-jack|2.0|0.0|0.0
-original|2.0|0.0|0.0
-button|2.0|0.0|0.0
-rtn|2.0|0.0|0.0
-bit|2.0|0.0|0.0
-trouble|2.0|0.0|0.0
-circuits|2.0|0.0|0.0
+response|6.0|0.0|0.0
+electrical nature|12.0|0.0|0.0
+eric hmm|8.0|0.0|0.0
+seller|8.0|0.0|0.0
+harley riders|4.5|1.3228756555322954|0.2939723678960656
+ca nolo press|4.5|1.3228756555322954|0.2939723678960656
+street bike|4.5|1.3228756555322954|0.2939723678960656
+current production parts|4.5|1.3228756555322954|0.2939723678960656
+giles|4.5|1.3228756555322954|0.2939723678960656
+timer|4.5|1.3228756555322954|0.2939723678960656
+local white wine|2.0|0.0|0.0
+sisters boyfriend|2.0|0.0|0.0
+honda weenies|2.0|0.0|0.0
+john stafford minnesota state university|2.0|0.0|0.0
+sticky stuffs|2.0|0.0|0.0
+good sam|2.0|0.0|0.0
+jack rogers|2.0|0.0|0.0
+radar gun target car|2.0|0.0|0.0
+large machine|2.0|0.0|0.0
+timing cap|2.0|0.0|0.0
+accidental shorts|2.0|0.0|0.0
+michael harpe|2.0|0.0|0.0
+local bus|2.0|0.0|0.0
+isloting transformer|2.0|0.0|0.0
+new england ham electronic fleamarket|2.0|0.0|0.0
+parallel ports|2.0|0.0|0.0
+jeroen belleman|2.0|0.0|0.0
+second string|2.0|0.0|0.0
+ld players|2.0|0.0|0.0
+exact values|2.0|0.0|0.0
+dow radio|2.0|0.0|0.0
+little box|2.0|0.0|0.0
+twisted pair|2.0|0.0|0.0
+lots|2.0|0.0|0.0
+bullshit|2.0|0.0|0.0
+shoot|2.0|0.0|0.0
+way|2.0|0.0|0.0
+dogs|2.0|0.0|0.0
+finger|2.0|0.0|0.0
+ge|2.0|0.0|0.0
+concours|2.0|0.0|0.0
+communication|2.0|0.0|0.0
+port|2.0|0.0|0.0
+notation|2.0|0.0|0.0
+reciever|2.0|0.0|0.0
+show|2.0|0.0|0.0
+fools|2.0|0.0|0.0
+sockets|2.0|0.0|0.0
+caps|2.0|0.0|0.0
+research|2.0|0.0|0.0
+device|2.0|0.0|0.0
 chris|2.0|0.0|0.0
-interface|2.0|0.0|0.0
-quartz|2.0|0.0|0.0
-project|2.0|0.0|0.0
-smtp|2.0|0.0|0.0
-capacitors|2.0|0.0|0.0
-people|2.0|0.0|0.0
-cars|2.0|0.0|0.0
-things|10.0|0.0|0.0
+line|2.0|0.0|0.0
+myers|2.0|0.0|0.0
+macrae|2.0|0.0|0.0
+jb jason blakey|4.0|0.0|0.0
 knots|4.0|0.0|0.0
-aftershave|8.0|0.0|0.0
-nz|6.0|0.0|0.0
+paul|6.0|0.0|0.0
+outriggers|6.0|0.0|0.0
+pink tools|20.0|0.0|0.0
+low tolerance|2.25|0.6614378277661477|0.2939723678960656
+good helmet|2.25|0.6614378277661477|0.2939723678960656
+passenger seat|2.25|0.6614378277661477|0.2939723678960656
+audio amateur magazine|2.25|0.6614378277661477|0.2939723678960656
+old obsolete machines|2.25|0.6614378277661477|0.2939723678960656
+berkeley|2.25|0.6614378277661477|0.2939723678960656
+wednesday|2.25|0.6614378277661477|0.2939723678960656
+niemeyer|2.25|0.6614378277661477|0.2939723678960656
+stereo|2.25|0.6614378277661477|0.2939723678960656
+hello netters|8.0|0.0|0.0
+diving|18.0|0.0|0.0
+girlfriends|16.0|0.0|0.0
+one|12.0|0.0|0.0
+things|20.0|0.0|0.0
+aftershave|18.0|0.0|0.0
+nz|16.0|0.0|0.0
+positive readings|14.0|0.0|0.0

@@ -15,7 +15,7 @@ SAMPLING_FILENAME = "SamplingFile_Test"
 EDGE_REMOVE_LIST_LOGFILE = "LowerLevelEdgeRemovalLogFile_Test.txt"
 
 
-TOP_ZSCORE_TERM_NUMBER =2
+TOP_ZSCORE_TERM_NUMBER = 11
 G= nx.DiGraph()
 zScore_G= nx.DiGraph()
 

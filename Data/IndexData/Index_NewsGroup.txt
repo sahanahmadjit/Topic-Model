@@ -1,168 +1,617 @@
-mais|52751.txt|10
+local motorcycle club|102616.txt|18
+pink tools|103132.txt|20
+right foot|103135.txt|20
+phil stone|103135.txt|16
+funny looks|103135.txt|12
+couple hours|103134.txt|16|103121.txt|14
+norman hamer|103134.txt|14
+general rule|103134.txt|4|103121.txt|4
+kinda people|103120.txt|18
+lotsa leaning bends|103120.txt|14
+good things|103120.txt|12
+similar reasons|103120.txt|8
+nice boy|103127.txt|20|103141.txt|14
+big bore|103127.txt|18
+hand guns|103127.txt|14
+david svoboda|103127.txt|12|103141.txt|20
+extreme weirdness|103127.txt|8
+favorite flame wars|103118.txt|20|103123.txt|18
+friendly riders|103118.txt|14
+lowly sport bike|103118.txt|8
+harley riders|103118.txt|4
+like bombing fish|103129.txt|20
+john stafford|103129.txt|18
+calamine lotion|103129.txt|14
+incoherent splutterings|103129.txt|6
+david brown ed|103142.txt|18
+california edition|103142.txt|14
+initial post|103142.txt|10
+speeding ticket|103142.txt|6
+ca nolo press|103142.txt|4
+geeky stickers|103145.txt|20
+curt howland|103145.txt|18|103144.txt|18|103139.txt|20
+fern bar|103145.txt|14
+curtis jackson|103145.txt|10|103128.txt|20
+local white wine|103145.txt|2
+right side|103117.txt|10
+norton war stories|103117.txt|6
+red line|103117.txt|4
+sisters boyfriend|103117.txt|2
+public safety|103128.txt|16
+thomas jefferson|103128.txt|14
+larger tank|103128.txt|10
+huge tank|103128.txt|8|103140.txt|2
+black lab mix doright|103128.txt|6
+decent aftermarket solution|103128.txt|4
+honda weenies|103128.txt|2
+erik asphaug|103126.txt|20
+bigger engine|103126.txt|10
+sport bike|103126.txt|8
+bruce clarke|103126.txt|6
+extra bucks|103126.txt|4
+dod paraphernalia|103119.txt|20
+thicker vinyl|103119.txt|18
+standard disclaimers|103119.txt|12
+little razzing|103119.txt|10
+john stafford minnesota state university|103119.txt|2
+mike muise|103121.txt|20|103121.txt|18
+body mass|103121.txt|16
+low tolerance|103121.txt|2
+brand new top end chambers|103143.txt|20
+email address|103143.txt|12
+local plastic shop|101725.txt|20
+plastic bits|101725.txt|18
+tap plastic|101725.txt|16
+several excellent products|101725.txt|12
+deep scratches|101725.txt|10
+jonathan jefferies|101725.txt|8
+scott wilken|101725.txt|6
+sticky stuffs|101725.txt|2
+former ninjaite|103138.txt|8|103123.txt|16|103122.txt|20
+last night|103138.txt|6|103123.txt|10|103122.txt|14
+god almighty|103138.txt|4
+good sam|103138.txt|2
+better gloves|103136.txt|20
+next purchase|103136.txt|18
+protective gear|103136.txt|12|103136.txt|10
+leather gold|103136.txt|8
+good helmet|103136.txt|2
+flight bag|103131.txt|20
+whole station|103131.txt|14
+morning show|103131.txt|6
+right handle|103130.txt|16
+countersteering faq|103130.txt|14
+eric hmm|103130.txt|8
+inane mail|103137.txt|12
+mail problems|103137.txt|10
+new dod|103137.txt|6
+train engines|103139.txt|18
+power units|103139.txt|16
+synthetic engi|103139.txt|14
+oil requirements|103139.txt|6
+daemon child|103141.txt|4
+idiotic quest|103124.txt|10
+jack waters|103124.txt|8
+irwin arnstein|103124.txt|6
+darker skin pigmentation|103124.txt|4
+jack rogers|103124.txt|2
+cultural heritage|103123.txt|20
+whole rear end|103140.txt|20
+nicholas coburn|103140.txt|18
+light green stripes|103140.txt|16
+full fairing|103140.txt|12
+style tank|103140.txt|8
+boulder doders|103140.txt|6
+helmetless motorcyclists|103122.txt|18
+snow skis|103122.txt|12
+insect impacts|103122.txt|10
+summer evenings|103122.txt|8
+right leg|103125.txt|16
+previous article|103125.txt|6
+street bike|103125.txt|4
+passenger seat|103125.txt|2
+du code|52751.txt|20
+disk array development|52751.txt|18
+est mal configure|52751.txt|16
+peripheral products division|52751.txt|14
+martin danjou|52751.txt|10
+de programme vers|52751.txt|6
+downloader une programme directement dans|52751.txt|4
+ftp sites|52756.txt|16|52721.txt|12
+electrical nature|52756.txt|12
+hello netters|52756.txt|8
+peter hendricks|52760.txt|16
+printer ports|52760.txt|14
+spared printer port|52760.txt|10
+reference power|52758.txt|20
+common references|52758.txt|18
+whatever reference|52758.txt|14
+consumer gear line level|52758.txt|10
+alexander graham bell|52758.txt|8|52719.txt|20
+si notation|52758.txt|6
+conductive plastic elements|52733.txt|20
+scott dorsey|52733.txt|18
+high quality pot|52733.txt|16|52733.txt|10
+weird metric sizes|52733.txt|14
+best pots|52733.txt|8
+solid brass case|52733.txt|6
+audio amateur magazine|52733.txt|2
+police radar|52734.txt|20|52732.txt|16
+calibrated guns|52734.txt|14
+uk library microlabs|52734.txt|12
+radar gun|52734.txt|4
+radar gun target car|52734.txt|2
+transformer cores|52759.txt|20
+noisy laminated power|52759.txt|14
+flyback squeal|52759.txt|10
+metal surfaces|52759.txt|8
+video monitors|52759.txt|6
+chewing gum|52759.txt|4
+netland help|52757.txt|18
+intel rmx operating system|52757.txt|16
+intel rmx documentation|52757.txt|8
+robotics lab|52757.txt|6
+large machine|52757.txt|2
+wayne alan martin|52750.txt|20
+universal time reciever|52750.txt|14
+nice lab|52750.txt|4
+timing cycles|52735.txt|20
+timing cycle|52735.txt|18
+spec version|52735.txt|14
+total timing cycle|52735.txt|8
+exars chip|52735.txt|6
+several years|52735.txt|4
+timing cap|52735.txt|2
+kernel mode systems|52732.txt|20
+david sharpe|52732.txt|18
+jamie hanrahan|52732.txt|14
+san diego|52732.txt|12
+extra horn|52732.txt|10
+programming pals|52728.txt|18
+homebuilt pal|52728.txt|16
+tim deagan official obnoxious poster|52728.txt|14
+eric taylor|52717.txt|20
+local airport|52717.txt|18
+stealth cars|52717.txt|16
+radar jammers|52717.txt|14
+speed limits|52717.txt|12
+electronics projects|52721.txt|20
+jb jason blakey|52721.txt|4
+southwestern bell|52719.txt|18
+babak sehari|52719.txt|14
+highest regards|52719.txt|8
+rajan ranga|52726.txt|20
+intels timer|52726.txt|14
+external timer|52726.txt|10
+internal timer|52726.txt|8
+electronics department|52743.txt|20|52739.txt|18|52747.txt|18|52748.txt|16
+several timers|52743.txt|18
+good ideas|52743.txt|16
+different colored pellets|52743.txt|12
+low temperature electronics|52743.txt|10
+divider chain|52743.txt|8
+big electro|52743.txt|6
+serial data transmission|52744.txt|20
+power cables|52744.txt|18
+overvoltage protection|52744.txt|12
+martin john gregory|52744.txt|10
+additional info|52744.txt|4
+accidental shorts|52744.txt|2
+mike harpe|52718.txt|20
+ormsby bldg|52718.txt|16
+information technology|52718.txt|6
+michael harpe|52718.txt|2
+old data books|52727.txt|20|52727.txt|14
+old databooks|52727.txt|18
+last years books|52727.txt|16
+last years|52727.txt|12
+alan kilian|52727.txt|10
+old ones|52727.txt|8
+new books|52727.txt|6
+current production parts|52727.txt|4
+old obsolete machines|52727.txt|2
+bus speeds|52729.txt|20
+audio card chokes|52729.txt|14
+bus speed conflict|52729.txt|12
+free usenet mail|52729.txt|8|52730.txt|18
+higher clock rates|52729.txt|6
+mhz bus|52729.txt|4
+local bus|52729.txt|2
+john west|52745.txt|20
+external components|52745.txt|18
+rs components|52745.txt|16
+little chips|52745.txt|14
+isloting transformer|52745.txt|2
+pioneer laser player|52742.txt|20|52753.txt|20
+computerised viewing|52742.txt|18|52753.txt|16
+pioneer laserdisc|52742.txt|16|52753.txt|10
+front panel power light|52742.txt|14|52753.txt|8
+hpib connector|52742.txt|6
+surplus store|52742.txt|4
+james harris rogers|52434.txt|18
+hertzian wave theory|52434.txt|12
+sept cambridge|52446.txt|20
+tentative early info|52446.txt|14
+pt breeze rest|52446.txt|12
+updated copy|52446.txt|10
+aug wellseley|52446.txt|8
+april webster ecara|52446.txt|6
+nov plymouth mayflower|52446.txt|4
+new england ham electronic fleamarket|52446.txt|2
+positive readings|52737.txt|14
+unregistered evaluation|52730.txt|16
+standard old zenith parallel port|52730.txt|6
+original ibm adaptor|52730.txt|4
+parallel ports|52730.txt|2
+digital scopes|52739.txt|16
+first time scope users|52739.txt|14
+analogue scopes|52739.txt|12
+scope manufacturers|52739.txt|10
+equivalent analogue scopes|52739.txt|8
+jeroen belleman|52739.txt|2
+xmas light|52755.txt|18
+reduced brightness|52755.txt|14
+full brightness|52755.txt|12
+level brightness xmas light|52755.txt|10
+resistor leads|52755.txt|8
+second string|52755.txt|2
+wire wrapping|52752.txt|20
+wiring capacitance|52752.txt|16
+high frequencies|52752.txt|14
+pascal goguey|52752.txt|12
+transmission line techniques|52752.txt|10
+wrapping increases|52752.txt|8
+wire wrap questions|52752.txt|6
+good ac powered ones|52752.txt|4
+rainer malzbender|52738.txt|20|52738.txt|18
+newest jdr microdevices catalog|52738.txt|12
+electronic project books|52731.txt|20
+kyler laird|52731.txt|18
+answering machine|52731.txt|8
+extension line|52731.txt|4
+computing science|52736.txt|20
+chris hand|52736.txt|18
+ibm pcs|52736.txt|16
+pc based layout program|52736.txt|14
+internet mail|52736.txt|10
+pioneer technicial support|52753.txt|18
+jim keais|52753.txt|14
+space ace|52753.txt|12
+ld players|52753.txt|2
+suitable crystal oscillators|52754.txt|20
+low power quartz oscillators|52754.txt|18
+crystal types|52754.txt|16
+low temperature sensitivity|52754.txt|12
+high temperature|52754.txt|10
+significant temperature drifts|52754.txt|8
+gut feeling|52754.txt|6|52747.txt|14
+battery power|52754.txt|4
+extreme cold|52754.txt|2|52747.txt|6
+tom glinos|52749.txt|20
+several ideas|52749.txt|18
+brilliant people|52749.txt|16
+toronto statistics|52749.txt|12
+simple history lesson|52749.txt|6
+trek tos|52749.txt|4
+big problem|52747.txt|20
+amateur radio|52747.txt|12
+michael covington|52747.txt|10
+big capacitors|52747.txt|8
+exact values|52747.txt|2
+human factors research lab|52740.txt|20
+compressor problem|52740.txt|18
+audio logic|52740.txt|14
+david vanderbyl|52725.txt|20
+positive impression|52725.txt|14
+access bus|52722.txt|18
+interface chips|52722.txt|14
+long haul|52722.txt|12
+mountain view|52722.txt|10
+hv capacitors|52746.txt|20
+numerous stores|52746.txt|18
+video monitor|52746.txt|16
+hv caps|52746.txt|14
+goldstar circuitry|52746.txt|8
+little room|52746.txt|6
+dow radio|52746.txt|2
+raw parts|52748.txt|20
+multiple use|52748.txt|12
+electrical erasure|52748.txt|10
+keith ledig|52748.txt|8
+little blue sparks|52723.txt|20
+brad meier|52723.txt|16
+small crackling noise|52723.txt|4
+little box|52723.txt|2
+maximum spi clock rate|52724.txt|18
+wayne schellekens|52724.txt|14
+serial dram nonvolatizer|52724.txt|12
+bank switching|52724.txt|4
+twisted pair|52724.txt|2
+tesla coils|52464.txt|4
+motorcycles|102616.txt|20|103132.txt|14
+name|102616.txt|16
+membership|102616.txt|14
+request|102616.txt|12
+computers|102616.txt|10
+bmw|102616.txt|8
+bikes|102616.txt|6|103145.txt|6|103117.txt|18
+postings|102616.txt|4
+parts|102616.txt|2|52748.txt|14
+diving|103132.txt|18
+girlfriends|103132.txt|16
+one|103132.txt|12
+ankle|103135.txt|18
+point|103135.txt|14
+climbing|103135.txt|10
+bed|103135.txt|8
+metatarsals|103135.txt|6
+article|103135.txt|4|103134.txt|8|103133.txt|10|103118.txt|2|103119.txt|6|103121.txt|10|103131.txt|2|103130.txt|12|103123.txt|6|103122.txt|2|52758.txt|4|52719.txt|12|52738.txt|4|52725.txt|16
+thanks|103135.txt|2|52728.txt|6|52726.txt|18|52723.txt|8
+confidence|103134.txt|20
+reactions|103134.txt|18
+time|103134.txt|12|103137.txt|20|52434.txt|20|52464.txt|10
+thumb|103134.txt|10|103121.txt|12
+sobriety|103134.txt|6|103121.txt|8
+half|103134.txt|2|52434.txt|2
+harley|103133.txt|20
+harleys|103133.txt|18|103129.txt|10
+people|103133.txt|16|103120.txt|6|103126.txt|14|52748.txt|2
+mail|103133.txt|14|103137.txt|8
+flames|103133.txt|12
+loads|103133.txt|8
+years|103133.txt|6
+laz|103133.txt|4
+lots|103133.txt|2
+bike|103120.txt|20|103144.txt|20
+mood|103120.txt|16
+bikers|103120.txt|10|103118.txt|16|103118.txt|12|103123.txt|14|103123.txt|12
+road|103120.txt|4
+bullshit|103120.txt|2
+man|103127.txt|16
+mike|103127.txt|10|103125.txt|14
+cookson|103127.txt|6|103141.txt|6
+chances|103127.txt|4|103125.txt|10
+rcr|103127.txt|2|103141.txt|10
+area|103118.txt|18
+california|103118.txt|10|103123.txt|4
+girlfriend|103118.txt|6
+necks|103129.txt|16
+july|103129.txt|12
+rednecks|103129.txt|8
+wales|103129.txt|4
+shoot|103129.txt|2
+ticket|103142.txt|20|103142.txt|16
+downey|103142.txt|12
+reply|103142.txt|8
+berkeley|103142.txt|2
+note|103145.txt|16
+quiche|103145.txt|12
+ferns|103145.txt|8
+fun|103145.txt|4
+sister|103117.txt|20
+ass|103117.txt|16
+feet|103117.txt|14|103136.txt|16
+flhs|103117.txt|12
+mouth|103117.txt|8
+nicholas|103128.txt|18
+someone|103128.txt|12|103130.txt|18|52718.txt|12
+something|103126.txt|18|103144.txt|8|52728.txt|12|52731.txt|16
+anything|103126.txt|16|52728.txt|8
+environment|103126.txt|12
+way|103126.txt|2
+stafford|103119.txt|16
+bunis|103119.txt|14
+rubs|103119.txt|8
+decal|103119.txt|4
+waterloo|103121.txt|6
+fact|103144.txt|16
+wizards|103144.txt|14|103139.txt|4
+yang|103144.txt|12
+cats|103144.txt|10
+options|103144.txt|6
+ears|103144.txt|4
+dogs|103144.txt|2
+cooper|103143.txt|18
+sale|103143.txt|16
+cheers|103143.txt|14
+dave|103143.txt|10|103141.txt|8
+seller|103143.txt|8
+paul|103143.txt|6
+interceptor|101725.txt|14
+windscreens|101725.txt|4
+policies|103138.txt|20
+board|103138.txt|18
+door|103138.txt|16
+facilities|103138.txt|14
+expense|103138.txt|12
+satisfaction|103138.txt|10
+arms|103136.txt|14
+boots|103136.txt|6
+first|103136.txt|4|52719.txt|4
+shipping|103131.txt|18
+recording|103131.txt|16
+anyone|103131.txt|12|52756.txt|20|52721.txt|14|52726.txt|12|52742.txt|10|52738.txt|8|52723.txt|10
+kirschenbaum|103131.txt|10
+wbcn|103131.txt|8
+ri|103131.txt|4
+motorcycle|103130.txt|20
+faq|103130.txt|10
+outriggers|103130.txt|6
+questions|103137.txt|18
+entry|103137.txt|16
+tool|103137.txt|14
+dod|103137.txt|4
+finger|103137.txt|2
+usage|103139.txt|12
+volitiles|103139.txt|10
+water|103139.txt|8
+ge|103139.txt|2
+svoboda|103141.txt|18
+ama|103141.txt|16
+ding|103141.txt|12
+concours|103141.txt|2
+backs|103124.txt|20
+living|103124.txt|18
+group|103124.txt|16
+shoes|103124.txt|14
+minds|103124.txt|12
+boys|103123.txt|8
+wednesday|103123.txt|2
+today|103140.txt|14
+gauges|103140.txt|10
+wheel|103140.txt|4
+poeple|103122.txt|16
+cruiser|103122.txt|6
+buggy|103122.txt|4
+crutches|103125.txt|20|103125.txt|18
+front|103125.txt|12
+friday|103125.txt|8
+mais|52751.txt|12
 je|52751.txt|8
-communication|52751.txt|6
-thompson|52751.txt|4
-chance|52751.txt|2
-anyone|52756.txt|10|52721.txt|6|52726.txt|6|52742.txt|8|52738.txt|4|52753.txt|4|52746.txt|4|52723.txt|4
-projects|52756.txt|8|52721.txt|10
-blakey|52756.txt|6|52721.txt|4
-plans|52756.txt|4|52721.txt|2
-output|52760.txt|10
-purposes|52760.txt|8
-software|52760.txt|6
-hope|52760.txt|4
-transistors|52760.txt|2
-reference|52758.txt|10
-power|52758.txt|8|52759.txt|4
-article|52758.txt|6|52719.txt|8|52727.txt|4|52754.txt|6|52725.txt|8
-notation|52758.txt|4
-office|52758.txt|2|52759.txt|10
-penny|52733.txt|10
-giles|52733.txt|8
-everything|52733.txt|6
-theunissen|52733.txt|4
-folks|52733.txt|2
-radar|52734.txt|10
-word|52734.txt|8
-ability|52734.txt|6
-skill|52734.txt|4
-mark|52734.txt|2
-transformers|52759.txt|8
-machine|52759.txt|6|52718.txt|2
-anybody|52759.txt|2|52757.txt|8|52725.txt|2
-rmx|52757.txt|10
-email|52757.txt|6|52718.txt|4|52723.txt|8
-use|52757.txt|4|52719.txt|6
-bull|52757.txt|2
-martin|52750.txt|10
-sounds|52750.txt|8
-wayne|52750.txt|6|52724.txt|6
-timing|52750.txt|4|52735.txt|6|52743.txt|4|52754.txt|8
-snow|52750.txt|2
-self|52735.txt|10
-buns|52735.txt|8
-c|52735.txt|4
-today|52735.txt|2
-details|52732.txt|10|52446.txt|4
-calabration|52732.txt|8
-murder|52732.txt|6
-show|52732.txt|4
-rumors|52732.txt|2
-eplds|52728.txt|10
-something|52728.txt|8|52731.txt|10
-chains|52728.txt|6
-anything|52728.txt|4
-thanks|52728.txt|2|52726.txt|10|52723.txt|2
+communication|52751.txt|2
+projects|52756.txt|18|52721.txt|18
+blakey|52756.txt|14|52721.txt|10
+plans|52756.txt|10|52721.txt|8
+output|52760.txt|20
+purposes|52760.txt|18
+software|52760.txt|12
+hope|52760.txt|8
+transistors|52760.txt|6
+measure|52760.txt|4
+port|52760.txt|2
+reference|52758.txt|16
+power|52758.txt|12|52759.txt|2
+notation|52758.txt|2
+penny|52733.txt|12
+giles|52733.txt|4
+radar|52734.txt|18
+word|52734.txt|16
+ability|52734.txt|10
+skill|52734.txt|8
+mark|52734.txt|6
+office|52759.txt|18
+transformers|52759.txt|16|52464.txt|2
+machine|52759.txt|12|52718.txt|8
+rmx|52757.txt|20
+anybody|52757.txt|14|52725.txt|8
+email|52757.txt|12|52718.txt|10|52723.txt|14
+use|52757.txt|10|52719.txt|10
+bull|52757.txt|4
+martin|52750.txt|18
+sounds|52750.txt|16
+wayne|52750.txt|12|52724.txt|10
+timing|52750.txt|10|52735.txt|10
+snow|52750.txt|8
+problems|52750.txt|6
+reciever|52750.txt|2
+self|52735.txt|16
+buns|52735.txt|12
+details|52732.txt|8
+calabration|52732.txt|6
+murder|52732.txt|4
+show|52732.txt|2
+eplds|52728.txt|20
+chains|52728.txt|10
+advance|52728.txt|4|52726.txt|16|52723.txt|6
+fools|52728.txt|2
 jet|52717.txt|10
 habit|52717.txt|8
 airplane|52717.txt|6
 knots|52717.txt|4
-site|52721.txt|8
-bell|52719.txt|10
-tomorrow|52719.txt|4
-first|52719.txt|2
-advance|52726.txt|8
-chip|52726.txt|4|52724.txt|4
-timer|52726.txt|2
-degrees|52743.txt|10
-lap|52743.txt|8
-caps|52743.txt|6
-school|52743.txt|2|52739.txt|6|52747.txt|2|52748.txt|4
-computer|52744.txt|10|52739.txt|4|52464.txt|4
-pc|52744.txt|8
-control|52744.txt|6|52749.txt|6
-protection|52744.txt|4|52745.txt|4
-soh|52744.txt|2
-university|52718.txt|10|52740.txt|4
-louisville|52718.txt|8
-someone|52718.txt|6
-information|52727.txt|10
-john|52727.txt|8|52745.txt|8
-data|52727.txt|6
-goldmine|52727.txt|2
-bus|52729.txt|10|52722.txt|8
-call|52729.txt|8|52730.txt|10
-views|52729.txt|6
-desonia|52729.txt|4|52730.txt|8
-eff|52729.txt|2|52730.txt|4
-isolated|52745.txt|10
-australia|52745.txt|6
-laird|52745.txt|2
-documentation|52742.txt|10|52753.txt|8
-system|52742.txt|6|52753.txt|10
-experience|52742.txt|4|52730.txt|6|52740.txt|2
-unit|52742.txt|2
-time|52434.txt|10
-rogers|52434.txt|8
-signal|52434.txt|6
-tesla|52434.txt|4
-methods|52434.txt|2
-april|52446.txt|10|52722.txt|4
-flea|52446.txt|8
-mit|52446.txt|6
-jack|52446.txt|2
-things|52737.txt|10
-aftershave|52737.txt|8
-nz|52737.txt|6
-original|52730.txt|2
-scopes|52739.txt|10
-students|52739.txt|8
-button|52739.txt|2
-string|52755.txt|10
-brightness|52755.txt|8
+site|52721.txt|16
+response|52721.txt|6
+bell|52719.txt|16
+tomorrow|52719.txt|6
+sockets|52719.txt|2
+chip|52726.txt|6|52726.txt|2|52724.txt|8
+timer|52726.txt|4
+degrees|52743.txt|14
+lap|52743.txt|4
+caps|52743.txt|2
+computer|52744.txt|16|52464.txt|14
+pc|52744.txt|14
+control|52744.txt|8|52749.txt|8
+protection|52744.txt|6|52745.txt|6
+university|52718.txt|18|52740.txt|8
+louisville|52718.txt|14
+protel|52718.txt|4
+bus|52729.txt|18|52722.txt|16
+call|52729.txt|16|52730.txt|20
+views|52729.txt|10
+isolated|52745.txt|12
+john|52745.txt|10
+australia|52745.txt|8
+laird|52745.txt|4
+documentation|52742.txt|12|52753.txt|4
+system|52742.txt|8|52753.txt|6
+experience|52742.txt|2|52730.txt|12|52740.txt|6
+rogers|52434.txt|16
+signal|52434.txt|14
+tesla|52434.txt|10
+methods|52434.txt|8
+noise|52434.txt|6
+kind|52434.txt|4
+april|52446.txt|18|52722.txt|6
+flea|52446.txt|16
+things|52737.txt|20
+aftershave|52737.txt|18
+nz|52737.txt|16
+desonia|52730.txt|14
+eff|52730.txt|10
+original|52730.txt|8
+scopes|52739.txt|20
+students|52739.txt|6
+school|52739.txt|4|52748.txt|4
+string|52755.txt|20
+brightness|52755.txt|16
 bulbs|52755.txt|6
 xmas|52755.txt|4
-rtn|52755.txt|2
-hands|52752.txt|10
-research|52752.txt|8
-guns|52752.txt|6
-breadboards|52752.txt|4
-bit|52752.txt|2
-blues|52738.txt|10|52748.txt|10
-availability|52738.txt|8|52748.txt|6
-fyzzicks|52738.txt|6
-trouble|52738.txt|2
-radio|52731.txt|8
-hook|52731.txt|6
-indicators|52731.txt|4
-circuits|52731.txt|2
-lecturer|52736.txt|10
+hands|52752.txt|18
+research|52752.txt|2
+blues|52738.txt|16|52748.txt|18
+availability|52738.txt|14|52748.txt|6
+fyzzicks|52738.txt|10
+trouble|52738.txt|6
+niemeyer|52738.txt|2
+radio|52731.txt|14
+hook|52731.txt|12
+indicators|52731.txt|10
+circuits|52731.txt|6
+device|52731.txt|2
+lecturer|52736.txt|12
 subdirectories|52736.txt|8
 pads|52736.txt|6
 schematics|52736.txt|4
 chris|52736.txt|2
-guide|52753.txt|6
-interface|52753.txt|2
-frequency|52754.txt|10|52747.txt|10
-crystal|52754.txt|4
-quartz|52754.txt|2
-u|52749.txt|10
-glinos|52749.txt|8
-line|52749.txt|4
-project|52749.txt|2
-circuit|52747.txt|8|52724.txt|2
-georgia|52747.txt|6
-covington|52747.txt|4
-stephens|52740.txt|10
-model|52740.txt|8
-equipment|52740.txt|6
-correction|52725.txt|10
-thing|52725.txt|6
-god|52725.txt|4
-buses|52722.txt|10
-mon|52722.txt|6
-smtp|52722.txt|2
-hv|52746.txt|10
-sources|52746.txt|8
-tube|52746.txt|6
-capacitors|52746.txt|2
-parts|52748.txt|8
-people|52748.txt|2
-wire|52723.txt|10
-base|52723.txt|6
-dram|52724.txt|10
-controller|52724.txt|8
-industries|52464.txt|10
-radios|52464.txt|8
-lights|52464.txt|6
-cars|52464.txt|2
+frequency|52754.txt|14|52747.txt|16
+u|52749.txt|14
+glinos|52749.txt|10
+line|52749.txt|2
+circuit|52747.txt|4|52724.txt|6
+stephens|52740.txt|16|52740.txt|4
+model|52740.txt|12
+equipment|52740.txt|10
+stereo|52740.txt|2
+correction|52725.txt|18
+thing|52725.txt|12
+god|52725.txt|10
+ghod|52725.txt|6
+attitude|52725.txt|4
+myers|52725.txt|2
+buses|52722.txt|20
+mon|52722.txt|8
+smtp|52722.txt|4
+macrae|52722.txt|2
+hv|52746.txt|12
+sources|52746.txt|10
+tube|52746.txt|4
+wire|52723.txt|18
+base|52723.txt|12
+dram|52724.txt|20
+controller|52724.txt|16
+industries|52464.txt|20
+radios|52464.txt|18
+lights|52464.txt|16
+cars|52464.txt|12
+homes|52464.txt|8
+peril|52464.txt|6

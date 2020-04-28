@@ -33,13 +33,14 @@ CO_EFFICIENT_FOR_COMMUNITY_JOIN = .25
 LOWER_LEVEL_CO_EFFICIENT_FOR_COMMUNITY_JOIN = .05
 C0_EFFICIENT_FOR_MULTIPLE_COMMUNITY = .05
 global COMMUNITY_NUMBER
-TOP_ZSCORE_TERM_NUMBER = 10
+TOP_ZSCORE_TERM_NUMBER = 15
 CO_EFFICIENT = 1
 
 MAC_DATA_DIRECTORY = "/ZResearchCode/HTopicModel/Topic-Model/Data/"
 linux_data_directory = "/home/C00408440/ZWorkStation/JournalVersion/Data/"
 GRAPH_DATA_DIRECTORY = "GraphData/"
 COMMUNITY_DATA_DIRECTORY = "CommunityData/"
+RANGE_DATA_DIRECTORY = "ClusterRange/"
 GRAPH_INPUT_DATA_FILENAME = "GraphInputData_NewsGroup.txt"
 ZSCORE_SORTED_FILENAME = "zScoreSorted_NEWSGROUP.txt"
 GEPHI_FORMAT_GRAPH_FILENAME = "gephi_format_graph_NEWSGROUP.gexf"
@@ -49,6 +50,7 @@ SAMPLING_FILENAME = "SamplingFile_Test"
 EDGE_REMOVE_LIST_LOGFILE = "LowerLevelEdgeRemovalLogFile_NEWSGROUP.txt"
 ZSCORE_REVERSE_SORTED_FILENAME = "ZREVERSE_SORTED_NEWSGROUP.txt"
 CO_VARIATION_VALUE_FILENAME = "CO_VARIATION_VALUE_NEWSGROUP.txt"
+TOP_CLUSTER_TERM_DATA_FILENAME= "NEWSGROUP_TOP_CLUSTER_TERM.txt"
 
 G = nx.DiGraph()
 rebuildG = nx.DiGraph()
@@ -286,9 +288,15 @@ def dictonaryForHigherLevelCommunity():
             hLevelCommunityNumberDict[item] = COMMUNITY_NUMBER
             COMMUNITY_NUMBER = COMMUNITY_NUMBER + 1
 
-
+    writeHLevelClusterTermToFile(hLevelCommunityNumberDict)
     higherLevelCommunityBaseStructure(hLevelCommunityNumberDict)
 
+def writeHLevelClusterTermToFile(hdict):
+    fileWrite = open(MAC_DATA_DIRECTORY + RANGE_DATA_DIRECTORY + TOP_CLUSTER_TERM_DATA_FILENAME, "w")
+
+    for key,value in hdict.items():
+        fileWrite.write(key + "|" + str(value) + "\n")
+    fileWrite.close()
 
 def higherLevelCommunityBaseStructure(higherLevelCommunityDict):
     sortedHighLevelTermByCommunityNumber = sorted(higherLevelCommunityDict.items(), key=operator.itemgetter(1),
@@ -419,10 +427,6 @@ def coreAddTermsToCommunityFunction(currentTerm):
                 graph.add_edge(item, currentTerm, weight=weightVal)
 
         communityGraphHashMap[bestCommunityNumber] = graph
-
-
-
-
 
     if passBoolean == False and currentTerm not in unabletoConnectCommunity:
         unabletoConnectCommunity.append(currentTerm)
