@@ -402,17 +402,25 @@ def coreAddTermsToCommunityFunction(currentTerm):
         sortedRankDict = dict(sortedRankHashMapAsList)
         bestCommunityNumber = list(sortedRankDict.keys())[0]
         graph = communityGraphHashMap[bestCommunityNumber]
+        #Testing Purpose Code Added
+        if graph.has_node(currentTerm):
+            print("DEBUG","ERROR")
         graph.add_node(currentTerm)
-
+        '''
         for item in listOfNodes:
-            if G.has_edge(currentTerm,item):
+            if G.has_edge(currentTerm, item):
                 weightVal = G[currentTerm][item]['weight']
                 graph.add_edge(currentTerm, item, weight=weightVal)
-            if G.has_edge(item,currentTerm):
+            if G.has_edge(item, currentTerm):
                 weightVal = G[item][currentTerm]['weight']
-                graph.add_edge(item, currentTerm, weight=weightVal)
+                graph.add_edge(item, currentTerm, weight=weightVal)        
+        '''
 
-        communityGraphHashMap[key] = graph
+
+        communityGraphHashMap[bestCommunityNumber] = graph
+
+
+
 
 
     if passBoolean == False and currentTerm not in unabletoConnectCommunity:
@@ -450,8 +458,6 @@ def addTermsToTheCommunity():
 
     print("Unable to Find community List:", len(unabletoConnectCommunity))
     print("MarkMultiple Community List:", len(markMultipleCommunity))
-    for i in unabletoConnectCommunity:
-        print(i," ")
 
     #iterativeWaytoAddTermsInCommunity()
 
