@@ -15,7 +15,8 @@ CLUSTER_RANGE_DATA_FILENAME= "NEWSGROUP_MANUAL_ADD_RANGE.txt"
 INDEX_FILE_NAME = "Index_NewsGroup.txt"
 TOP_CLUSTER_TERM_DATA_FILENAME= "NEWSGROUP_TOP_CLUSTER_TERM.txt"
 DATA_SAMPLE_FILENAME= "NEWSGROUP_SAMPLE_DATA_FILENAME"
-TOTAL_RANDOM_SAMPLE = 200
+PMI_SAMPLE_FILENAME = "NEWSGROUP_PMI_FILENAME"
+TOTAL_RANDOM_SAMPLE = 100
 
 communityTermListAsHashMap = dict()
 topicAssingmentByCommunityNumberDict = dict()
@@ -166,15 +167,15 @@ def verification():
             if topicByModel is not None and topicByFileRange is not None:
                 if topicByModel == topicByFileRange:
                     MATCH_COUNT +=1
-                    #print("MATCH")
-                    #print(term + " Topic By File Range: " + topicByFileRange + " Topic By Model: " + topicByModel)
+                    print("MATCH")
+                    print(term + " #Topic By File Range: " + topicByFileRange + " #Topic By Model: " + topicByModel)
                 else:
                     UNMATCH_COUNT +=1
-                    #print("NOT MATCH")
-                    #print(term + " Topic By File Range: " + topicByFileRange +" Topic By Model: " + topicByModel)
+                    print("NOT MATCH")
+                    print(term + " #Topic By File Range: " + topicByFileRange +" #Topic By Model: " + topicByModel)
 
     totalSearch = UNMATCH_COUNT + MATCH_COUNT
-    print("Percentage of Accuracy:", MATCH_COUNT/totalSearch)
+    print("=======Percentage of Classification Accuracy:", MATCH_COUNT/totalSearch , " =========")
 
 
 
