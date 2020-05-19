@@ -35,12 +35,14 @@ C0_EFFICIENT_FOR_MULTIPLE_COMMUNITY = .05
 global COMMUNITY_NUMBER
 TOP_ZSCORE_TERM_NUMBER = 15
 CO_EFFICIENT = 1
+SAMPLING_TERM_COLLECTION_NUMBER = 5
 
 MAC_DATA_DIRECTORY = "/ZResearchCode/HTopicModel/Topic-Model/Data/"
 linux_data_directory = "/home/C00408440/ZWorkStation/JournalVersion/Data/"
 GRAPH_DATA_DIRECTORY = "GraphData/"
 COMMUNITY_DATA_DIRECTORY = "CommunityData/"
 RANGE_DATA_DIRECTORY = "ClusterRange/"
+SAMPLING_STATISTICS_DIRECTORY = "SampleStatistics/"
 GRAPH_INPUT_DATA_FILENAME = "GraphInputData_NewsGroup.txt"
 ZSCORE_SORTED_FILENAME = "zScoreSorted_NEWSGROUP.txt"
 GEPHI_FORMAT_GRAPH_FILENAME = "gephi_format_graph_NEWSGROUP.gexf"
@@ -51,6 +53,8 @@ EDGE_REMOVE_LIST_LOGFILE = "LowerLevelEdgeRemovalLogFile_NEWSGROUP.txt"
 ZSCORE_REVERSE_SORTED_FILENAME = "ZREVERSE_SORTED_NEWSGROUP.txt"
 CO_VARIATION_VALUE_FILENAME = "CO_VARIATION_VALUE_NEWSGROUP.txt"
 TOP_CLUSTER_TERM_DATA_FILENAME= "NEWSGROUP_TOP_CLUSTER_TERM.txt"
+ZSORE_SORTED_BY_ASSO_FILENAME = "zScoreSortedByAsso_NEWSGROUP.txt"
+
 
 G = nx.DiGraph()
 rebuildG = nx.DiGraph()
@@ -62,6 +66,7 @@ nonOverlappingFinalDictonaryCommunity = dict()
 communityTrackingDict = dict()
 hLevelCommunityNumberDict = dict()
 communityGraphHashMap = dict()
+zScoreAssocationDict = dict()
 markMultipleCommunity = []
 unabletoConnectCommunity = []
 
@@ -501,6 +506,49 @@ def writingClusterToFile():
             file.write(item + "\n")
 
 
+def loadSortedZScoreforAssocaition():
+    with open(MAC_DATA_DIRECTORY + GRAPH_DATA_DIRECTORY + ZSORE_SORTED_BY_ASSO_FILENAME) as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter='|')
+        for line in csv_reader:
+            zScoreAssocationDict[line[0]] = line[1]
+
+def sapmlingFromCommunity():
+
+    # Load Graph from HashMap
+    for key, value in communityGraphHashMap.items():
+        graph = communityGraphHashMap[key]
+        listOfNodes = list(graph.nodes)
+        communityRankedDict = dict()
+        for item in listOfNodes:
+            communityRankedDict[item] = zScoreAssocationDict[item]
+        sortedRankHashMapAsList = sorted(communityRankedDict.items(), key=operator.itemgetter(1), reverse=True)
+
+
+        length = len(sortedRankHashMapAsList)
+        listOfNodesCoverSet = set()
+        dataSetCoverStatistics = dict()
+        for i in range(0, length, 1):
+            if i !=0 and i%SAMPLING_TERM_COLLECTION_NUMBER == 0:
+                percentageOfCover = len(listOfNodesCoverSet)/length
+                dataSetCoverStatistics[i] = percentageOfCover
+            else:
+                toupleTerm = sortedRankHashMapAsList[i]
+                listOfNodesCoverSet.add(toupleTerm[0]) #Add one item
+                neighboursList = graph[toupleTerm[0]]
+                listOfNodesCoverSet.update(neighboursList) #Add multiple item
+
+
+        file = open(MAC_DATA_DIRECTORY + SAMPLING_STATISTICS_DIRECTORY + str(key) + ".txt", "w+")
+        for key,value in dataSetCoverStatistics.items():
+            file.write(str(key) + "|" + str(value) + "\n")
+
+
+
+
+
+
+
+
 
 def main_Graph_Building_function():
     print("=====Building Graph From Text Data=====")
@@ -521,6 +569,9 @@ def main_Graph_Building_function():
     hashMapCommunityVisualization(communityGraphHashMap)
     print("=======Writing Data to Community File=======")
     writingClusterToFile()
+    print("========Sampling Method Started======")
+    loadSortedZScoreforAssocaition()
+    sapmlingFromCommunity()
 
 
 
