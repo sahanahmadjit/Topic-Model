@@ -3,7 +3,9 @@ import csv
 import math
 import operator
 from enum import Enum
+from random import sample
 import matplotlib.pyplot as plt
+
 
 
 class percentageOfTopValue(Enum):
@@ -36,6 +38,7 @@ global COMMUNITY_NUMBER
 TOP_ZSCORE_TERM_NUMBER = 15
 CO_EFFICIENT = 1
 SAMPLING_TERM_COLLECTION_NUMBER = 5
+SAMPLING_DATASET_COVERAGE_PERCENTAGE = .9
 
 MAC_DATA_DIRECTORY = "/ZResearchCode/HTopicModel/Topic-Model/Data/"
 linux_data_directory = "/home/C00408440/ZWorkStation/JournalVersion/Data/"
@@ -43,6 +46,10 @@ GRAPH_DATA_DIRECTORY = "GraphData/"
 COMMUNITY_DATA_DIRECTORY = "CommunityData/"
 RANGE_DATA_DIRECTORY = "ClusterRange/"
 SAMPLING_STATISTICS_DIRECTORY = "SampleStatistics/"
+SAMPLING_TERM_DIRECTORY= "SamplingTerms/"
+RANDOM_NODE_SAMPLING_DIRECTORY = "RandomNodeSampling/"
+RANDOM_EDGE_SAMPLING_DIRCTORY = "RandomEdgeSampling/"
+RANDOM_TRAVESE_SAMPLING_DIRECTORY = "RandomTraverseSampling/"
 GRAPH_INPUT_DATA_FILENAME = "GraphInputData_NewsGroup.txt"
 ZSCORE_SORTED_FILENAME = "zScoreSorted_NEWSGROUP.txt"
 GEPHI_FORMAT_GRAPH_FILENAME = "gephi_format_graph_NEWSGROUP.gexf"
@@ -531,17 +538,131 @@ def sapmlingFromCommunity():
             if i !=0 and i%SAMPLING_TERM_COLLECTION_NUMBER == 0:
                 percentageOfCover = len(listOfNodesCoverSet)/length
                 dataSetCoverStatistics[i] = percentageOfCover
+                if percentageOfCover >= SAMPLING_DATASET_COVERAGE_PERCENTAGE:
+                    #Writing Sampling Terms to File
+                    file = open(MAC_DATA_DIRECTORY + SAMPLING_TERM_DIRECTORY + str(key) + ".txt", "w+")
+                    #Add only those high associated terms from ranked dict. Not their neighbours
+                    for j in range(0,i,1):
+                        toupleTerm = sortedRankHashMapAsList[j]
+                        file.write(toupleTerm[0]+"\n")
+                    file.close()
+                    #Writing Sampling Statistics to File
+                    file = open(MAC_DATA_DIRECTORY + SAMPLING_STATISTICS_DIRECTORY + str(key) + ".txt", "w+")
+                    for key, value in dataSetCoverStatistics.items():
+                        file.write(str(key) + "|" + str(value) + "\n")
+                    file.close()
+                    break
             else:
                 toupleTerm = sortedRankHashMapAsList[i]
                 listOfNodesCoverSet.add(toupleTerm[0]) #Add one item
                 neighboursList = graph[toupleTerm[0]]
                 listOfNodesCoverSet.update(neighboursList) #Add multiple item
 
+def randomNodeSampling():
 
-        file = open(MAC_DATA_DIRECTORY + SAMPLING_STATISTICS_DIRECTORY + str(key) + ".txt", "w+")
-        for key,value in dataSetCoverStatistics.items():
+    # Load Graph from HashMap
+    for key, value in communityGraphHashMap.items():
+        graph = communityGraphHashMap[key]
+        listOfNodes = list(graph.nodes)
+        length = len(listOfNodes)
+        listOfNodesCoverSet = set()
+        dataSetCoverStatistics = dict()
+
+        randomNumber = sample(range(0, length), length) #Generate total length number of random sample number
+
+        for i in range(0, length, 1):
+            percentageOfCover = len(listOfNodesCoverSet)/length
+            dataSetCoverStatistics[i] = percentageOfCover
+            if percentageOfCover >= SAMPLING_DATASET_COVERAGE_PERCENTAGE:
+                    #Writing Sampling Statistics to File
+                    file = open(MAC_DATA_DIRECTORY + RANDOM_NODE_SAMPLING_DIRECTORY + str(key) + ".txt", "w+")
+                    for key, value in dataSetCoverStatistics.items():
+                        file.write(str(key) + "|" + str(value) + "\n")
+                    file.close()
+                    break
+            else:
+                indexOfRandomNode = randomNumber[i]
+                toupleTerm = listOfNodes[indexOfRandomNode]
+                listOfNodesCoverSet.add(toupleTerm) #Add one item
+                neighboursList = graph[toupleTerm]
+                listOfNodesCoverSet.update(neighboursList) #Add multiple item
+
+
+
+def randomEdgeSampling():
+    # Load Graph from HashMap
+    for key, value in communityGraphHashMap.items():
+        graph = communityGraphHashMap[key]
+        listOfNodes = list(graph.nodes)
+        length = len(listOfNodes)
+        listOfNodesCoverSet = set()
+        dataSetCoverStatistics = dict()
+
+        randomNumber = sample(range(0, length), length) #Generate total length number of random sample number
+
+        for i in range(0, length-1, 1):
+            percentageOfCover = len(listOfNodesCoverSet)/length
+            dataSetCoverStatistics[i] = percentageOfCover
+            if percentageOfCover >= SAMPLING_DATASET_COVERAGE_PERCENTAGE:
+                    #Writing Sampling Statistics to File
+
+                    file = open(MAC_DATA_DIRECTORY + RANDOM_EDGE_SAMPLING_DIRCTORY + str(key) + ".txt", "w+")
+                    for key, value in dataSetCoverStatistics.items():
+                        file.write(str(key) + "|" + str(value) + "\n")
+                    file.close()
+                    break
+            else:
+                indexOfRandomNode = randomNumber[i]
+                toupleTerm = listOfNodes[indexOfRandomNode]
+                listOfNodesCoverSet.add(toupleTerm) #Add one item
+                neighboursList = graph[toupleTerm]
+                toupleTermTwo = tuple(neighboursList.items())[0][0]
+                secondNeighboursList = graph[toupleTermTwo]
+                listOfNodesCoverSet.update(neighboursList) #Add multiple item
+                listOfNodesCoverSet.update(secondNeighboursList)
+
+
+def randomTraverseSampling():
+    # Load Graph from HashMap
+    for key, value in communityGraphHashMap.items():
+        graph = communityGraphHashMap[key]
+        listOfNodes = list(graph.nodes)
+        length = len(listOfNodes)
+        listOfNodesCoverSet = set()
+        dataSetCoverStatistics = dict()
+
+        randomNumber = sample(range(0, length), length) #Generate total length number of random sample number
+        randomArrayIndex = 0
+        indexOfRandomNode = randomNumber[randomArrayIndex]
+        sourceTerm = listOfNodes[indexOfRandomNode]
+
+        percentageOfCover = 0
+        i= 0
+        j= 0
+        while percentageOfCover <= SAMPLING_DATASET_COVERAGE_PERCENTAGE and j<=100:
+            percentageOfCover = len(listOfNodesCoverSet)/length
+            print("DEBUG", percentageOfCover)
+            dataSetCoverStatistics[i] = percentageOfCover
+            i = i+1
+            j = j+1
+
+            listOfNodesCoverSet.add(sourceTerm) #Add one item
+            neighboursList = graph[sourceTerm]
+            nextTerm = tuple(neighboursList.items())[0][0]
+            listOfNodesCoverSet.update(neighboursList) #Add multiple item
+
+            if sourceTerm == nextTerm:
+                randomArrayIndex = randomArrayIndex + 1
+                indexOfRandomNode = randomNumber[randomArrayIndex]
+                sourceTerm = listOfNodes[indexOfRandomNode]
+            else:
+                sourceTerm = nextTerm
+
+
+
+        file = open(MAC_DATA_DIRECTORY + RANDOM_TRAVESE_SAMPLING_DIRECTORY + str(key) + ".txt", "w+")
+        for key, value in dataSetCoverStatistics.items():
             file.write(str(key) + "|" + str(value) + "\n")
-
 
 
 
@@ -572,6 +693,10 @@ def main_Graph_Building_function():
     print("========Sampling Method Started======")
     loadSortedZScoreforAssocaition()
     sapmlingFromCommunity()
+    randomNodeSampling()
+    randomEdgeSampling()
+    randomTraverseSampling()
+
 
 
 
